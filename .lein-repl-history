@@ -1,0 +1,87 @@
+(+ 8 9)
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [clojure.data.json :as json]
+            [org.httpkit.client :as client]))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [clojure.data.json :as json]
+            [httpkit :as client]))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [httpkit :as client]))
+exit
+(:require [org.httpkit.sni-client :as sni-client])
+ (:require [clojure.data.json :as json]
+            [org.httpkit.client :as client]))
+            [org.httpkit.client :as client])
+ (:require [clojure.data.json :as json]
+            [org.httpkit.client :as client])
+(:require [org.httpkit.client :as client])
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [clojure.data.json :as json]
+            [org.httpkit.client :as client]))
+exit
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [clojure.data.json :as json]
+           [org.httpkit.client :as client]))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [org.httpkit.client :as client]))
+exit
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [org.httpkit.client :as client]))
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+exit
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(:require [org.httpkit.client :as client])
+exit
+(:require [org.httpkit.client :as client])
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [org.httpkit.client :as client]))
+exit
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [clojure.data.json :as json]
+           [org.httpkit.client :as client]))
+(ns practicalli.simple-api-client
+  (:gen-class)
+  (:require [org.httpkit.client :as client]))
+(:require [org.httpkit.sni-client :as sni-client]) 
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+exit
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(:require [org.httpkit.sni-client :as sni-client]) 
+java
+(System/getProperty "java.vm.version")
+(System/getProperty "java.version")
+exit
+ (:require [org.httpkit.sni-client :as sni-client]) 
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+exit
+(println (clojure.string/join "\n" (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
+(:require [org.httpkit.client :as client])
+exit
+(:require [org.httpkit.client :as client])
+(:require [org.httpkit.clientx :as client])
+(:require [org.httwwwwpkit.clientx :as client])
+(:require [ggg :as client])
+(:require [clojure.data.json :as client])
+(:require [clojure.data :as client])
+(:require [clojure :as client])
+(:require [clojure.ggg :as client])
+exit
+(:require [org.httpkit.client :as client])
+(require '[org.httpkit.client :as io])
+(require [org.httpkit.client :as io])
+(require '[org.httpkit.client :as io])
+(resolve-deps deps)
+exit
+(require '[org.httpkit.client :as cd])
+exit

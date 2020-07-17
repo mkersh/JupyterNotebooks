@@ -1,0 +1,19 @@
+{:paths ["src" "resources"]
+ :deps
+        ; {org.clojure/clojure {:mvn/version "1.10.1"}
+        ;{org.clojure/clojure {:mvn/version "1.10.0-RC1"}
+        {org.clojure/clojure {:mvn/version "1.5.1"}
+         base64-clj/base64-clj {:mvn/version "0.1.1"}
+         http-kit            {:mvn/version "2.4.0-alpha4"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "1.0.0"}}}
+  :runner
+  {:extra-deps {com.cognitect/test-runner
+                {:git/url "https://github.com/cognitect-labs/test-runner"
+                 :sha "f7ef16dc3b8332b0d77bc0274578ad5270fbfedd"}}
+   :main-opts ["-m" "cognitect.test-runner"
+               "-d" "test"]}
+  :uberjar {:extra-deps {seancorfield/depstar {:mvn/version "1.0.94"}}
+            :main-opts ["-m" "hf.depstar.uberjar" "simple-api-server.jar"
+                        "-C" "-m" "practicalli.simple-api-server"]}}}
