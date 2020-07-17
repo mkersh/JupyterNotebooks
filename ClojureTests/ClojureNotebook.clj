@@ -80,6 +80,3 @@ myMap
 
 myMap2
 
-
-(slurp "https://game-scoreboard-api.herokuapp.com/game/scoreboard")
-
