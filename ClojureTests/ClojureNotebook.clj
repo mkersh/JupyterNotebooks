@@ -1,3 +1,13 @@
+;;; ************************************************************
+;;; 
+;;; Clojure Tests and examples
+;;;
+;;;  GITHUB: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/ClojureNotebook.clj
+;;; 
+;;; ************************************************************
+
+
+
 ;;; *********************************  List datastructures
 (def MyExampleList '(1 2 3 4 5 6))
 MyExampleList
@@ -30,7 +40,10 @@ MyExampleList
 
 (vector 1 2 "hh")
 
+(comment
+  ; Commenting next line out cos it causes an error
 (vector-of :int 1 2 "hh")
+)
 
 (vector-of :int 1 2 3 4 5)
 
