@@ -5,7 +5,12 @@
 ;;;  GITHUB: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/ClojureNotebook.clj
 ;;; 
 ;;; ************************************************************
-
+(ns ClojureNotebook
+  (:refer-clojure))
+; (in-ns 'ClojureNotebook.newton-raphson)
+; (ns-name *ns*)
+; (ns-interns *ns*)
+; (all-ns)
 
 
 ;;; *********************************  List datastructures
@@ -95,3 +100,69 @@ myMap2
 
 (ns-name *ns*)
 
+
+;;; *********************************  Functions
+;;; 
+
+;; Standard public function
+(defn publicFunction
+  "optional doc string"
+  {:optional-meta-data 1}
+  [arg1 arg2]
+  (println (str "this is" arg1 arg2))
+)
+
+(publicFunction 1 2)
+
+;; defn- creates a private function that is only visible within  the current namespace
+(defn- privateFunction
+  "optional doc string"
+  {:optional-meta-data 1}
+  [arg1 arg2]
+  (println (str "this is" arg1 arg2)))
+
+(privateFunction 1 2)
+
+(defn funcWithOverloadedArgs
+  ([]
+   (println "No Args passed"))
+  ([arg1]
+   (println "1 Args passed"))
+ ([arg1 & rest]
+   (println "More than 1 Args passed " rest)))
+
+(funcWithOverloadedArgs 1 2 3 )
+
+(defn funcWithListParam
+  ;([[]]
+   ;(println "Null list"))
+  ([[arg1 & rest]]
+   (println (str "Args passed list " arg1 rest))
+  ))
+
+(funcWithListParam [])
+
+(def my-vector [1 2 3])
+
+(let [[x & z] my-vector]
+  (println x z))
+
+;; Anonymous functions
+
+(def fn1
+ (fn [x] (println x))) 
+
+(fn1 "this is it")
+
+;; Shorter version of anonymous functions
+(#(println (str "anon func called with " %)) 1)
+
+(def fn2 #(println (str "anon func2 called with " %)))
+
+(fn2 "Let see this work")
+
+
+
+;; ->> Macro
+
+(->> 1 (+ 2) (fn2))

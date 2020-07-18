@@ -1,7 +1,7 @@
-(ns cheese.analysis
+(ns ClojureNotebook.newton-raphson
   (:refer-clojure)
   )
-; (in-ns 'cheese.analysis)
+; (in-ns 'ClojureNotebook.newton-raphson)
 ; (ns-name *ns*)
 ; (ns-interns *ns*)
 ; (all-ns)
@@ -13,7 +13,7 @@
   (exp x 2))
 
 (defn good-enough? [guess x]
-  (< (Math/abs (- (square guess) x)) 0.001))
+  (< (Math/abs (- (square guess) x)) 0.00000000001))
 
 (defn average [x y]
   (/ (+ x y) 2))
