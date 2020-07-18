@@ -161,8 +161,31 @@ myMap2
 
 (fn2 "Let see this work")
 
+;; Recursive functions
 
+(defn fac [x]
+  (if (= x 1)
+    1
+    (* x (fac (- x 1)))
+    )
+  )
+
+(fac 100N)
+
+(defn fac2 [x]
+  (loop [n x
+         result 1]
+    (if (= n 1)
+      result
+      (recur (- n 1) (* result n) )
+      )
+    ))
+
+
+(fac2 100N)
 
 ;; ->> Macro
 
 (->> 1 (+ 2) (fn2))
+
+
