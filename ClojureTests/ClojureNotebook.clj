@@ -93,3 +93,5 @@ myMap
 
 myMap2
 
+(ns-name *ns*)
+
