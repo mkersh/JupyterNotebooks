@@ -6,3 +6,4 @@ ClojureTests/target/repl-port
 ClojureTests/target/classes/META-INF/maven/clojure-notebook/clojure-notebook/pom.properties
 ClojureTests/target/stale/leiningen.core.classpath.extract-native-dependencies
 target/repl-port
+clj-wamp-example
