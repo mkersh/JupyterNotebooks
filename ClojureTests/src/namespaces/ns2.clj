@@ -1,19 +1,18 @@
 ;;; Namespace names need to match file name
 ;;; Required namespaces need to be on the classpath
 ;;;     - This is a bit messy for my tests
-(ns ns2
-   (:require (ns1))
+(ns namespaces.ns2
+   (:require [namespaces.ns1])
   )
 
 ;; Print the classpath
-;
-(println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader))))
+;(println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader))))
 
  ;(require '(ns1))
 
 (defn ns2SayHello []
   (println "MKNameSpace2 Says Hello from me AND!!!")
-  (ns1/ns1SayHello)
+  (namespaces.ns1/ns1SayHello)
   )
 
 

@@ -19,9 +19,11 @@
                  [clabango "0.5"]
                  [http-kit "2.1.5"]
                  [clj-wamp "1.0.0-rc1"]]
-  :profiles {:dev {:resource-paths ["resources-dev" "namespaces"]
+  :profiles {:dev {:resource-paths ["resources-dev"]
                    :dependencies [[org.clojure/tools.namespace "0.2.3"]]
                    :jvm-opts ["-Xmx1g" "-server"
                               "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"]}
              :production {:resource-paths ["resources-prod"]}}
-  :main ClojureNotebook)
+  ; Setting this to ClojureNotebook breaks the REPL load
+  :xmain XXClojureNotebook
+  )
