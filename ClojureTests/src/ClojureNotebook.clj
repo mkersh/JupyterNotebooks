@@ -141,7 +141,7 @@ myMap2
 (defn funcWithOverloadedArgs
   ([]
    (println "No Args passed"))
-  ([arg1]
+  ([_] ; _ allows you to ignore arg and avoid lint errors
    (println "1 Args passed"))
   ([arg1 & rest]
    (println "More than 1 Args passed " rest)))
