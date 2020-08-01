@@ -2,7 +2,7 @@
 ;;; Required namespaces need to be on the classpath
 ;;;     - This is a bit messy for my tests
 (ns ns2
-   (:require ns1)
+   (:require (ns1))
   )
 
 ;; Print the classpath
