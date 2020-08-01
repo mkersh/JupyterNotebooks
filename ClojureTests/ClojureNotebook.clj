@@ -7,7 +7,7 @@
 ;;; ************************************************************
 (ns ClojureNotebook
   (:refer-clojure))
-; (in-ns 'ClojureNotebook.newton-raphson)
+; (in-ns 'ClojureNotebook)
 ; (ns-name *ns*)
 ; (ns-interns *ns*)
 ; (all-ns)
@@ -32,6 +32,19 @@ MyExampleList
 ;; This is an example of calling a java function .indexOf on a list
 (.indexOf MyExampleList 4)
 
+;;; Map function example
+
+(map + [1 2 3 4 5 6 7 8 9 10] (cycle [1 3]))
+
+(map + (cycle [1 3]) [1 2 3 4 5 6 7 8 9 10])
+
+(map #(+ % 50) [1 2 3])
+
+(count [1 2 3 4 5 6 7 8 9 10])
+; If you try and execute the next line it will hang the REPL
+; CTRL-OPT-C CTRL-OPT-D to break
+(count (cycle [1 3]))
+
 
 ;;; ********************************* Vectors
 ;;; Very similar to lists but it general use vectors to store data. 
@@ -47,8 +60,7 @@ MyExampleList
 
 (comment
   ; Commenting next line out cos it causes an error
-(vector-of :int 1 2 "hh")
-)
+  (vector-of :int 1 2 "hh"))
 
 (vector-of :int 1 2 3 4 5)
 
@@ -86,7 +98,7 @@ myMap
 (assoc myMap2 :key55 11)
 
 ;; Keys in maps are unique. If you want to add multiple values for a key you need to do something like:
-(defn addItem 
+(defn addItem
   "this is a docString associated with the function"
   [key val]
   (let
@@ -109,8 +121,7 @@ myMap2
   "optional doc string"
   {:optional-meta-data 1}
   [arg1 arg2]
-  (println (str "this is" arg1 arg2))
-)
+  (println (str "this is" arg1 arg2)))
 
 (publicFunction 1 2)
 
@@ -128,17 +139,16 @@ myMap2
    (println "No Args passed"))
   ([arg1]
    (println "1 Args passed"))
- ([arg1 & rest]
+  ([arg1 & rest]
    (println "More than 1 Args passed " rest)))
 
-(funcWithOverloadedArgs 1 2 3 )
+(funcWithOverloadedArgs 1 2 3)
 
 (defn funcWithListParam
   ;([[]]
    ;(println "Null list"))
   ([[arg1 & rest]]
-   (println (str "Args passed list " arg1 rest))
-  ))
+   (println (str "Args passed list " arg1 rest))))
 
 (funcWithListParam [])
 
@@ -150,7 +160,7 @@ myMap2
 ;; Anonymous functions
 
 (def fn1
- (fn [x] (println x))) 
+  (fn [x] (println x)))
 
 (fn1 "this is it")
 
@@ -166,9 +176,7 @@ myMap2
 (defn fac [x]
   (if (= x 1)
     1
-    (* x (fac (- x 1)))
-    )
-  )
+    (* x (fac (- x 1)))))
 
 (fac 100N)
 
@@ -177,15 +185,82 @@ myMap2
          result 1]
     (if (= n 1)
       result
-      (recur (- n 1) (* result n) )
-      )
-    ))
+      (recur (- n 1) (* result n)))))
 
 
 (fac2 100N)
 
+;; Calculating the number of combinations of Crypto Seeds for BIP-39 Word List with dictionary of 2048 words and seeds of 24 words
+
+(let [num-words 24
+      res (/ (fac2 2048N) (fac2 (- 2048N num-words)))]
+  (println "Result: " res)
+  (str res))
 ;; ->> Macro
 
 (->> 1 (+ 2) (fn2))
 
+(count "115.792.089.237.316.195.423.570.985.008.687.907.853.269.984.665.640.564.039.457.584.007.913.129.639.936")
 
+(require '[clojure.string :as str])
+(count (str/split "115.792.089.237.316.195.423.570.985.008.687.907.853.269.984.665.640.564.039.457.584.007.913.129.639.936" #"\."))
+(* 26 3)
+
+(count "25892008055647378700916274834106651525738683598033725572049016676308484096000000")
+
+(defn exp [x n]
+  (reduce * (repeat n x)))
+
+(count (str (exp 2048N 24N)))
+
+
+;;; ******************** Concurrent programmimg
+;;; Futures, Delays, Promises
+;;; Atoms, Refs
+
+;; Future - Basically creates a separate JVM thread
+(defn testFuture []
+  (future (Thread/sleep 4000)
+          (println "I'll print after 4 seconds"))
+  (println "I'll print immediately"))
+
+(testFuture)
+
+(let [result (future (Thread/sleep 3000)
+                     (+ 1 1))]
+  (println "The result is: " @result)
+  (println "It will be at least 3 seconds before I print"))
+
+(def fut1 (future (Thread/sleep 3000)
+                  (+ 1 1)))
+
+; See if a future is realised 
+(realized? fut1)
+@fut1
+
+
+;; Atoms allow you to change state in a controlled way
+(def fred (atom {:cuddle-hunger-level 0
+                 :percent-deteriorated 0}))
+@fred
+(swap! fred
+       (fn [current-state]
+         (merge-with + current-state {:cuddle-hunger-level 1})))
+
+;; Delays
+(def jackson-5-delay
+  (delay (let [message "Just call my name and I'll be there"]
+           (println "First deref:" message)
+           message)))
+
+jackson-5-delay
+
+; Dereference or force for evaluate
+(force jackson-5-delay)
+@jackson-5-delay
+
+
+;; Promises
+(def my-promise (promise))
+(deliver my-promise (+ 1 2))
+@my-promise
