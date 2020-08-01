@@ -113,6 +113,9 @@ myMap2
 
 (ns-name *ns*)
 
+(def vector7 [1 2 3 4])
+(try (vector7 10)
+     (catch Exception e (str "caught exception: " e)))
 
 ;;; *********************************  Functions
 ;;; 
