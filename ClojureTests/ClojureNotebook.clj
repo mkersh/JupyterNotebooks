@@ -94,6 +94,7 @@ myMap
 (println "keyword as function " (:key30 myMap))
 
 (def myMap2 (sorted-map :key55 ["55 val1"] :key56 ["55 val2"]))
+myMap2
 
 (assoc myMap2 :key55 11)
 
@@ -106,7 +107,7 @@ myMap
     newVal (conj curVal val)]
     (def myMap2 (assoc myMap2 key newVal))))  ; Not a good idea I know!
 
-(addItem :key55 90)
+(addItem :key55 92)
 
 myMap2
 
