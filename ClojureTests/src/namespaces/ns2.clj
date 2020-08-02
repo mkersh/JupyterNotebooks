@@ -26,7 +26,7 @@
    #":")))
 )
 
-(printClassPath)
+;(printClassPath)
 
 (defn ns2SayHello []
   (println "MKNameSpace2 Says Hello from me AND!!!")
