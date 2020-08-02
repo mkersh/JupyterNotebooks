@@ -12,7 +12,6 @@
 (defn printClassPath []
 (println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
 
-;
 ;(printClassPath)
 
 (defn ns2SayHello []
