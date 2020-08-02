@@ -1,4 +1,4 @@
-(ns ClojureNotebook.newton-raphson
+(ns SICP.newton-raphson
   (:refer-clojure)
   )
 ; (in-ns 'ClojureNotebook.newton-raphson)

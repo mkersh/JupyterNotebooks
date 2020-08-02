@@ -4,14 +4,15 @@
 (ns namespaces.ns2
    (:require [namespaces.ns1 :as req1])
   )
+;; Here's another way of requiring another namespace
+;; but you are better off using :require within (ns ...)
+;(require '[namespaces.ns1 :as req1])
 
 ;; Print the classpath
 (defn printClassPath []
 (println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader)))))
 
 ;(printClassPath)
-
- ;(require '(ns1))
 
 (defn ns2SayHello []
   (println "MKNameSpace2 Says Hello from me AND!!!")
