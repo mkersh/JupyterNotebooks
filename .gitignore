@@ -7,3 +7,6 @@ ClojureTests/target/classes/META-INF/maven/clojure-notebook/clojure-notebook/pom
 ClojureTests/target/stale/leiningen.core.classpath.extract-native-dependencies
 target/repl-port
 clj-wamp-example
+ClojureTests/.calva/output-window/output.repl-file
+ClojureTests/.calva/output-window/.clj-kondo/config.edn
+ClojureTests/.calva/output-window/.clj-kondo/.cache/2020.07.29/lock
