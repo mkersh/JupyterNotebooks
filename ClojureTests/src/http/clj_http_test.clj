@@ -1,4 +1,10 @@
 ;;; https://github.com/dakrone/clj-http
+;;; 
+;;; Started to look at this library for making JSON API calls
+;;; BUT I abandoned and moved to http-kit because the status handling
+;;; in clj-http appeared to be too complicated 
+;;; i.e. I just could not easily get the http response code
+;;; 
 (ns http.clj_http_test
   (:require
    [clj-http.client :as client]))
