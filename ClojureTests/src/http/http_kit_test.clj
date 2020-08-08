@@ -93,7 +93,8 @@
     newAccessPathList (conj accessPathList k)]
     (cond
       (vector? item)
-      (findPath-vector item matchStr newAccessPathList)
+      (concat (findPath-vector item matchStr newAccessPathList)
+              (search-leaf k nil matchStr newAccessPathList))
 
       (map? item)
       (findPath-map item matchStr newAccessPathList)
@@ -158,6 +159,44 @@
   (get-lists-from (tidyup-results (findPath-aux resultEdn matchStr []))) ; last parm builds up the access-path
   )
 
+(defn get-obj-attrs [obj attrList]
+  (let [attrValList (map #(vector % (get obj %)) attrList)]
+    (into {} attrValList)
+    ))
+
+(defn extract-attrs [attrList objList]
+  (map #(get-obj-attrs % attrList) objList)
+  )
+
+(extract-attrs ["id" "name", "addresses"]
+[{"creationDate" "2020-08-03T07:49:08+02:00",
+  "emailAddress" "",
+  "id" "CreditArrangementTests",
+  "branchHolidays" [],
+  "lastModifiedDate" "2020-08-03T07:49:08+02:00",
+  "name" "CreditArrangementTests",
+  "phoneNumber" "",
+  "encodedKey" "8a8187b573b2da480173b2dc87ac000b",
+  "addresses"
+  [{"encodedKey" "8a8187b573b2da480173b2dc87ac000c",
+    "parentKey" "8a8187b573b2da480173b2dc87ac000b",
+    "indexInList" -1}],
+  "state" "ACTIVE",
+  "notes" ""}
+ 
+ {"creationDate" "2020-08-03T07:49:08+02:00"
+  "emailAddress" ""
+  "id" "CreditArrangementTests"
+  "branchHolidays" []
+  "lastModifiedDate" "2020-08-03T07:49:08+02:00"
+  "name" "CreditArrangementTests"
+  "phoneNumber" ""
+  "encodedKey" "8a8187b573b2da480173b2dc87ac000b"
+  "addresses" []
+  "state" "ACTIVE"
+  "notes" ""}
+ ])
+
 (def testEdn ["ffff@@" {:fred "john"} {:gary 2 :hh ["john" 1 2 3 "john"]} "john"])
 
 (declare get-lists-from)
@@ -199,9 +238,9 @@
     (DEBUG "TIDY: " res)
     res))
 
-(tidyup-results [[nil 5 6] [1 '(7 8 9)] 2 nil 3 4])
-(tidyup-results ['(nil (nil nil nil nil nil)) '(nil) 0])
-(tidyup-results ['(nil)])
+;; (tidyup-results [[nil 5 6] [1 '(7 8 9)] 2 nil 3 4])
+;; (tidyup-results ['(nil (nil nil nil nil nil)) '(nil) 0])
+;; (tidyup-results ['(nil)])
 
 
 (list? '(nil))
