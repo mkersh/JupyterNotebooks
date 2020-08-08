@@ -20,7 +20,8 @@
                  [org.clojure/data.json "1.0.0"]
                  [http-kit "2.4.0"]
                  [clj-wamp "1.0.0-rc1"]
-                 [clj-http "3.10.1"]]
+                 [clj-http "3.10.1"]
+                 [dk.ative/docjure "1.14.0"]]
   :profiles {:dev {:resource-paths ["resources-dev"]
                    :dependencies [[org.clojure/tools.namespace "0.2.3"]]
                    :jvm-opts ["-Xmx1g" "-server"

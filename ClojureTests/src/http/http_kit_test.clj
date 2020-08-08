@@ -23,6 +23,7 @@
         p3 (str/replace p2 "}}" "")
         placeHolderValue (:url (get env/ENV-MAP p3))]
     (str/replace currentStr placeHolder placeHolderValue)))
+
 ;; Support the expansion of placeholder in URLs 
 ;; e.g "{{env1}}/branches" which will have the {{env1}} placeholders replaced
 (defn expandURL [url]
@@ -105,8 +106,6 @@
   (DEBUG "Searching in map")
   (map #(search-map-item % matchStr accessPathList)  root))
 
-;;(map #(search-map-item % "john" [])  {:f1 1 :f2 "hello" :f3 "john"})
-
 
 (defn search-leaf [key item matchStr accessPathList]
   (DEBUG "Search Leaf Node: " item " access path: " accessPathList)
@@ -168,6 +167,7 @@
   (map #(get-obj-attrs % attrList) objList)
   )
 
+
 (extract-attrs ["id" "name", "addresses"]
 [{"creationDate" "2020-08-03T07:49:08+02:00",
   "emailAddress" "",
@@ -197,17 +197,18 @@
   "notes" ""}
  ])
 
+
 (def testEdn ["ffff@@" {:fred "john"} {:gary 2 :hh ["john" 1 2 3 "john"]} "john"])
 
 (declare get-lists-from)
 (defn get-lists-items [res item]
   (cond
     (vector? item)
-    (conj res item)
+      (conj res item)
     (seq? item)
-    (concat res (get-lists-from item))
+      (concat res (get-lists-from item))
     :else
-    nil))
+      nil))
 
 (defn get-lists-from [seq1]
   (reduce get-lists-items [] seq1))
