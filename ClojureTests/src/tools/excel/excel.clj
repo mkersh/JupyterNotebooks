@@ -67,7 +67,7 @@
         sheets    (ss/sheet-seq workbook)
         d2 (println "here2" (ss/sheet-name (first sheets)))]
     (println "about to iterate through sheets")
-    ;(load-sheet (first sheets))))
+    (load-sheet (first sheets))))
     (map load-sheet sheets)))
 
 (load-spreadsheet2 "src/tools/excel/spreadsheet.xlsx")
@@ -78,4 +78,9 @@
 
 (load-spreadsheet2 "~/JupyterNotebooks/ClojureTests/src/tools/excel/spreadsheet.xlsx")
 
+
+;; This is my RFP spreadsheet but it does not load because of:
+;; https://github.com/mjul/docjure/issues/92
+;; Guess I will have to go straight to using google docs API and read
+;; spreadsheets from there. BUT that's a project for another day
 (load-spreadsheet2 "~/Downloads/test2.xlsx")
