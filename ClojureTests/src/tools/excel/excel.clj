@@ -1,4 +1,5 @@
 ;;; https://github.com/mjul/docjure
+;;; Experimented with this Aug 2020
 (ns tools.excel.excel
   (:require
    [dk.ative.docjure.spreadsheet :as ss]))
