@@ -67,7 +67,7 @@
         sheets    (ss/sheet-seq workbook)
         d2 (println "here2" (ss/sheet-name (first sheets)))]
     (println "about to iterate through sheets")
-    (load-sheet (first sheets))))
+    ;(load-sheet (first sheets))))
     (map load-sheet sheets)))
 
 (load-spreadsheet2 "src/tools/excel/spreadsheet.xlsx")
