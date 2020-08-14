@@ -1,6 +1,7 @@
 
 ;;; http://http-kit.github.io/
-(ns http.http_kit_test
+;;; https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/http/http_kit_test.clj
+(ns http.tests.http_kit_test
   (:require
    [clojure.data.json :as json]
    [org.httpkit.client :as client]
@@ -44,8 +45,30 @@
 (re-seq placeholderRegExp "{{env1}}{{env1}}")
 (re-seq placeholderRegExp "no placeholder to expand")
 
+;; Extract the best response from resp
+(defn best-response [resp]
+  (let [body (:body resp)
+        status (:status resp)]
+    (if (= body "")
+      (str "SUCCESS: " status) ;; Could return resp for full response but makes it noisy
+      (json/read-str body))))
 
-(defn GET2 [url, options]
+
+;; Convert options parameters from EDN to JSON
+(defn expand-options [options]
+  (prn "OPTIONS: " options)
+  (let [body (:body options)]
+    (if (or (map? body)(vector? body))
+      (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
+      options)))
+
+
+;;; ----------------------------------------------------------------------
+;;; GET - Helper
+;;; 
+;;; 
+
+(defn- GET2 [url, options]
   (DEBUG "GET2: started")
   (let [url-expanded (expandURL url)
         ;options2 (assoc options :basic-auth basic-auth)
@@ -58,8 +81,9 @@
     ;(DEBUG response)
     (json/read-str (:body response))))
 
-(defn GET [url]
-  (GET2 url, {}))
+(defn GET 
+  ([url] (GET2 url, {}))
+  ([url, options] (GET2 url, options)))
 
 (defn PRINT [http-kit-response]
   (let [num-items (count http-kit-response)]
@@ -69,15 +93,215 @@
                                ; Need to make this more readable though by introducing a higher level function 
     ))
 
+
+;;; ----------------------------------------------------------------------
+;;; POST - Helper
+;;; 
+;;; 
+
+(defn POST [url, options]
+  (DEBUG "POST: started")
+  (let [url-expanded (expandURL url)
+        ;options2 (assoc options :basic-auth basic-auth)
+        response @(client/post url-expanded options)
+        status (:status response)]
+    (DEBUG "POST: " url-expanded)
+    
+    (if (< status 300)
+      (prn "Successful Call: " status)
+      (prn "ERROR Status: " status))
+    (json/read-str (:body response))))
+
+(defn apiTest-postCustomer []
+  (let [options {:basic-auth (get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"
+                           "Content-Type" "application/json"}
+                 :query-params {}
+                 :body (json/write-str
+                 {"firstName" "Dominic"
+                  "lastName" "Raab2"
+                  "preferredLanguage" "ENGLISH"
+                  "addresses" [{"country" "UK"
+                                "city" "Liverpool"}]
+                  "notes" "Some Notes on this person"
+                  "gender" "MALE"
+
+                  ;; "assignedBranchKey" "8a8186ac692678910169287cf43606af"
+                  ;; "idDocuments" [{"documentType" "Passport"
+                  ;;                 "documentId" "0123456789"
+                  ;;                 "issuingAuthority" "UK"
+                  ;;                 "validUntil" "2020-02-06"
+                  ;;                 "identificationDocumentTemplateKey" "8a81879867f40eff0167f45206e8002b"
+                 })
+                 }]
+    (PRINT (POST "{{env1}}/clients" options))))
+
+;; Testing the functions
+(comment
+  (time (apiTest-postCustomer)))
+
+;;; ----------------------------------------------------------------------
+;;; DELETE - Helper
+;;; 
+;;; 
+
+(defn DELETE [url, options]
+  (DEBUG "DELETE: started")
+  (let [url-expanded (expandURL url)
+        ;options2 (assoc options :basic-auth basic-auth)
+        response @(client/delete url-expanded options)
+        status (:status response)]
+    (DEBUG "DELETE: " url-expanded)
+
+    (if (< status 300)
+      (prn "Successful Call: " status)
+      (prn "ERROR Status: " status))
+    (best-response response)))
+
+
+(def NewCustomerID "42424242")
+
+(defn apiTest-deleteCustomer []
+  (let [options {:basic-auth (get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"
+                          }
+                 :query-params {}
+                         }
+        url (str "{{env1}}/clients/" NewCustomerID) ]
+    (PRINT (DELETE url options))))
+
+;;; ----------------------------------------------------------------------
+;;; PATCH - Helper
+;;; 
+;;; 
+
+(defn PATCH [url, options0]
+  (DEBUG "PATCH: started")
+  (let [url-expanded (expandURL url)
+        options (expand-options options0)
+        response @(client/patch url-expanded options)
+        status (:status response)]
+    (DEBUG "PATCH: " url-expanded)
+
+    (if (< status 300)
+      (prn "Successful Call: " status)
+      (prn "ERROR Status: " status))
+    (best-response response)))
+
+;;; ----------------------------------------------------------------------
+;;; PUT - Helper
+;;; 
+;;; 
+
+(defn PUT [url, options0]
+  (DEBUG "PUT: started")
+  (let [url-expanded (expandURL url)
+        options (expand-options options0)
+        response @(client/put url-expanded options)
+        status (:status response)]
+    (DEBUG "PUT: " url-expanded)
+
+    (if (< status 300)
+      (prn "Successful Call: " status)
+      (prn "ERROR Status: " status))
+    (best-response response)))
+
+
+(defn apiTest-putCustomer []
+  (let [options {:basic-auth (get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"
+                           "Content-Type" "application/json"}
+                 :query-params {}
+                 :body 
+                        {"creationDate" "2020-08-14T11:53:36+02:00"
+                        ;;  "idDocuments" []
+                         "approvedDate" "2020-08-14T11:53:37+02:00"
+                         "groupLoanCycle" 0
+                         "preferredLanguage" "ENGLISH"
+                         "lastName" "Raab2XXXXX"
+                         "xid" "145566212"  ; Iterestingly you can change the id!!
+                         "id" "MarkK77"
+                         "gender" "MALE"
+                         "lastModifiedDate" "2020-08-14T12:14:13+02:00"
+                         "firstName" "Jim999bbbbbbb"
+                         "encodedKey" "8a81874573ec2db00173ec5ffab40897"
+                        ;;  "addresses"
+                        ;;  [{"encodedKey" "8a81874573ec2db00173ec6398ad0933"
+                        ;;    "parentKey" "8a81874573ec2db00173ec5ffab40897"
+                        ;;    "city" "Liverpool"
+                        ;;    "country" "UK"
+                        ;;    "indexInList" 0}]
+                         "loanCycle" 0
+                         "state" "INACTIVE"
+                         "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"
+                         "notes" "Modified set of notes<br/>Hello world!!<br/>Another line
+                                  <script>alert(1);</script>
+                                  <p style= 'color:#FF0000';>Red paragraph text</p>
+                                  "
+                         "groupKeys" []}
+                        
+                        }
+        url (str "{{env1}}/clients/" NewCustomerID)]
+    (PRINT (PUT url options))))
+
+
+
+
+(defn apiTest-patchCustomer []
+  (let [options {:basic-auth (get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"
+                           "Content-Type" "application/json"
+                           }
+                 :query-params {}
+                ;;  :body (json/write-str [{"op" "ADD"
+                ;;          "path" "firstName"
+                ;;          "value" "Jim999BBB"}
+                ;;         {"op" "ADD"
+                ;;          "path" "gender"
+                ;;          "value" "MALE"}
+                ;;         {"op" "ADD"
+                ;;          "path" "This attribute doesn't exists"
+                ;;          "value" "FEMALEff"}])
+                 :body (identity [{"op" "ADD"
+                                         "path" "firstName"
+                                         "value" "Jim999BBB"}
+                                        {"op" "ADD"
+                                         "path" "gender"
+                                         "value" "MALE"}
+                                        {"op" "ADD"
+                                         "path" "This attribute doesn't exists"
+                                         "value" "FEMALEff"}])
+                 }
+        url (str "{{env1}}/clients/" NewCustomerID)]
+    (PRINT (PATCH url options))))
+
+;; Testing the functions
+(comment
+  (identity [1 2 3])
+  (declare apiTest-getCustomer)
+  (def NewCustomerID "MarkK77")
+  (time (apiTest-postCustomer))
+  (time (apiTest-getCustomer NewCustomerID))
+  (time (apiTest-patchCustomer))
+  (time (apiTest-putCustomer))
+  (time (apiTest-deleteCustomer)))
+
 ;;; -----------------------------------------------------------------
 ;;; Mambu API tests
 ;;; 
+
+(defn apiTest-getCustomer [id]
+  (let [options {:basic-auth (get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+                 :query-params {"detailsLevel" "FULL"}}
+        url (str "{{env1}}/clients/" id)]
+    (PRINT (GET url options))))
 
 (defn apiTest-getAllBranches []
   (let [options {:basic-auth (get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}]
-    (PRINT (GET2 "{{env1}}/branches" options))))
+    (PRINT (GET "{{env1}}/branches" options))))
 
 ;; Testing the functions
 (comment
@@ -163,11 +387,15 @@
     (into {} attrValList)
     ))
 
-(defn extract-attrs [attrList objList]
-  (map #(get-obj-attrs % attrList) objList)
-  )
+(defn extract-attrs [attrList objOrList]
+  (let [objList ; make sure objOrList is a vector
+           (if (vector? objOrList) 
+             objOrList 
+             (vector objOrList)) ]
+    (map #(get-obj-attrs % attrList) objList)))
 
-
+(concat [] [1 2 3])
+(concat [] {:f 1})
 (extract-attrs ["id" "name", "addresses"]
 [{"creationDate" "2020-08-03T07:49:08+02:00",
   "emailAddress" "",
