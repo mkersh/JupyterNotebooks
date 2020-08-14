@@ -16,7 +16,7 @@
     (api/PRINT (api/GET url options))))
 
 (defn create-customer []
-  (let [options {:basic-auth (get-auth "env1")
+  (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -32,14 +32,14 @@
 
 
 (defn delete-customer [id]
-  (let [options {:basic-auth (get-auth "env1")
+  (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
         url (str "{{env1}}/clients/" id)]
     (api/PRINT (api/DELETE url options))))
 
 (defn put-customer [id]
-  (let [options {:basic-auth (get-auth "env1")
+  (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -67,7 +67,7 @@
     (api/PRINT (api/PUT url options))))
 
 (defn patch-customer [id]
-  (let [options {:basic-auth (get-auth "env1")
+  (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
