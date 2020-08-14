@@ -86,7 +86,7 @@
 
 
 (comment ; Test the calls out here
-  (def NewCustomerID "651627137")
+  (def NewCustomerID "269428937")
   (time (list-customers))
   (time (get-customer NewCustomerID))
   (time (create-customer))
@@ -94,5 +94,5 @@
   (time (patch-customer NewCustomerID))
   (time (put-customer NewCustomerID))
   
-  (get-customer NewCustomerID)
+  
   )
