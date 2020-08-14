@@ -15,19 +15,6 @@
         url "{{env1}}/clients"]
     (api/PRINT (api/GET url options))))
 
-(defn list-customers-paged [& opt-overrides]
-  (let [detailLevel (first opt-overrides)
-        moreOpts (get opt-overrides 2)
-        optdefs {:basic-auth (api/get-auth "env1")
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {"detailsLevel" (or detailLevel "FULL"
-                                                   "paginationDetails" "ON"
-                                                   "limit" 1)}}
-        options (merge optdefs moreOpts)
-        url "{{env1}}/clients?offset=0&limit=1&paginationDetails=ON"]
-    ;offset=1&limit=1
-    (api/PRINT (api/GET url options))))
-
 (defn get-customer [id]
   (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
