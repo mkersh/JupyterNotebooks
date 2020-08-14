@@ -1,7 +1,7 @@
 
 ;;; http://http-kit.github.io/
 ;;; https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/http/http_kit_test.clj
-(ns http.tests.http_kit_test
+(ns http.http_kit_test
   (:require
    [clojure.data.json :as json]
    [org.httpkit.client :as client]
@@ -10,7 +10,7 @@
    [clojure.pprint :as pp]))
 
 (defn DEBUG [& args]
-  (identity args) ; To prevent clj-kondo warning
+  (identity args)
   ;(apply println args)
   )
 
