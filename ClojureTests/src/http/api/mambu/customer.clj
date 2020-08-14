@@ -1,17 +1,37 @@
 (ns http.api.customer
   (:require [http.api.json_helper :as api]))
 
-(defn list-customers []
-  (let [options {:basic-auth (api/get-auth "env1")
+(defn list-customers [& opt-overrides ]
+  (let [detailLevel (or (first opt-overrides) "FULL")
+        limitVal (or (second opt-overrides) 50)
+        moreOpts (get opt-overrides 2)
+        optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {"detailsLevel" "FULL"}}
+                 :query-params {
+                                "detailsLevel" (or detailLevel "FULL")
+                                "paginationDetails" "ON"
+                                 "limit" limitVal}}
+        options (merge optdefs moreOpts)
         url "{{env1}}/clients"]
+    (api/PRINT (api/GET url options))))
+
+(defn list-customers-paged [& opt-overrides]
+  (let [detailLevel (first opt-overrides)
+        moreOpts (get opt-overrides 2)
+        optdefs {:basic-auth (api/get-auth "env1")
+                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+                 :query-params {"detailsLevel" (or detailLevel "FULL"
+                                                   "paginationDetails" "ON"
+                                                   "limit" 1)}}
+        options (merge optdefs moreOpts)
+        url "{{env1}}/clients?offset=0&limit=1&paginationDetails=ON"]
+    ;offset=1&limit=1
     (api/PRINT (api/GET url options))))
 
 (defn get-customer [id]
   (let [options {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {"detailsLevel" "FULL"}}
+                 :query-params {"detailsLevel" "BASIC"}}
         url (str "{{env1}}/clients/" id)]
     (api/PRINT (api/GET url options))))
 
@@ -74,6 +94,11 @@
                  :body [{"op" "ADD"
                          "path" "firstName"
                          "value" "Jim999BBBUUUU"}
+                        ;; Next OP is an example of updating a custom field
+                        ;; Change the op to remove to delete
+                        {"op" "add"
+                         "path" "/_MKExtraCustomer/MyCustomerField1"
+                         "value" "Oh yes"}
                         {"op" "ADD"
                          "path" "gender"
                          "value" "MALE"}
@@ -87,13 +112,26 @@
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment 
-  (def NewCustomerID "269428937")
+  (def NewCustomerID "917544150")
+  (time (list-customers "FULL" nil {:query-params {"detailsLevel" "BASIC"}}))
+  (time (list-customers "BASIC"))
+  (time (list-customers "FULL" 5))
   (time (list-customers))
+  
   (time (get-customer NewCustomerID))
   (time (create-customer))
   (time (delete-customer NewCustomerID))
   (time (patch-customer NewCustomerID))
   (time (put-customer NewCustomerID))
   
-  
+  (merge {:f 1 :g 2} {:f 3})
   )
+
+
+(def list1 [1])
+
+(first list1)
+
+(second list1)
+
+(get list1 2)
