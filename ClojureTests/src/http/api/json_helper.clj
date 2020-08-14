@@ -1,5 +1,5 @@
 ;; Helper functions to calling JSON APIs using http://http-kit.github.io/
-;; GitHub: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/http/api
+;; GitHub: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/http/api/json_helper.clj 
 (ns http.api.json_helper
   (:require
    [clojure.data.json :as json]
@@ -16,62 +16,36 @@
 ;;; GET, POST, DELETE, PATCH, PUT
 ;;; 
 
-(defn- GET2 [url, options]
+(defn- request [url, method, options0]
   (let [url-expanded (expandURL url)
-        ;options2 (assoc options :basic-auth basic-auth)
-        response @(client/get url-expanded options)
+        options (expand-options options0)
+        response @(method url-expanded options)
         status (:status response)]
+
     (if (< status 300)
       (prn "Successful Call: " status)
       (prn "ERROR Status: " status))
-    (json/read-str (:body response))))
+    (best-response response)))
+
+(defn- GET2 [url, options]
+  (request url, client/get, options)
+)
 
 (defn GET
   ([url] (GET2 url, {}))
   ([url, options] (GET2 url, options)))
 
-(defn POST [url, options0]
-  (let [url-expanded (expandURL url)
-        options (expand-options options0)
-        response @(client/post url-expanded options)
-        status (:status response)]
+(defn POST [url, options]
+  (request url, client/post, options))
 
-    (if (< status 300)
-      (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
-    (best-response response)))
-
-(defn PATCH [url, options0]
-  (let [url-expanded (expandURL url)
-        options (expand-options options0)
-        response @(client/patch url-expanded options)
-        status (:status response)]
-
-    (if (< status 300)
-      (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
-    (best-response response)))
+(defn PATCH [url, options]
+  (request url, client/patch, options))
 
 (defn DELETE [url, options]
-  (let [url-expanded (expandURL url)
-        response @(client/delete url-expanded options)
-        status (:status response)]
+  (request url, client/delete, options))
 
-    (if (< status 300)
-      (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
-    (best-response response)))
-
-(defn PUT [url, options0]
-  (let [url-expanded (expandURL url)
-        options (expand-options options0)
-        response @(client/put url-expanded options)
-        status (:status response)]
-
-    (if (< status 300)
-      (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
-    (best-response response)))
+(defn PUT [url, options]
+  (request url, client/put, options))
 
 ;;; ----------------------------------------------------------------------
 ;;; Print and Extraction helper functions

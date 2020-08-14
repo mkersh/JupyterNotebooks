@@ -45,16 +45,16 @@
                  :query-params {}
                  :body
                  {"creationDate" "2020-08-14T15:02:28+02:00"
-                  "approvedDate" "2020-08-14T15:02:28+02:00"
+                  "approvedDate" "2020-08-14T15:32:10+02:00"
                   "groupLoanCycle" 0
                   "preferredLanguage" "ENGLISH"
-                  "lastName" "Raab2XXXXX"
+                  "lastName" "Raab2XXXXXYYYYY"
                   "id" id
                   "xid" "145566212"  ; Iterestingly you can change the id!!
                   "gender" "MALE"
                   "lastModifiedDate" "2020-08-14T12:14:13+02:00"
                   "firstName" "Jim999bbbbbbb"
-                  "encodedKey" "8a8186da73ec37c20173ed0d29962ea0"
+                  "encodedKey" "8a81871173ec66260173ed29009d2cee"
                   "loanCycle" 0
                   "state" "INACTIVE"
                   "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"
@@ -86,7 +86,7 @@
 
 
 (comment ; Test the calls out here
-  (def NewCustomerID "917544150")
+  (def NewCustomerID "651627137")
   (time (list-customers))
   (time (get-customer NewCustomerID))
   (time (create-customer))
