@@ -1,4 +1,4 @@
-(ns http.api.json_helper
+(ns http.api.customer
   (:require [http.api.json_helper :as api]))
 
 (defn list-customers []
@@ -84,8 +84,9 @@
     (api/PRINT (api/PATCH url options))))
 
 
-
-(comment ; Test the calls out here
+; Test in your REPL: Select line to run ctl+alt+c <space>
+; Use api/find-path and api/extract-attrs to navigate through results
+(comment 
   (def NewCustomerID "269428937")
   (time (list-customers))
   (time (get-customer NewCustomerID))

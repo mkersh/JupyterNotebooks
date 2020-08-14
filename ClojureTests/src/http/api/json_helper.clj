@@ -87,6 +87,9 @@
           (vector objOrList))]
     (map #(get-obj-attrs % attrList) objList)))
 
+(defn docstring [symbol]
+  (:doc (meta (resolve symbol))))
+
 ;;; ----------------------------------------------------------------------
 ;;; Internal helper functions
 ;;; 
