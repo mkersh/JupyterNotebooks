@@ -1,46 +1,54 @@
-(ns http.api.customer
+(ns http.api.account
   (:require [http.api.json_helper :as api]))
 
-(defn list-customers [& opt-overrides ]
+(defn list-loans [& opt-overrides]
   (let [detailLevel (or (first opt-overrides) "FULL")
         limitVal (or (second opt-overrides) 50)
         moreOpts (get opt-overrides 2)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {
-                                "detailsLevel" (or detailLevel "FULL")
+                 :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
-                                 "limit" limitVal}}
+                                "limit" limitVal}}
         options (merge optdefs moreOpts)
-        url "{{env1}}/clients"]
+        url "{{env1}}/loans"]
     (api/PRINT (api/GET url options))))
 
-(defn get-customer [id & opt-overrides]
+(defn get-loan [id & opt-overrides]
   (let [detailLevel (or (first opt-overrides) "FULL")
         moreOpts (get opt-overrides 1)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{env1}}/loans/" id)]
     (api/PRINT (api/GET url options))))
 
-(defn create-customer [& opt-overrides]
+(defn create-loan [& opt-overrides]
   (let [moreOpts (first opt-overrides)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
-                 :body  {"firstName" "Dominic"
-                         "lastName" "Raab2"
-                         "preferredLanguage" "ENGLISH"
-                         "addresses" [{"country" "UK"
-                                       "city" "Liverpool"}]
-                         "notes" "Some Notes on this person"
-                         "gender" "MALE"
-                         "identificationDocumentTemplateKey" "8a81879867f40eff0167f45206e8002b"}}
+                 :body  {"loanAmount" 30000.0
+                         "loanName" "MKCurTest1"
+                         "accountHolderKey" "8a8186da73ec37c20173eec481a92753"
+                         "productTypeKey" "8a8187366a01d4a1016a023792a500b9"
+                         "accountHolderType" "CLIENT"
+                         "scheduleSettings" {"defaultFirstRepaymentDueDateOffset" 0
+                                             "gracePeriod" 0
+                                             "gracePeriodType" "NONE"
+                                             "paymentPlan" []
+                                             "periodicPayment" 0.0
+                                             "principalRepaymentInterval" 1
+                                             "repaymentInstallments" 12
+                                             "repaymentPeriodCount" 1
+                                             "repaymentPeriodUnit" "MONTHS"
+                                             "repaymentScheduleMethod" "DYNAMIC"
+                                             "scheduleDueDatesMethod" "INTERVAL"}
+                         "interestSettings" {"interestRate" 2.0}}}
         options (merge optdefs moreOpts)]
-    (api/PRINT (api/POST "{{env1}}/clients" options))))
+    (api/PRINT (api/POST "{{env1}}/loans" options))))
 
 
 (defn delete-customer [id]
@@ -107,41 +115,37 @@
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
-(comment 
-  (def NewCustomerID "756828242")
-  (time (list-customers "FULL" nil {:query-params {"detailsLevel" "BASIC"}}))
-  (time (list-customers "BASIC"))
-  (time (list-customers "FULL" 5))
-  (time (list-customers))
+(comment
   
-  (time (get-customer NewCustomerID))
-  (time (get-customer NewCustomerID "FULL"))
-  
-  (time (create-customer))
+  (time (list-loans "BASIC" 1))
+  (time (list-loans))
+
+  (def NewAccountID "SCGC121")
+  (time (get-loan NewAccountID))
+  (time (get-loan NewAccountID "BASIC"))
+
+  (time (create-loan))
   (time (create-customer {:body  {"firstName" "Charles"
-                         "lastName" "Brown"}}))
-  
+                                  "lastName" "Brown"}}))
+
   (time (delete-customer NewCustomerID))
-  
+
   (time (patch-customer NewCustomerID {:body [{"op" "ADD"
-                         "path" "firstName"
-                         "value" "1212121212121212"}]}))
+                                               "path" "firstName"
+                                               "value" "1212121212121212"}]}))
   (time (patch-customer NewCustomerID))
-  
+
   (time (put-customer "580959603" {:body {"creationDate" "2020-08-14T22:24:47+02:00"
-                                            "idDocuments" []
-                                            "groupLoanCycle" 0
-                                            "preferredLanguage" "ENGLISH"
-                                            "lastName" "Brownxx"
-                                            "id" "580959603"
-                                            "lastModifiedDate" "2020-08-14T22:24:47+02:00"
-                                            "firstName" "Charles"
-                                            "encodedKey" "8a81871173ec66260173eea5761e1d9e"
-                                            "addresses" []
-                                            "loanCycle" 0
-                                            "state" "INACTIVE"
-                                            "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
-  (time (put-customer NewCustomerID))
-  
- 
-  )
+                                          "idDocuments" []
+                                          "groupLoanCycle" 0
+                                          "preferredLanguage" "ENGLISH"
+                                          "lastName" "Brownxx"
+                                          "id" "580959603"
+                                          "lastModifiedDate" "2020-08-14T22:24:47+02:00"
+                                          "firstName" "Charles"
+                                          "encodedKey" "8a81871173ec66260173eea5761e1d9e"
+                                          "addresses" []
+                                          "loanCycle" 0
+                                          "state" "INACTIVE"
+                                          "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
+  (time (put-customer NewCustomerID)))
