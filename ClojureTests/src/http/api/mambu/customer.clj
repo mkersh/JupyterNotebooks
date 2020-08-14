@@ -113,12 +113,3 @@
   
   (merge {:f 1 :g 2} {:f 3})
   )
-
-
-(def list1 [1])
-
-(first list1)
-
-(second list1)
-
-(get list1 2)
