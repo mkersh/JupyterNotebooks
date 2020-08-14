@@ -8,28 +8,13 @@
    [http.ENV :as env] ; This is the file to store env secrets in - make sure its in your .gitignore
    [clojure.pprint :as pp]))
 
-(declare expandURL expand-options best-response)
+(declare expandURL expand-options best-response request GET2)
 
 ;;; ----------------------------------------------------------------------
 ;;; JSON - Helper Methods:
 ;;; 
 ;;; GET, POST, DELETE, PATCH, PUT
 ;;; 
-
-(defn- request [url, method, options0]
-  (let [url-expanded (expandURL url)
-        options (expand-options options0)
-        response @(method url-expanded options)
-        status (:status response)]
-
-    (if (< status 300)
-      (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
-    (best-response response)))
-
-(defn- GET2 [url, options]
-  (request url, client/get, options)
-)
 
 (defn GET
   ([url] (GET2 url, {}))
@@ -46,6 +31,20 @@
 
 (defn PUT [url, options]
   (request url, client/put, options))
+
+(defn- request [url, method, options0]
+  (let [url-expanded (expandURL url)
+        options (expand-options options0)
+        response @(method url-expanded options)
+        status (:status response)]
+
+    (if (< status 300)
+      (prn "Successful Call: " status)
+      (prn "ERROR Status: " status))
+    (best-response response)))
+
+(defn- GET2 [url, options]
+  (request url, client/get, options))
 
 ;;; ----------------------------------------------------------------------
 ;;; Print and Extraction helper functions
