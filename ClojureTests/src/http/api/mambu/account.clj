@@ -1,4 +1,4 @@
-(ns http.api.account
+(ns http.api.mambu.account
   (:require [http.api.json_helper :as api]))
 
 (defn list-loans [& opt-overrides]
@@ -24,7 +24,7 @@
         url (str "{{env1}}/loans/" id)]
     (api/PRINT (api/GET url options))))
 
-(defn create-loan [& opt-overrides]
+(defn create-loan [prodid & opt-overrides]
   (let [moreOpts (first opt-overrides)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
@@ -33,7 +33,7 @@
                  :body  {"loanAmount" 30000.0
                          "loanName" "MKCurTest1"
                          "accountHolderKey" "8a8186da73ec37c20173eec481a92753"
-                         "productTypeKey" "8a8187366a01d4a1016a023792a500b9"
+                         "productTypeKey" prodid
                          "accountHolderType" "CLIENT"
                          "scheduleSettings" {"defaultFirstRepaymentDueDateOffset" 0
                                              "gracePeriod" 0
@@ -124,8 +124,8 @@
   (time (get-loan NewAccountID))
   (time (get-loan NewAccountID "BASIC"))
 
-  (time (create-loan))
-  (time (create-customer {:body  {"firstName" "Charles"
+  (time (create-loan "8a8187366a01d4a1016a023792a500b9"))
+  (time (create-loan {:body  {"firstName" "Charles"
                                   "lastName" "Brown"}}))
 
   (time (delete-customer NewCustomerID))
@@ -149,3 +149,16 @@
                                           "state" "INACTIVE"
                                           "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
   (time (put-customer NewCustomerID)))
+
+
+(use 'clojure.test)
+
+(deftest addition
+  (is (= 4 (+ 2 2)))
+  (is (= 7 (+ 3 4))))
+
+(comment
+(run-tests 'http.api.account)
+
+(run-all-tests #"http.*")
+)

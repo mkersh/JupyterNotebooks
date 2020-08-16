@@ -247,3 +247,8 @@
       (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
       options)))
 
+(use 'clojure.test)
+
+(deftest addition2
+  (is (= 3 (+ 2 2)))
+  (is (= 7 (+ 3 4))))

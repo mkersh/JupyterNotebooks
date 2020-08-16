@@ -27,6 +27,7 @@
                    :jvm-opts ["-Xmx1g" "-server"
                               "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"]}
              :production {:resource-paths ["resources-prod"]}}
+  :test-paths ["test" "src"]
   ; Setting this to ClojureNotebook breaks the REPL load
   :xmain XXClojureNotebook
   )

@@ -1,4 +1,4 @@
-(ns http.api.branch
+(ns http.api.mambu.branch
   (:require [http.api.json_helper :as api]))
 
 (defn list-branches []
