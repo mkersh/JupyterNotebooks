@@ -1,7 +1,5 @@
 (ns http.api.mambu.account
-  (:require [http.api.json_helper :as api]
-            [http.api.mambu.customer :as cust]
-            ))
+  (:require [http.api.json_helper :as api]))
 
 (defn list-loans [& opt-overrides]
   (let [detailLevel (or (first opt-overrides) "FULL")
@@ -12,22 +10,6 @@
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
                                 "limit" limitVal}}
-        options (merge optdefs moreOpts)
-        url "{{env1}}/loans"]
-    (api/PRINT (api/GET url options))))
-
-(defn get-customer-loans [id & opt-overrides]
-  (let [encID     (cust/get-customer-encid id)
-        detailLevel (or (first opt-overrides) "FULL")
-        limitVal (or (second opt-overrides) 50)
-        moreOpts (get (into [] opt-overrides) 2)
-        optdefs {:basic-auth (api/get-auth "env1")
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {"detailsLevel" (or detailLevel "FULL")
-                                "paginationDetails" "ON"
-                                "limit" limitVal
-                                "accountHolderType" "CLIENT"
-                                "accountHolderId" encID}}
         options (merge optdefs moreOpts)
         url "{{env1}}/loans"]
     (api/PRINT (api/GET url options))))
@@ -129,6 +111,10 @@
         options (merge optdefs moreOpts)
         url (str "{{env1}}/clients/" id)]
     (api/PRINT (api/PATCH url options))))
+
+(defn close-customer-accounts [id]
+  (prn "close-customer-accounts")
+  )
 
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
