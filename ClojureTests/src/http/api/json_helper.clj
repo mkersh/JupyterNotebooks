@@ -52,13 +52,12 @@
 ;;; 
 
 
-(defn PRINT [http-kit-response]
-  (let [num-items (count http-kit-response)]
-    (pp/pprint http-kit-response) ; This was pretty-printing the complete result
-    (prn "Number of items:" num-items)
-    ;(map #(get % attr) result) ; This is now just selecting the top level "id" keys from the results
-                               ; Need to make this more readable though by introducing a higher level function 
-    ))
+(defn PRINT [http-kit-response & options]
+  (if (:no-print (first options))
+    http-kit-response
+    (let [num-items (count http-kit-response)]
+      (pp/pprint http-kit-response) ; This was pretty-printing the complete result
+      (prn "Number of items:" num-items))))
 
 
 (defn get-auth [envId]

@@ -4,7 +4,7 @@
 (defn list-customers [& opt-overrides ]
   (let [detailLevel (or (first opt-overrides) "FULL")
         limitVal (or (second opt-overrides) 50)
-        moreOpts (get opt-overrides 2)
+        moreOpts (get (into [] opt-overrides) 2)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {
@@ -17,13 +17,13 @@
 
 (defn get-customer [id & opt-overrides]
   (let [detailLevel (or (first opt-overrides) "FULL")
-        moreOpts (get opt-overrides 1)
+        moreOpts (second opt-overrides)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
         url (str "{{env1}}/clients/" id)]
-    (api/PRINT (api/GET url options))))
+    (api/PRINT (api/GET url options) moreOpts)))
 
 (defn create-customer [& opt-overrides]
   (let [moreOpts (first opt-overrides)
@@ -105,6 +105,16 @@
     (api/PRINT (api/PATCH url options))))
 
 
+(defn get-customer-encid
+  "Return the encID associated with the id-or-obj passed in.
+   id-or-obj can either be a customer ID, an encoded ID or a customer object."
+  [id-or-obj & opt-overrides]
+  (cond 
+    (map? id-or-obj) (get id-or-obj "encodedKey")
+    (= (count (str id-or-obj)) 32) id-or-obj
+    :else (get (get-customer id-or-obj "BASIC" (merge (first opt-overrides) {:no-print true})) "encodedKey")))
+
+
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment 
@@ -116,6 +126,9 @@
   
   (time (get-customer NewCustomerID))
   (time (get-customer NewCustomerID "FULL"))
+  (time (get-customer NewCustomerID "BASIC"))
+  
+  (get-customer-encid "756828242")
   
   (time (create-customer))
   (time (create-customer {:body  {"firstName" "Charles"
