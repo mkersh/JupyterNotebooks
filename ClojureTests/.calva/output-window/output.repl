@@ -1,0 +1,4 @@
+"OPTIONS: " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC"}, :details-level "BASIC", :no-print true}
+"Successful Call: " 200
+"8a8186da73ec37c20173eec481a92753"
+clj::http.api.mambu.customer=> 

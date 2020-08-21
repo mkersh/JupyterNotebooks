@@ -2,21 +2,23 @@
   (:require [http.api.json_helper :as api]))
 
 (defn list-loans [& opt-overrides]
-  (let [detailLevel (or (first opt-overrides) "FULL")
-        limitVal (or (second opt-overrides) 50)
-        moreOpts (get (into [] opt-overrides) 2)
+  (let [moreOpts (first opt-overrides)
+        detailLevel (or (:details-level moreOpts) "FULL")
+        limitVal (or (:limit moreOpts) 50)
+        offset (or (:offset moreOpts) 0)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
-                                "limit" limitVal}}
+                                "limit" limitVal
+                                "offset" offset}}
         options (merge optdefs moreOpts)
         url "{{env1}}/loans"]
     (api/PRINT (api/GET url options))))
 
 (defn get-loan [id & opt-overrides]
-  (let [detailLevel (or (first opt-overrides) "FULL")
-        moreOpts (second opt-overrides)
+  (let [moreOpts (first opt-overrides)
+        detailLevel (or (:details-level moreOpts) "FULL")
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
@@ -120,12 +122,12 @@
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment
   
-  (time (list-loans "BASIC" 1))
+  (time (list-loans {:details-level "BASIC" :limit 1000 :offset 114}))
   (time (list-loans))
 
   (def NewAccountID "SCGC121")
   (time (get-loan NewAccountID))
-  (time (get-loan NewAccountID "BASIC"))
+  (time (get-loan NewAccountID {:details-level "BASIC"}))
 
   (time (create-loan "8a8187366a01d4a1016a023792a500b9"))
   (time (create-loan {:body  {"firstName" "Charles"

@@ -3,22 +3,25 @@
   (:require [http.api.json_helper :as api]))
 
 (defn list-customers [& opt-overrides ]
-  (let [detailLevel (or (first opt-overrides) "FULL")
-        limitVal (or (second opt-overrides) 50)
-        moreOpts (get (into [] opt-overrides) 2)
+  (let [moreOpts (first opt-overrides)
+        detailLevel (or (:details-level moreOpts) "FULL")
+        limitVal (or (:limit moreOpts) 50)
+        offset (or (:offset moreOpts) 0)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {
                                 "detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
-                                 "limit" limitVal}}
+                                "limit" limitVal
+                                "offset" offset}}
         options (merge optdefs moreOpts)
         url "{{env1}}/clients"]
+    (prn options)
     (api/PRINT (api/GET url options))))
 
 (defn get-customer [id & opt-overrides]
-  (let [detailLevel (or (first opt-overrides) "FULL")
-        moreOpts (second opt-overrides)
+  (let [moreOpts (first opt-overrides)
+        detailLevel (or (:details-level moreOpts) "FULL")
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
@@ -115,21 +118,21 @@
   (cond 
     (map? id-or-obj) (get id-or-obj "encodedKey")
     (= (count (str id-or-obj)) 32) id-or-obj
-    :else (get (get-customer id-or-obj "BASIC" (merge (first opt-overrides) {:no-print true})) "encodedKey")))
+    :else (get (get-customer id-or-obj (merge (first opt-overrides) {:details-level "BASIC" :no-print true})) "encodedKey")))
 
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment 
   (def NewCustomerID "756828242")
-  (time (list-customers "FULL" nil {:query-params {"detailsLevel" "BASIC"}}))
-  (time (list-customers "BASIC"))
-  (time (list-customers "FULL" 5))
+  (time (list-customers {:query-params {"detailsLevel" "BASIC"}}))
+  (time (list-customers {:details-level "BASIC"}))
+  (time (list-customers {:details-level "FULL" :limit 6 :offset 0}))
   (time (list-customers))
   
   (time (get-customer NewCustomerID))
-  (time (get-customer NewCustomerID "FULL"))
-  (time (get-customer NewCustomerID "BASIC"))
+  (time (get-customer NewCustomerID {:details-level "FULL"}))
+  (time (get-customer NewCustomerID {:details-level "BASIC"}))
   
   (get-customer-encid "756828242")
   
