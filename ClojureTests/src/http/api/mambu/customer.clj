@@ -44,11 +44,13 @@
     (api/PRINT (api/POST "{{env1}}/clients" options))))
 
 
-(defn delete-customer [id]
-  (let [options {:basic-auth (api/get-auth "env1")
+(defn delete-customer [id & opt-overrides]
+  (let [moreOpts (first opt-overrides)
+        optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{env1}}/clients/" id)
+        options (merge optdefs moreOpts)]
     (api/PRINT (api/DELETE url options))))
 
 (defn put-customer [id & opt-overrides]

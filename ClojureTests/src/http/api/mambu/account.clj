@@ -112,10 +112,9 @@
         url (str "{{env1}}/clients/" id)]
     (api/PRINT (api/PATCH url options))))
 
-(defn close-customer-accounts [id]
-  (prn "close-customer-accounts")
+(defn close-account [acc-obj]
+  nil
   )
-
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
@@ -123,23 +122,6 @@
   
   (time (list-loans "BASIC" 1))
   (time (list-loans))
-  
-  (time (get-customer-loans "756828242"))
-  (time (get-customer-loans "8a8186da73ec37c20173eec481a92753"))
-  (def custObj {"creationDate" "2020-08-14T22:58:42+02:00"
-                 "approvedDate" "2020-08-14T22:58:42+02:00"
-                 "groupLoanCycle" 0
-                 "preferredLanguage" "ENGLISH"
-                 "lastName" "Brown"
-                 "id" "756828242"
-                 "lastModifiedDate" "2020-08-14T22:58:42+02:00"
-                 "firstName" "Charles"
-                 "encodedKey" "8a8186da73ec37c20173eec481a92753"
-                 "loanCycle" 0
-                 "state" "INACTIVE"
-                 "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"})
-  (time (get-customer-loans custObj))
-  
 
   (def NewAccountID "SCGC121")
   (time (get-loan NewAccountID))

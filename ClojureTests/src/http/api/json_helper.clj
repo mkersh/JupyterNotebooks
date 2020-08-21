@@ -40,7 +40,10 @@
 
     (if (< status 300)
       (prn "Successful Call: " status)
-      (prn "ERROR Status: " status))
+      
+      (if (:throw-errors options)
+        (throw (Exception. (str "ERROR Status: " status)))
+        (prn "ERROR Status: " status)))
     (best-response response)))
 
 (defn- GET2 [url, options]
