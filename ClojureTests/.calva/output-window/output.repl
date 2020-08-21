@@ -1,4 +1,257 @@
-"OPTIONS: " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC"}, :details-level "BASIC", :no-print true}
-"Successful Call: " 200
-"8a8186da73ec37c20173eec481a92753"
-clj::http.api.mambu.customer=> 
+; This is the Calva evaluation results output window.
+; Leave it open, please. Because quirks.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::user=> 
+; Jack-in done.
+; Evaluating file: customer_account.clj
+nil
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " 5
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " 5
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+(nil nil nil nil nil)
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/closeAllLoans
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+(nil nil nil nil nil)
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+(nil nil nil nil nil)
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+(nil nil nil nil nil)
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"---->MIDDLE close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+(nil nil nil nil nil)
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"---->MIDDLE close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeAllLoans " clojure.lang.PersistentVector
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"closeLoan "
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+#'http.api.mambu.customer_account/close-customer-and-accounts
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:32+02:00", "approvedDate" "2020-08-21T18:07:17+02:00", "activationTransactionKey" "8a8187077410fcf4017411c6358b095c", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "WBOS115", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:29:57+02:00", "lastAccountAppraisalDate" "2020-08-21T18:07:22+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENT
+S_INCREASE", "encodedKey" "8a8186e174119c4a017411c5785c0162", "closedDate" "2020-08-21T18:29:57+02:00", "accountArrearsSettings" {"encodedKey" "8a8186e174119c4a017411c58a9a016a", "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "interestFromArrearsAccrued" 0, "disbursementDetails" {"encodedKey" "8a8186e174119c4a017411c58a9a0168", "expectedDisbursementDate" "2020-08-21T18:07:21+02:00", "disbursementDate" "2020-08-21T18:07:21+02:00", "transactionDetails" {"encodedKey" "8a8186e174119c4a017411c58a9a0169", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "CLOSED", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMeth
+od" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepaymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0, "accountSubState" "WRITTEN_OFF"}
+"*****IN reject-loan"
+"*****IN writeoff-loan"
+"ERROR Status: " 400
+{"returnCode" 116, "returnStatus" "INVALID_STATE_TRANSITION"}
+"Number of items:" 2
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:29+02:00", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "BKDP961", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:06:29+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE", "encodedKey" "8a8187077410fcf4017411c57e82091f", "accountArrearsSettings" {"encodedKey" "8a8187077410fcf4017411c57e820922", "toleranceCalculationMetho
+d" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "disbursementDetails" {"encodedKey" "8a8187077410fcf4017411c57e820920", "transactionDetails" {"encodedKey" "8a8187077410fcf4017411c57e820921", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "PENDING_APPROVAL", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMethod" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepa
+ymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0}
+"Successful Call: 204"
+"SUCCESS: 204"
+"Number of items:" 12
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:28+02:00", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "TVTV962", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:06:28+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE", "encodedKey" "8a8186e174119c4a017411c571fa0151", "accountArrearsSettings" {"encodedKey" "8a8186e174119c4a017411c578340154", "toleranceCalculationMetho
+d" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "disbursementDetails" {"encodedKey" "8a8186e174119c4a017411c571fa0152", "transactionDetails" {"encodedKey" "8a8186e174119c4a017411c571fa0153", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "PENDING_APPROVAL", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMethod" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepa
+ymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0}
+"Successful Call: 204"
+"SUCCESS: 204"
+"Number of items:" 12
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:24+02:00", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "LLQB002", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:06:24+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE", "encodedKey" "8a8186e174119c4a017411c4fbb7011b", "accountArrearsSettings" {"encodedKey" "8a8186e174119c4a017411c56b1d0132", "toleranceCalculationMetho
+d" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "disbursementDetails" {"encodedKey" "8a8186e174119c4a017411c4fbb7011c", "transactionDetails" {"encodedKey" "8a8186e174119c4a017411c56b1d0131", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "PENDING_APPROVAL", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMethod" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepa
+ymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0}
+"Successful Call: 204"
+"SUCCESS: 204"
+"Number of items:" 12
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:22+02:00", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "ADNP290", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:06:22+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE", "encodedKey" "8a8187d8741112c5017411c1d9660978", "accountArrearsSettings" {"encodedKey" "8a8187d8741112c5017411c561b509cb", "toleranceCalculationMetho
+d" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "disbursementDetails" {"encodedKey" "8a8187d8741112c5017411c561b509c9", "transactionDetails" {"encodedKey" "8a8187d8741112c5017411c561b509ca", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "PENDING_APPROVAL", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMethod" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepa
+ymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0}
+"Successful Call: 204"
+"SUCCESS: 204"
+"Number of items:" 12
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+"---->START close-customer-accounts" "896933805"
+"*******get-customer-loans " {:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC", "paginationDetails" "ON", "limit" 999, "accountHolderType" "CLIENT", "accountHolderId" "8a8186e174119c4a017411c1c36000d0"}, :details-level "BASIC", :limit 999, :no-print true}
+"*******In close-loan " {"creationDate" "2020-08-21T18:06:32+02:00", "approvedDate" "2020-08-21T18:07:17+02:00", "activationTransactionKey" "8a8187077410fcf4017411c6358b095c", "accruedInterest" 0, "prepaymentSettings" {"prepaymentRecalculationMethod" "NO_RECALCULATION", "principalPaidInstallmentStatus" "PARTIALLY_PAID", "applyInterestOnPrepaymentMethod" "AUTOMATIC"}, "productTypeKey" "8a8187366a01d4a1016a023792a500b9", "balances" {"interestFromArrearsDue" 0, "interestFromArrearsPaid" 0, "feesDue" 0, "feesPaid" 0, "penaltyDue" 0, "penaltyBalance" 0, "interestBalance" 0, "interestFromArrearsBalance" 0, "principalDue" 0, "redrawBalance" 0, "principalBalance" 0, "penaltyPaid" 0, "holdBalance" 0, "interestPaid" 0, "interestDue" 0, "feesBalance" 0, "principalPaid" 0}, "id" "WBOS115", "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS", "lastModifiedDate" "2020-08-21T18:29:57+02:00", "lastAccountAppraisalDate" "2020-08-21T18:07:22+02:00", "arrearsTolerancePeriod" 0, "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENT
+S_INCREASE", "encodedKey" "8a8186e174119c4a017411c5785c0162", "closedDate" "2020-08-21T18:29:57+02:00", "accountArrearsSettings" {"encodedKey" "8a8186e174119c4a017411c58a9a016a", "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD", "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS", "nonWorkingDaysMethod" "EXCLUDED", "tolerancePeriod" 0}, "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}, "interestFromArrearsAccrued" 0, "disbursementDetails" {"encodedKey" "8a8186e174119c4a017411c58a9a0168", "expectedDisbursementDate" "2020-08-21T18:07:21+02:00", "disbursementDate" "2020-08-21T18:07:21+02:00", "transactionDetails" {"encodedKey" "8a8186e174119c4a017411c58a9a0169", "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6", "internalTransfer" false}, "fees" []}, "accountState" "CLOSED", "paymentMethod" "HORIZONTAL", "allowOffset" false, "interestSettings" {"interestChargeFrequency" "ANNUALIZED", "interestApplicationMethod" "REPAYMENT_DUE_DATE", "accrueLateInterest" true, "interestCalculationMeth
+od" "DECLINING_BALANCE", "interestBalanceCalculationMethod" "ONLY_PRINCIPAL", "interestRateSource" "FIXED_INTEREST_RATE", "interestType" "SIMPLE_INTEREST", "interestRate" 2.0, "accrueInterestAfterMaturity" false}, "scheduleSettings" {"repaymentPeriodUnit" "MONTHS", "periodicPayment" 0, "hasCustomSchedule" false, "defaultFirstRepaymentDueDateOffset" 2, "gracePeriod" 0, "repaymentPeriodCount" 1, "scheduleDueDatesMethod" "INTERVAL", "repaymentScheduleMethod" "DYNAMIC", "repaymentInstallments" 12, "principalRepaymentInterval" 1, "gracePeriodType" "NONE"}, "accountHolderType" "CLIENT", "loanAmount" 30000.0, "loanName" "MKCurTest1", "accountHolderKey" "8a8186e174119c4a017411c1c36000d0", "accruedPenalty" 0, "accountSubState" "WRITTEN_OFF"}
+"*****IN reject-loan"
+"*****IN writeoff-loan"
+"ERROR Status: " 400
+{"returnCode" 116, "returnStatus" "INVALID_STATE_TRANSITION"}
+"Number of items:" 2
+"---->MIDDLE close-customer-accounts"
+"ERROR Status: " 400
+{"errors" [{"errorCode" 315, "errorReason" "CLIENT_HAS_ACCOUNTS"}]}
+"Number of items:" 1
+"---->END close-customer-accounts"
+nil
+clj::http.api.mambu.customer_account=> 
+"ERROR Status: " 400
+{"errors" [{"errorCode" 305, "errorReason" "INVALID_CLIENT_STATE"}]}
+"Number of items:" 1
+"Elapsed time: 432.104567 msecs"
+nil
+clj::http.api.mambu.account=> 

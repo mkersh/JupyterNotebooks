@@ -124,13 +124,13 @@
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment 
-  (def NewCustomerID "756828242")
+  (def NewCustomerID "896933805")
   (time (list-customers {:query-params {"detailsLevel" "BASIC"}}))
   (time (list-customers {:details-level "BASIC"}))
   (time (list-customers {:details-level "FULL" :limit 6 :offset 0}))
   (time (list-customers))
   
-  (time (get-customer NewCustomerID))
+  (time (get-customer NewCustomerID {:no-print true}))
   (time (get-customer NewCustomerID {:details-level "FULL"}))
   (time (get-customer NewCustomerID {:details-level "BASIC"}))
   

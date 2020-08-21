@@ -1,5 +1,7 @@
 ;; Helper functions to calling JSON APIs using http://http-kit.github.io/
 ;; GitHub: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/http/api/json_helper.clj 
+;;
+;; Pretty print directly (clojure.pprint/pprint
 (ns http.api.json_helper
   (:require
    [clojure.data.json :as json]
@@ -32,6 +34,12 @@
 (defn PUT [url, options]
   (request url, client/put, options))
 
+(defn PRN [str1 & options ]
+  (if (:no-print (first options))
+    nil
+    (prn str1)
+    ))
+
 (defn- request [url, method, options0]
   (let [url-expanded (expandURL url)
         options (expand-options options0)
@@ -39,8 +47,7 @@
         status (:status response)]
 
     (if (< status 300)
-      (prn "Successful Call: " status)
-      
+      (PRN (str "Successful Call: " status) options0)
       (if (:throw-errors options)
         (throw (Exception. (str "ERROR Status: " status)))
         (prn "ERROR Status: " status)))
@@ -243,7 +250,7 @@
 
 ;; Convert options parameters from EDN to JSON
 (defn- expand-options [options]
-  (prn "OPTIONS: " options)
+  ;;(prn "OPTIONS: " options)
   (let [body (:body options)]
     (if (or (map? body) (vector? body))
       (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed

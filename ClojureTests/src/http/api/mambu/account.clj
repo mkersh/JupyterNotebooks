@@ -1,5 +1,6 @@
 (ns http.api.mambu.account
-  (:require [http.api.json_helper :as api]))
+  (:require [http.api.json_helper :as api]
+            [http.api.mambu.customer :as cust]))
 
 (defn list-loans [& opt-overrides]
   (let [moreOpts (first opt-overrides)
@@ -24,17 +25,19 @@
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
         url (str "{{env1}}/loans/" id)]
-    (api/PRINT (api/GET url options))))
+    (prn "**get-loan " moreOpts)
+    (api/PRINT (api/GET url options) moreOpts)))
 
-(defn create-loan [prodid & opt-overrides]
+(defn create-loan [prodid clientIdOrEncId & opt-overrides]
   (let [moreOpts (first opt-overrides)
+        clientId (cust/get-customer-encid clientIdOrEncId)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body  {"loanAmount" 30000.0
                          "loanName" "MKCurTest1"
-                         "accountHolderKey" "8a8186da73ec37c20173eec481a92753"
+                         "accountHolderKey" clientId
                          "productTypeKey" prodid
                          "accountHolderType" "CLIENT"
                          "scheduleSettings" {"defaultFirstRepaymentDueDateOffset" 0
@@ -53,69 +56,77 @@
     (api/PRINT (api/POST "{{env1}}/loans" options))))
 
 
-(defn delete-customer [id]
-  (let [options {:basic-auth (api/get-auth "env1")
+(defn delete-loan [id & opt-overrides]
+  (let [moreOpts (first opt-overrides)
+        optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
-        url (str "{{env1}}/clients/" id)]
+        options (merge optdefs moreOpts)
+        url (str "{{env1}}/loans/" id)]
     (api/PRINT (api/DELETE url options))))
 
-(defn put-customer [id & opt-overrides]
+(defn put-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body
-                 {"creationDate" "2020-08-14T15:02:28+02:00"
-                  "approvedDate" "2020-08-14T15:32:10+02:00"
-                  "groupLoanCycle" 0
-                  "preferredLanguage" "ENGLISH"
-                  "lastName" "Raab2XXXXXYYYYY"
-                  "id" id
-                  "xid" "145566212"  ; Iterestingly you can change the id!!
-                  "gender" "MALE"
-                  "lastModifiedDate" "2020-08-14T12:14:13+02:00"
-                  "firstName" "Jim999bbbbbbb"
-                  "encodedKey" "8a81871173ec66260173ed29009d2cee"
-                  "loanCycle" 0
-                  "state" "INACTIVE"
-                  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"
-                  "notes" "Modified set of notes<br/>Hello world!!<br/>Another line
-                                  <script>alert(1);</script>
-                                  <p style= 'color:#FF0000';>Red paragraph text</p>
-                                  "
-                  "groupKeys" []}}
-        url (str "{{env1}}/clients/" id)
+                 {}}
+        url (str "{{env1}}/loans/" id)
         options (merge optdefs moreOpts)]
     (api/PRINT (api/PUT url options))))
 
-(defn patch-customer [id & opt-overrides]
+(defn patch-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body [{"op" "ADD"
-                         "path" "firstName"
-                         "value" "Jim999BBBUUUU"}
-                        ;; Next OP is an example of updating a custom field
-                        ;; Change the op to remove to delete
-                        {"op" "add"
-                         "path" "/_MKExtraCustomer/MyCustomerField1"
-                         "value" "Oh yes"}
-                        {"op" "ADD"
-                         "path" "gender"
-                         "value" "MALE"}
-                        {"op" "ADD"
-                         "path" "This attribute doesn't exists"
-                         "value" "FEMALEff"}]}
+                         "path" "loanName"
+                         "value" "Lease3BBBBB"}
+                        ]}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{env1}}/loans/" id)]
     (api/PRINT (api/PATCH url options))))
 
-(defn close-account [acc-obj]
-  nil
+(defn writeoff-loan [accid & opt-overrides]
+  (prn "*****IN writeoff-loan")
+  (let [moreOpts (first opt-overrides)
+        optdefs {:basic-auth (api/get-auth "env1")
+                 :headers {"Content-Type" "application/json"}
+                 :query-params {}
+                 :body {"type" "WRITE_OFF"
+                        "notes" "Account written off"
+                        }}
+        options (merge optdefs moreOpts)
+        url (str "{{env1}}/loans/" accid "/transactions")]
+    (api/PRINT (api/POST url options)))
+  )
+
+
+(defn reject-loan [accid & opt-overrides]
+  (prn "*****IN reject-loan")
+  (let [moreOpts (first opt-overrides)
+        optdefs {:basic-auth (api/get-auth "env1")
+                 :headers {"Content-Type" "application/json"}
+                 :query-params {}
+                 :body {"type" "REJECT"
+                        "notes" "Account REJECTED"}}
+        options (merge optdefs moreOpts)
+        url (str "{{env1}}/loans/" accid "/transactions")]
+    (api/PRINT (api/POST url options))))
+
+(defn close-loan [acc-obj]
+  (prn "*******In close-loan " acc-obj)
+  (let [accid (get acc-obj "id")]
+    (try
+      (delete-loan accid {:throw-errors true})
+      (catch Exception _ 
+        (try (reject-loan accid {:throw-errors true})
+             (catch Exception _ (writeoff-loan accid)))))
+    )
   )
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
@@ -125,35 +136,98 @@
   (time (list-loans {:details-level "BASIC" :limit 1000 :offset 114}))
   (time (list-loans))
 
-  (def NewAccountID "SCGC121")
+  ;; ({"id" "WBOS115"} {"id" "OJBS671"} {"id" "ARNM393"} {"id" "BKDP961"} {"id" "TVTV962"} {"id" "LLQB002"} {"id" "ADNP290"})
+
+  (def NewAccountID "ARNM393")
   (time (get-loan NewAccountID))
   (time (get-loan NewAccountID {:details-level "BASIC"}))
 
-  (time (create-loan "8a8187366a01d4a1016a023792a500b9"))
-  (time (create-loan {:body  {"firstName" "Charles"
-                                  "lastName" "Brown"}}))
+  (time (create-loan "8a8187366a01d4a1016a023792a500b9" "896933805"))
+ 
+  (time (close-loan (get-loan NewAccountID {:no-print true})))
+  (time (writeoff-loan NewAccountID))
+  (time (delete-loan NewAccountID))
 
-  (time (delete-customer NewCustomerID))
+  (time (patch-loan NewAccountID {:body [{"op" "ADD"
+                                               "path" "loanName"
+                                               "value" "LeaseLoan33332"}]}))
+  (time (patch-loan NewAccountID))
 
-  (time (patch-customer NewCustomerID {:body [{"op" "ADD"
-                                               "path" "firstName"
-                                               "value" "1212121212121212"}]}))
-  (time (patch-customer NewCustomerID))
-
-  (time (put-customer "580959603" {:body {"creationDate" "2020-08-14T22:24:47+02:00"
-                                          "idDocuments" []
-                                          "groupLoanCycle" 0
-                                          "preferredLanguage" "ENGLISH"
-                                          "lastName" "Brownxx"
-                                          "id" "580959603"
-                                          "lastModifiedDate" "2020-08-14T22:24:47+02:00"
-                                          "firstName" "Charles"
-                                          "encodedKey" "8a81871173ec66260173eea5761e1d9e"
-                                          "addresses" []
-                                          "loanCycle" 0
-                                          "state" "INACTIVE"
-                                          "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
-  (time (put-customer NewCustomerID)))
+  (time (put-loan NewAccountID {:body {"creationDate" "2020-01-08T09:01:13+02:00"
+                                      "guarantors" []
+                                      "approvedDate" "2020-01-08T08:01:18+02:00"
+                                      "activationTransactionKey" "8a8187f76f83bafd016f83f50f70029c"
+                                      "accruedInterest" 0.44
+                                      "prepaymentSettings"
+                                      {"prepaymentRecalculationMethod" "NO_RECALCULATION"
+                                       "principalPaidInstallmentStatus" "PARTIALLY_PAID"
+                                       "applyInterestOnPrepaymentMethod" "AUTOMATIC"}
+                                      "productTypeKey" "8a8187f76f83bafd016f83f2dcb1026d"
+                                      
+                                      "id" "JOEM230"
+                                      "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS"
+                                      "lastModifiedDate" "2020-01-08T09:07:45+02:00"
+                                      "daysInArrears" 567
+                                      "lastAccountAppraisalDate" "2020-08-21T00:34:47+02:00"
+                                      "arrearsTolerancePeriod" 0
+                                      "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE"
+                                      "assignedBranchKey" "8a8187136eaec3f5016eb324a5242dd8"
+                                      "encodedKey" "8a8187f76f83bafd016f83f3abd00284"
+                                      "accountArrearsSettings"
+                                      {"encodedKey" "8a8187f76f83bafd016f83f50f5c028c"
+                                       "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD"
+                                       "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS"
+                                       "nonWorkingDaysMethod" "EXCLUDED"
+                                       "tolerancePeriod" 0}
+                                      "lastInterestAppliedDate" "2020-01-08T08:07:46+02:00"
+                                      "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"}
+                                      "interestFromArrearsAccrued" 6194.44
+                                      "tranches" []
+                                      "disbursementDetails"
+                                      {"encodedKey" "8a8187f76f83bafd016f83f50f5c028a"
+                                       "expectedDisbursementDate" "2019-01-01T00:00:00+02:00"
+                                       "disbursementDate" "2019-01-01T00:00:00+02:00"
+                                       "transactionDetails"
+                                       {"encodedKey" "8a8187f76f83bafd016f83f50f5c028b"
+                                        "transactionChannelKey" "8a818e74677a2e9201677ec2b4c336a6"
+                                        "transactionChannelId" "cash"
+                                        "internalTransfer" false}
+                                       "fees" []}
+                                      "assets" []
+                                      "accountState" "ACTIVE_IN_ARREARS"
+                                      "paymentMethod" "HORIZONTAL"
+                                      "allowOffset" false
+                                      "interestSettings"
+                                      {"interestChargeFrequency" "ANNUALIZED"
+                                       "interestApplicationMethod" "REPAYMENT_DUE_DATE"
+                                       "accrueLateInterest" true
+                                       "interestCalculationMethod" "DECLINING_BALANCE"
+                                       "interestBalanceCalculationMethod" "ONLY_PRINCIPAL"
+                                       "interestRateSource" "FIXED_INTEREST_RATE"
+                                       "interestType" "SIMPLE_INTEREST"
+                                       "interestRate" 10.1
+                                       "accrueInterestAfterMaturity" false}
+                                      "scheduleSettings"
+                                      {"repaymentPeriodUnit" "MONTHS"
+                                       "periodicPayment" 0
+                                       "paymentPlan" []
+                                       "hasCustomSchedule" false
+                                       "gracePeriod" 0
+                                       "repaymentPeriodCount" 1
+                                       "scheduleDueDatesMethod" "INTERVAL"
+                                       "repaymentScheduleMethod" "DYNAMIC"
+                                       "repaymentInstallments" 12
+                                       "principalRepaymentInterval" 1
+                                       "gracePeriodType" "NONE"}
+                                      "fundingSources" []
+                                      "daysLate" 567
+                                      "accountHolderType" "CLIENT"
+                                      "loanAmount" 100000.0
+                                      "loanName" "Lease3XXXXXX"
+                                      "accountHolderKey" "8a8187136eaec3f5016eb32791322de2"
+                                      "accruedPenalty" 0
+                                      "lastSetToArrearsDate" "2019-02-02T00:00:00+02:00"}}))
+  )
 
 
 (use 'clojure.test)

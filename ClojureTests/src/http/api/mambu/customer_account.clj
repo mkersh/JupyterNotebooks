@@ -5,9 +5,10 @@
 
 (defn get-customer-loans [id & opt-overrides]
   (let [encID     (cust/get-customer-encid id)
-        detailLevel (or (first opt-overrides) "FULL")
-        limitVal (or (second opt-overrides) 50)
-        moreOpts (get (into [] opt-overrides) 2)
+        moreOpts (first opt-overrides)
+        detailLevel (or (:details-level moreOpts) "FULL")
+        limitVal (or (:limit moreOpts) 50)
+        
         optdefs {:basic-auth (api/get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
@@ -20,9 +21,17 @@
     (prn "*******get-customer-loans " options )
     (api/PRINT (api/GET url options) options)))
 
+
 (defn close-customer-and-accounts [id]
-  (prn "close-customer-accounts")
-  (map acc/close-account (get-customer-loans id "BASIC" 999 {:no-print true})))
+  (prn "---->START close-customer-accounts" id)
+  ;; This next line caused me a lot of pain. It was not evaluating because of lazy sequences.
+  ;; I needed to warp in doall to force the side effects.
+  ;; When it was the last expression is the function then it was working!!!
+  (doall (map acc/close-loan (get-customer-loans id {:details-level "BASIC" :limit 999 :no-print true})))
+  (prn "---->MIDDLE close-customer-accounts")
+  (cust/delete-customer id)
+  (prn "---->END close-customer-accounts")
+  )
 
 
 (defn close-customer
@@ -32,21 +41,27 @@
    [id]
 
    (let
-    [cust-obj (cust/get-customer id "BASIC" {:no-print true})
+    [cust-obj (cust/get-customer id  {:details-level "BASIC" :no-print true})
      status (get cust-obj "state")]
      (if (= status "INACTIVE")
        (try
          (cust/delete-customer id {:throw-errors true}) ; NOTE: This still may fail because customer may have inactive accounts
          (catch Exception _ (close-customer-and-accounts id)))
-
        (close-customer-and-accounts id))))
 
 (comment
+  (get-customer-loans "896933805" {:details-level "BASIC" :limit 999 :no-print false})
   
-  (time (close-customer "756828242"))
+  (closeAllLoans (get-customer-loans "896933805" {:details-level "BASIC" :limit 999 :no-print true}))
+  
+  (close-customer-and-accounts "896933805")
+  
+  (close-customer "896933805")
+  
+  (time (close-customer "896933805"))
   (cust/get-customer "756828242")
   
-  (time (get-customer-loans "756828242"))
+  (time (get-customer-loans "896933805"))
   (time (get-customer-loans "8a8186da73ec37c20173eec481a92753"))
   (def custObj {"creationDate" "2020-08-14T22:58:42+02:00"
               "approvedDate" "2020-08-14T22:58:42+02:00"
