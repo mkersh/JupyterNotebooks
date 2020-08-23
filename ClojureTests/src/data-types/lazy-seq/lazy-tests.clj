@@ -61,3 +61,35 @@
     (cons n (inf-range (+ n 1)))))
 
 (printall (take 200 (inf-range-wrong)))
+
+
+;; An example combining lazy sequences with higher order functions
+;; Generate prime numbers using trial division.
+;; Note that the starting set of sieved numbers should be
+;; the set of integers starting with 2 i.e., (iterate inc 2) 
+;; 
+;; Wow that is quite clever how this works!
+;; The magic is all happening with the filter that filters out all items divisible 
+;; by the first item on the list remembering the the list has previously been filtered
+;; by the items before 2, 3, 5 etc
+;; How it is working behind the scene is still quite complicated though with multiple
+;; lazy evaluation being applied at multiple steps.
+(defn sieve [s]
+  (cons (first s)
+        (lazy-seq (sieve (filter #(not= 0 (mod % (first s)))
+                                 (rest s))))))
+
+(nth (sieve (iterate inc 2)) 2)
+
+(iterate inc 2)
+
+(take 3 (iterate #(+ % 3) 2))
+
+
+(defn sieve2 [s]
+  (cons (first s)
+        (sieve (filter #(not= 0 (mod % (first s)))
+                                 (rest s)))))
+
+(take 5 (sieve2 (iterate inc 2)))
+
