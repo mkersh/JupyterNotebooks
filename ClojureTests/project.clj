@@ -12,6 +12,7 @@
                                               com.sun.jmx/jmxri]]
                  [org.clojure/tools.logging "0.2.6"]
                  [org.clojure/tools.cli "0.2.2"]
+                 [org.clojure/math.combinatorics "0.1.6"]
                  [org.apache.cxf/cxf-xjc-plugin "3.2.0"]
                  [ring-server "0.2.8"]
                  [lib-noir "0.5.5"]

@@ -1,408 +1,67 @@
-(0
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- ...)
+; Evaluating file: 8queens.clj
+"Elapsed time: 265.285418 msecs"
+#'algorithms.puzzles.8queens/eight-queens2
 clj::algorithms.puzzles.8queens=> 
-; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
-; Don't know how to create ISeq from: java.lang.Long
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:442" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
+92
 clj::algorithms.puzzles.8queens=> 
-(1 2)
+"Elapsed time: 34.241669 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/enumerate
+"Elapsed time: 31.529069 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
-; Wrong number of args (1) passed to: algorithms.puzzles.8queens/enumerate/fn--26420
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:442" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
+"Elapsed time: 31.733172 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/enumerate
+"Elapsed time: 32.041284 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:442" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
+"Elapsed time: 31.786932 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
-; Wrong number of args (0) passed to: clojure.lang.PersistentVector
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:442" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
+"Elapsed time: 31.825206 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-[(2 3)]
+"Elapsed time: 273.13499 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-[2 3]
+; Evaluating file: 8queens.clj
+"Elapsed time: 262.743053 msecs"
+"Elapsed time: 282.154383 msecs"
+"Elapsed time: 31.852078 msecs"
+92
 clj::algorithms.puzzles.8queens=> 
-([4 0] [6 1] [7 2])
-clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/enumerate
-clj::algorithms.puzzles.8queens=> 
-([4 0] [4 1] [6 2])
-clj::algorithms.puzzles.8queens=> 
-([4 0] [4 1] [6 2])
-clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/diag-check
-clj::algorithms.puzzles.8queens=> 
-[[0 1 2 3 4 5 6 7]
- [0 1 2 3 4 5 7 6]
- [0 1 2 3 4 6 5 7]
- [0 1 2 3 4 6 7 5]
- [0 1 2 3 4 7 5 6]
- [0 1 2 3 4 7 6 5]
- [0 1 2 3 5 4 6 7]
- [0 1 2 3 5 4 7 6]
- [0 1 2 3 5 6 4 7]
- [0 1 2 3 5 6 7 4]
- [0 1 2 3 5 7 4 6]
- [0 1 2 3 5 7 6 4]
- [0 1 2 3 6 4 5 7]
- [0 1 2 3 6 4 7 5]
- [0 1 2 3 6 5 4 7]
- [0 1 2 3 6 5 7 4]
- [0 1 2 3 6 7 4 5]
- [0 1 2 3 6 7 5 4]
- [0 1 2 3 7 4 5 6]
- [0 1 2 3 7 4 6 5]
- [0 1 2 3 7 5 4 6]
- [0 1 2 3 7 5 6 4]
- [0 1 2 3 7 6 4 5]
- [0 1 2 3 7 6 5 4]
- [0 1 2 4 3 5 6 7]
- [0 1 2 4 3 5 7 6]
- [0 1 2 4 3 6 5 7]
- [0 1 2 4 3 6 7 5]
- [0 1 2 4 3 7 5 6]
- [0 1 2 4 3 7 6 5]
- [0 1 2 4 5 3 6 7]
- [0 1 2 4 5 3 7 6]
- [0 1 2 4 5 6 3 7]
- [0 1 2 4 5 6 7 3]
- [0 1 2 4 5 7 3 6]
- [0 1 2 4 5 7 6 3]
- [0 1 2 4 6 3 5 7]
- [0 1 2 4 6 3 7 5]
- [0 1 2 4 6 5 3 7]
- [0 1 2 4 6 5 7 3]
- [0 1 2 4 6 7 3 5]
- [0 1 2 4 6 7 5 3]
- [0 1 2 4 7 3 5 6]
- [0 1 2 4 7 3 6 5]
- [0 1 2 4 7 5 3 6]
- [0 1 2 4 7 5 6 3]
- [0 1 2 4 7 6 3 5]
- [0 1 2 4 7 6 5 3]
- [0 1 2 5 3 4 6 7]
- [0 1 2 5 3 4 7 6]
- ...]
-clj::algorithms.puzzles.8queens=> 
-; Syntax error compiling at (src/algorithms/puzzles/8queens/8queens.clj:54:1).
-; Unable to resolve symbol: queens-on-same-diagonals in this context
-[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
- {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
- {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
- {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
- {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
- {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
- {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
- {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
- {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
- {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
- {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
- {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
- {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
-clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/queens-on-same-diagonals
-clj::algorithms.puzzles.8queens=> 
-"set 1: " #{0 4 6 12 2 14 10 8}
-"set 2: " #{0}
-nil
-clj::algorithms.puzzles.8queens=> 
-true
-clj::algorithms.puzzles.8queens=> 
-false
-clj::algorithms.puzzles.8queens=> 
-true
-clj::algorithms.puzzles.8queens=> 
-true
-clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/queens-on-same-diagonals?
-clj::algorithms.puzzles.8queens=> 
-false
-clj::algorithms.puzzles.8queens=> 
-; Syntax error reading source at (REPL:61:15).
-; Invalid number: 8-queens
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:433" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:432" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
-clj::algorithms.puzzles.8queens=> 
-; Syntax error reading source at (REPL:61:15).
-; Invalid number: 8-queens
-[{:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:433" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:432" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
- {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
- {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
- {:file "AFn.java" :line 22 :method "run" :flags [:java]}
- {:file "Thread.java" :line 832 :method "run" :flags [:java]}]
+#'algorithms.puzzles.8queens/eight-queens2
 clj::algorithms.puzzles.8queens=> 
 #'algorithms.puzzles.8queens/eight-queens
 clj::algorithms.puzzles.8queens=> 
-([0 4 7 5 2 6 1 3]
- [0 5 7 2 6 3 1 4]
- [0 6 3 5 7 1 4 2]
- [0 6 4 7 1 3 5 2]
- [1 3 5 7 2 0 6 4]
- [1 4 6 0 2 7 5 3]
- [1 4 6 3 0 7 5 2]
- [1 5 0 6 3 7 2 4]
- [1 5 7 2 0 3 6 4]
- [1 6 2 5 7 4 0 3]
- [1 6 4 7 0 3 5 2]
- [1 7 5 0 2 4 6 3]
- [2 0 6 4 7 1 3 5]
- [2 4 1 7 0 6 3 5]
- [2 4 1 7 5 3 6 0]
- [2 4 6 0 3 1 7 5]
- [2 4 7 3 0 6 1 5]
- [2 5 1 4 7 0 6 3]
- [2 5 1 6 0 3 7 4]
- [2 5 1 6 4 0 7 3]
- [2 5 3 0 7 4 6 1]
- [2 5 3 1 7 4 6 0]
- [2 5 7 0 3 6 4 1]
- [2 5 7 0 4 6 1 3]
- [2 5 7 1 3 0 6 4]
- [2 6 1 7 4 0 3 5]
- [2 6 1 7 5 3 0 4]
- [2 7 3 6 0 5 1 4]
- [3 0 4 7 1 6 2 5]
- [3 0 4 7 5 2 6 1]
- [3 1 4 7 5 0 2 6]
- [3 1 6 2 5 7 0 4]
- [3 1 6 2 5 7 4 0]
- [3 1 6 4 0 7 5 2]
- [3 1 7 4 6 0 2 5]
- [3 1 7 5 0 2 4 6]
- [3 5 0 4 1 7 2 6]
- [3 5 7 1 6 0 2 4]
- [3 5 7 2 0 6 4 1]
- [3 6 0 7 4 1 5 2]
- [3 6 2 7 1 4 0 5]
- [3 6 4 1 5 0 2 7]
- [3 6 4 2 0 5 7 1]
- [3 7 0 2 5 1 6 4]
- [3 7 0 4 6 1 5 2]
- [3 7 4 2 0 6 1 5]
- [4 0 3 5 7 1 6 2]
- [4 0 7 3 1 6 2 5]
- [4 0 7 5 2 6 1 3]
- [4 1 3 5 7 2 0 6]
- ...)
-clj::algorithms.puzzles.8queens=> 
-true
-clj::algorithms.puzzles.8queens=> 
-true
-clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 272.373487 msecs"
 92
 clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 272.796935 msecs"
 92
 clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 47.908367 msecs"
-([0 4 7 5 2 6 1 3]
- [0 5 7 2 6 3 1 4]
- [0 6 3 5 7 1 4 2]
- [0 6 4 7 1 3 5 2]
- [1 3 5 7 2 0 6 4]
- [1 4 6 0 2 7 5 3]
- [1 4 6 3 0 7 5 2]
- [1 5 0 6 3 7 2 4]
- [1 5 7 2 0 3 6 4]
- [1 6 2 5 7 4 0 3]
- [1 6 4 7 0 3 5 2]
- [1 7 5 0 2 4 6 3]
- [2 0 6 4 7 1 3 5]
- [2 4 1 7 0 6 3 5]
- [2 4 1 7 5 3 6 0]
- [2 4 6 0 3 1 7 5]
- [2 4 7 3 0 6 1 5]
- [2 5 1 4 7 0 6 3]
- [2 5 1 6 0 3 7 4]
- [2 5 1 6 4 0 7 3]
- [2 5 3 0 7 4 6 1]
- [2 5 3 1 7 4 6 0]
- [2 5 7 0 3 6 4 1]
- [2 5 7 0 4 6 1 3]
- [2 5 7 1 3 0 6 4]
- [2 6 1 7 4 0 3 5]
- [2 6 1 7 5 3 0 4]
- [2 7 3 6 0 5 1 4]
- [3 0 4 7 1 6 2 5]
- [3 0 4 7 5 2 6 1]
- [3 1 4 7 5 0 2 6]
- [3 1 6 2 5 7 0 4]
- [3 1 6 2 5 7 4 0]
- [3 1 6 4 0 7 5 2]
- [3 1 7 4 6 0 2 5]
- [3 1 7 5 0 2 4 6]
- [3 5 0 4 1 7 2 6]
- [3 5 7 1 6 0 2 4]
- [3 5 7 2 0 6 4 1]
- [3 6 0 7 4 1 5 2]
- [3 6 2 7 1 4 0 5]
- [3 6 4 1 5 0 2 7]
- [3 6 4 2 0 5 7 1]
- [3 7 0 2 5 1 6 4]
- [3 7 0 4 6 1 5 2]
- [3 7 4 2 0 6 1 5]
- [4 0 3 5 7 1 6 2]
- [4 0 7 3 1 6 2 5]
- [4 0 7 5 2 6 1 3]
- [4 1 3 5 7 2 0 6]
- ...)
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 270.17595 msecs"
-nil
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 270.919279 msecs"
-nil
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 267.806659 msecs"
-nil
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 265.19313 msecs"
-nil
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 267.439882 msecs"
+"Elapsed time: 32.899045 msecs"
 92
 clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 270.246636 msecs"
+"Elapsed time: 30.462755 msecs"
 92
 clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 265.02957 msecs"
+"Elapsed time: 32.167235 msecs"
 92
+clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 29724.118704 msecs"
+724
+clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 29217.24887 msecs"
+724
+clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 611.885494 msecs"
+724
+clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 19583.683502 msecs"
+14200
+clj::algorithms.puzzles.8queens=> 
+"Elapsed time: 19261.325648 msecs"
+14200
 clj::algorithms.puzzles.8queens=> 
