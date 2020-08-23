@@ -67,6 +67,20 @@
 
 (permute4 (range 8))
 
+;; This is a lot neater than my version BUT very difficult to understand
+;; The for is performing some magic here!!
+;; Also it is not as quick as my permute
+(defn permute5 [s]
+  (if (= (count s) 1)
+    (list s)
+    (for [head s
+          tail (permute5 (remove #{head} s))]
+      (cons head tail))))
+
+(permute5 (range 3))
+
+(remove #{1} [1 2 3])
+
 (queens-on-same-diagonals? [2 4 6 0 3 1 7 5])
 
 (defn eight-queens
@@ -156,6 +170,7 @@
 ;; 12x12 boards takes 20 secs, my python was 18.5
 (time (count (eight-queens2 12)))
   
+;; 14x 14 board takes 800 secs
 (time (count (eight-queens2 14)))
   
   
