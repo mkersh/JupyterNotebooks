@@ -1,9 +1,9 @@
 ;;; ************************************************************
-;;; 
+;;;
 ;;; Clojure Tests and examples
 ;;;
 ;;;  GITHUB: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/ClojureNotebook.clj
-;;; 
+;;;
 ;;; ************************************************************
 (ns ClojureNotebook
   (:refer-clojure))
@@ -11,7 +11,6 @@
 ; (ns-name *ns*)
 ; (ns-interns *ns*)
 ; (all-ns)
-
 
 ;;; *********************************  List datastructures
 (def MyExampleList '(1 2 3 4 5 6))
@@ -47,9 +46,9 @@ MyExampleList
 
 
 ;;; ********************************* Vectors
-;;; Very similar to lists but it general use vectors to store data. 
-;;; One advantage is that you do not have to quote a vector when it just has data in it, 
-;;; whereas with a list you do. 
+;;; Very similar to lists but it general use vectors to store data.
+;;; One advantage is that you do not have to quote a vector when it just has data in it,
+;;; whereas with a list you do.
 ;;; With a list (unless quoted) the first argument is always expected to be a function to apply the following arguments.
 
 [1 2 3 4]
@@ -105,7 +104,7 @@ myMap2
   (let
    [curVal (myMap2 key)
     newVal (conj curVal val)]
-    (def myMap2 (assoc myMap2 key newVal))))  ; Not a good idea I know!
+   (def myMap2 (assoc myMap2 key newVal))))  ; Not a good idea I know!
 
 (addItem :key55 92)
 
@@ -118,7 +117,7 @@ myMap2
      (catch Exception e (str "caught exception: " e)))
 
 ;;; *********************************  Functions
-;;; 
+;;;
 
 ;; Standard public function
 (defn publicFunction
@@ -238,7 +237,7 @@ myMap2
 (def fut1 (future (Thread/sleep 3000)
                   (+ 1 1)))
 
-; See if a future is realised 
+; See if a future is realised
 (realized? fut1)
 @fut1
 

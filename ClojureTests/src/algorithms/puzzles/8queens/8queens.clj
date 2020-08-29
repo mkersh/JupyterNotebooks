@@ -172,6 +172,9 @@
   
 ;; 14x 14 board takes 800 secs
 (time (count (eight-queens2 14)))
+
+
+
   
   
 )

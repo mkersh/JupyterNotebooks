@@ -17,24 +17,5 @@
 ;   - File URLs in stacktrace frames are peekable and clickable.
 clj::user=> 
 ; Jack-in done.
-; Evaluating file: 8queens.clj
-"Elapsed time: 420.17515 msecs"
-nil
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 383.137419 msecs"
-92
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 366.54217 msecs"
-92
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 360.781733 msecs"
-92
-clj::algorithms.puzzles.8queens=> 
-#'algorithms.puzzles.8queens/eight-queens
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 294.433203 msecs"
-92
-clj::algorithms.puzzles.8queens=> 
-"Elapsed time: 285.871717 msecs"
-92
-clj::algorithms.puzzles.8queens=> 
+13050.900882024447
+clj::control-flow.for=> 
