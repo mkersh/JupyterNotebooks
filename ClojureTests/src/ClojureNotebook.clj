@@ -16,6 +16,7 @@
 (def MyExampleList '(1 2 3 4 5 6))
 MyExampleList
 
+
 ; adding to the beginning of a list
 (cons 0 MyExampleList)
 
@@ -28,10 +29,12 @@ MyExampleList
 ;; Functions that you can apply to list
 (nth MyExampleList 3)
 
+
 ;; This is an example of calling a java function .indexOf on a list
-(.indexOf MyExampleList 4)
+;(.indexOf MyExampleList 4)
 
 ;;; Map function example
+
 
 (map + [1 2 3 4 5 6 7 8 9 10] (cycle [1 3]))
 
@@ -40,9 +43,12 @@ MyExampleList
 (map #(+ % 50) [1 2 3])
 
 (count [1 2 3 4 5 6 7 8 9 10])
+
+
 ; If you try and execute the next line it will hang the REPL
 ; CTRL-OPT-C CTRL-OPT-D to break
-(count (cycle [1 3]))
+;;(count (cycle [1 3]))
+
 
 
 ;;; ********************************* Vectors
@@ -69,7 +75,7 @@ MyExampleList
 
 (count myVector)
 
-;; List comprehenxion
+;; List comprehension
 (for [x myVector]
   (str "1" x))
 
@@ -217,7 +223,7 @@ myMap2
 (count (str (exp 2048N 24N)))
 
 
-;;; ******************** Concurrent programmimg
+;;; ******************** Concurrent programming
 ;;; Futures, Delays, Promises
 ;;; Atoms, Refs
 
