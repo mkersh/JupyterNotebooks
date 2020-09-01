@@ -7,3 +7,9 @@
     [x y]))
 
 (for-test)
+
+(defn test
+  [x zero])
+
+
+
