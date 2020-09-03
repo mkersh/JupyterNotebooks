@@ -1,4 +1,5 @@
 ;;; https://docs.google.com/document/d/1tiz0qjGfqv0On5k0R3EeIdOgf_9ZZovqcW8yPb5QhCs/edit
+;;; GitHub: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/algorithms/puzzles/8queens/8queens.clj
 ;;; 
 (ns algorithms.puzzles.8queens
 ;;   (:require
@@ -157,13 +158,13 @@
 
 ;; For a 10x10 board the inefficient version takes ~ 30 secs
 ;; NOTE: This is compared to ~ 10 for a version I wrote in python
-;; bit the python version was using a permutations function in a C library
-(time (count (eight-queens)))
+;; but the python version was using a permutations function in a C library
+(time (count (eight-queens 10)))
 
 ;; This efficient version takes ~ 34 ms
 (time (count (eight-queens2)))
 
-;; The effecicient version takes ~ 611 ms for a 10x10 boards
+;; The efficient version takes ~ 611 ms for a 10x10 boards
 ;; This is comparable with a version I wrote in python but no quicker
 (time (count (eight-queens2 10)))
 
