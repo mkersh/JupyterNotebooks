@@ -256,8 +256,10 @@
       (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
       options)))
 
-(use 'clojure.test)
+(defn convertJsonFileToEdn [fn]
+  (let [fileStr (slurp fn)]
+    (json/read-str fileStr)))
 
-(deftest addition2
-  (is (= 3 (+ 2 2)))
-  (is (= 7 (+ 3 4))))
+(def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
+
+nCinoConnectorJson

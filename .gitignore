@@ -11,3 +11,4 @@ ClojureTests/.calva/output-window/output.repl-file
 ClojureTests/.calva/output-window/.clj-kondo/config.edn
 ClojureTests/.calva/output-window/.clj-kondo/.cache/2020.07.29/lock
 ClojureTests/src/http/ENV.clj
+ClojureTests/.idea
