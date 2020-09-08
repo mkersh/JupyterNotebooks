@@ -18,6 +18,10 @@
 ;;; GET, POST, DELETE, PATCH, PUT
 ;;; 
 
+(defn convertJsonFileToEdn [fn]
+  (let [fileStr (slurp fn)]
+    (json/read-str fileStr)))
+    
 (defn GET
   ([url] (GET2 url, {}))
   ([url, options] (GET2 url, options)))
@@ -256,10 +260,7 @@
       (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
       options)))
 
-(defn convertJsonFileToEdn [fn]
-  (let [fileStr (slurp fn)]
-    (json/read-str fileStr)))
-
 (def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
 
-nCinoConnectorJson
+(comment
+(find-path "https://{{config.url}}" nCinoConnectorJson))
