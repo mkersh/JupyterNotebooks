@@ -6,3 +6,6 @@
   (prn "3")
   (prn "4")))
 
+
+  (System/getProperty "java.vm.version")
+

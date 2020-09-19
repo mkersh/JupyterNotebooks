@@ -1,4 +1,746 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
 
-; Evaluating file: json_helper.clj
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::user=> 
+; Jack-in done.
+; Syntax error compiling at (src/sandbox/sandbox1.clj:3:1).
+; Unable to resolve symbol: doto in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/mkersh/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java:836" :method "run" :flags [:java]}]
+clj::sandbox.sandbox1=> 
+; Evaluating file: sandbox1.clj
+3 "1"
+nil "2"
+nil "3"
+nil "4"
+"openj9-0.21.0"
+clj::sandbox.sandbox1=> 
+3 "1"
+nil "2"
+nil "3"
+nil "4"
+3
+clj::sandbox.sandbox1=> 
+"openj9-0.21.0"
+clj::sandbox.sandbox1=> 
+; Evaluating file: customer.clj
 nil
-clj::http.api.json_helper=> 
+clj::http.api.mambu.customer=> 
+{:basic-auth ["apiUser" "complexPassword12345"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "BASIC"}}
+"Successful Call: 200"
+[{"creationDate" "2020-08-21T18:05:56+02:00",
+  "approvedDate" "2020-08-21T18:05:56+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Brown",
+  "id" "896933805",
+  "lastModifiedDate" "2020-08-21T19:19:08+02:00",
+  "activationDate" "2020-08-21T18:07:22+02:00",
+  "firstName" "Charles",
+  "encodedKey" "8a8186e174119c4a017411c1c36000d0",
+  "closedDate" "2020-08-21T19:19:08+02:00",
+  "loanCycle" 0,
+  "state" "EXITED",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-08-14T22:55:10+02:00",
+  "approvedDate" "2020-08-14T22:55:10+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Raab2",
+  "id" "031861219",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-08-14T22:55:10+02:00",
+  "firstName" "Dominic",
+  "encodedKey" "8a8186aa73ed0e2b0173eea1c5697329",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-08-14T22:30:45+02:00",
+  "approvedDate" "2020-08-14T22:30:45+02:00",
+  "grou
+pLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Raab2",
+  "id" "364428647",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-08-14T22:31:25+02:00",
+  "firstName" "1212121212121212",
+  "encodedKey" "8a81874573ec2db00173eea7b86d215f",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-08-14T15:02:28+02:00",
+  "approvedDate" "2020-08-14T15:02:28+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Raab2XXXXX",
+  "id" "917544150",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-08-14T16:52:54+02:00",
+  "firstName" "Jim999BBBUUUU",
+  "encodedKey" "8a8186da73ec37c20173ed0d29962ea0",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-08-14T15:32:10+02:00",
+  "approvedDate" "2020-08-14T15:32:10+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Raab2XXXXXYYYYY",
+  "id" "651627137",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-08-1
+4T15:34:43+02:00",
+  "firstName" "Jim999bbbbbbb",
+  "encodedKey" "8a81871173ec66260173ed29009d2cee",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-08-03T07:49:52+02:00",
+  "approvedDate" "2020-08-03T07:49:52+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Cust CA",
+  "id" "113850703",
+  "lastModifiedDate" "2020-08-03T11:02:10+02:00",
+  "activationDate" "2020-08-03T08:54:57+02:00",
+  "firstName" "Test",
+  "assignedBranchKey" "8a8187b573b2da480173b2dc87ac000b",
+  "encodedKey" "8a8187b573b2da480173b2dc87ac000e",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-06-11T09:25:16+02:00",
+  "approvedDate" "2020-06-11T09:25:16+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "719628436",
+  "lastModifiedDate" "2020-06-11T09:25:16+02:00",
+  "firstName" "Dominic",
+  "encodedKey" "8a8187007284d5e80172a2447dcb0665",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-06-11T09:24:56+02:00",
+  "approvedDate" "2020-06-11T09:24:57+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "225927934",
+  "lastModifiedDate" "2020-06-11T09:24:56+02:00",
+  "firstName" "Dominic",
+  "encodedKey" "8a8187007284d5e8017294cf41b848d7",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-05-24T09:18:25+02:00",
+  "approvedDate" "2020-05-24T09:18:25+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Annual Capitalisation",
+  "id" "561240810",
+  "lastModifiedDate" "2020-05-24T09:18:25+02:00",
+  "firstName" "Test",
+  "assignedBranchKey" "8a81862a6b6a9f53016b709aa31244de",
+  "encodedKey" "8a818609723167880172458ad1e14b9e",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-05-03T16:54:21+02:0
+0",
+  "approvedDate" "2020-05-03T16:54:21+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "415531009",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-05-03T16:54:21+02:00",
+  "firstName" "Dominic",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a81870d71d1c7460171db07eb3c75e1",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-05-02T15:15:34+02:00",
+  "approvedDate" "2019-05-02T15:15:35+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Smith",
+  "id" "072889113",
+  "middleName" "Terry",
+  "lastModifiedDate" "2020-03-31T11:30:28+02:00",
+  "activationDate" "2019-05-03T12:22:11+02:00",
+  "firstName" "John",
+  "assignedBranchKey" "8a8186016a73c831016a77fe7fcf2b21",
+  "encodedKey" "8a8186016a73c831016a788d7fa32d2e",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-03-11T12:09:05+02:00"
+,
+  "approvedDate" "2020-03-11T12:09:05+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Offset",
+  "id" "683600498",
+  "lastModifiedDate" "2020-03-11T12:10:33+02:00",
+  "activationDate" "2020-03-11T12:10:33+02:00",
+  "firstName" "Test",
+  "encodedKey" "8a81865170973cd10170c911b3817c4f",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-03-10T14:56:25+02:00",
+  "approvedDate" "2020-03-10T14:56:25+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "sfsgsfs",
+  "id" "827684591",
+  "lastModifiedDate" "2020-03-10T14:56:25+02:00",
+  "firstName" "Test :: 35353635",
+  "encodedKey" "8a81865170973cd10170c44708310e2f",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-02-20T15:21:00+02:00",
+  "approvedDate" "2020-02-20T15:21:00+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Tester",
+  "id" "973895725",
+  "last
+ModifiedDate" "2020-02-20T15:24:21+02:00",
+  "activationDate" "2020-02-20T15:24:21+02:00",
+  "firstName" "CC",
+  "assignedBranchKey" "8a81869b7057feec01705dde63ba4716",
+  "encodedKey" "8a81869b7057feec017062c237b91277",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-01-29T16:04:24+02:00",
+  "approvedDate" "2020-01-29T16:04:25+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Smith",
+  "id" "786543348",
+  "gender" "MALE",
+  "lastModifiedDate" "2020-01-29T16:04:24+02:00",
+  "firstName" "Dominic",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a81879d6ff19845016ff19e0e0d0019",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2020-01-02T15:54:35+02:00",
+  "approvedDate" "2020-01-02T15:54:35+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "0032E00002i053QQAQ",
+  "lastModifiedDate" "2020-0
+1-02T16:03:32+02:00",
+  "firstName" "Andy",
+  "encodedKey" "8a81865f6f64f280016f66895b4a03ed",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+  "mobilePhone" "2332323232232355"}
+ {"creationDate" "2020-01-02T15:37:59+02:00",
+  "approvedDate" "2020-01-02T15:38:00+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "0032E00002i04VtQAI",
+  "lastModifiedDate" "2020-01-02T15:46:00+02:00",
+  "firstName" "Mark",
+  "encodedKey" "8a8186c66f657bcf016f65d40b2f004d",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+  "mobilePhone" "3333333"}
+ {"creationDate" "2020-01-02T14:46:23+02:00",
+  "approvedDate" "2020-01-02T14:46:24+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "sdsd",
+  "id" "317107658",
+  "lastModifiedDate" "2020-01-02T14:46:23+02:00",
+  "firstName" "sds",
+  "encodedKey" "8a8187966f64e856016f6649f304010f",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clien
+tRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-12-24T16:28:53+02:00",
+  "approvedDate" "2019-12-24T16:28:53+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "nCino",
+  "id" "797791047",
+  "lastModifiedDate" "2019-12-24T16:28:53+02:00",
+  "firstName" "Test",
+  "assignedBranchKey" "8a8187706f3514d1016f384c6b5e0762",
+  "encodedKey" "8a8187706f3514d1016f384f84a70843",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-12-23T17:11:13+02:00",
+  "approvedDate" "2019-12-23T17:11:13+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Tester",
+  "id" "731533170",
+  "lastModifiedDate" "2019-12-23T17:21:45+02:00",
+  "activationDate" "2019-12-23T17:15:02+02:00",
+  "firstName" "ON Mortgage",
+  "encodedKey" "8a8187706f2dcb89016f334f94df0432",
+  "loanCycle" 1,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-11-28T19:56:08+02:00",
+  "approve
+dDate" "2019-11-28T19:56:09+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Interest Calcs",
+  "id" "688433740",
+  "lastModifiedDate" "2019-11-28T20:00:21+02:00",
+  "activationDate" "2019-11-28T20:00:21+02:00",
+  "firstName" "Tester",
+  "assignedBranchKey" "8a8187136eaec3f5016eb324a5242dd8",
+  "encodedKey" "8a8187136eaec3f5016eb32791322de2",
+  "loanCycle" 1,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-11-16T23:37:55+02:00",
+  "approvedDate" "2019-11-16T23:37:56+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Jones",
+  "id" "001447765",
+  "lastModifiedDate" "2019-11-16T23:38:31+02:00",
+  "activationDate" "2019-11-16T23:38:31+02:00",
+  "firstName" "Jim",
+  "assignedBranchKey" "8a8187106e751c66016e751c66d70001",
+  "encodedKey" "8a8186356e760405016e7625d12a03e4",
+  "loanCycle" 2,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-11-10T16:05:31+02:00",
+  "app
+rovedDate" "2019-11-10T16:05:32+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Test",
+  "id" "643920786",
+  "lastModifiedDate" "2019-11-10T17:33:37+02:00",
+  "activationDate" "2019-11-10T16:07:14+02:00",
+  "firstName" "Kyber",
+  "assignedBranchKey" "8a8186f06e54eda4016e559e66c3050b",
+  "encodedKey" "8a8186f06e54eda4016e55a1eb8d0515",
+  "loanCycle" 2,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-11-09T11:33:44+02:00",
+  "approvedDate" "2019-11-09T11:33:44+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "X",
+  "id" "327319389",
+  "lastModifiedDate" "2019-11-09T12:14:30+02:00",
+  "activationDate" "2019-11-09T11:35:29+02:00",
+  "firstName" "Cust ",
+  "assignedBranchKey" "8a8186af6e4f6cdd016e4f815cb101f0",
+  "encodedKey" "8a8186af6e4f6cdd016e4f82a8c901f6",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-06-19T18:39:12+02:00",
+  "approvedDate
+" "2019-06-19T18:39:07+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Pete",
+  "id" "138181102",
+  "middleName" "Tester xyz",
+  "lastModifiedDate" "2019-10-15T20:33:18+02:00",
+  "activationDate" "2019-06-20T10:14:02+02:00",
+  "firstName" "Product",
+  "assignedBranchKey" "8a81862a6b6a9f53016b709aa31244de",
+  "encodedKey" "8a81862a6b6a9f53016b709aa31244e1",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-08-12T16:37:36+02:00",
+  "approvedDate" "2019-08-12T16:37:36+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Test",
+  "id" "708570140",
+  "middleName" "Test",
+  "lastModifiedDate" "2019-08-12T16:39:07+02:00",
+  "activationDate" "2019-08-12T16:39:07+02:00",
+  "firstName" "Loan Tester",
+  "assignedBranchKey" "8a81862a6b6a9f53016b709aa31244de",
+  "encodedKey" "8a8187366c856563016c8643587601d1",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"crea
+tionDate" "2019-06-06T12:38:31+02:00",
+  "approvedDate" "2019-06-06T12:38:32+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "06 June",
+  "id" "628673981",
+  "lastModifiedDate" "2019-06-06T12:39:45+02:00",
+  "firstName" "New Customer",
+  "encodedKey" "8a8187d46b2c5cfb016b2c5cfbfe0001",
+  "closedDate" "2019-06-06T12:39:45+02:00",
+  "loanCycle" 0,
+  "state" "EXITED",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-04-12T08:17:23+02:00",
+  "approvedDate" "2019-04-12T08:17:24+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Business",
+  "id" "728939220",
+  "lastModifiedDate" "2019-04-12T08:30:44+02:00",
+  "firstName" "NewSME",
+  "encodedKey" "8a8187a06a101429016a102f3180001f",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a8186a267df5bec0167df5becc90001"}
+ {"creationDate" "2019-04-10T21:14:59+02:00",
+  "approvedDate" "2019-04-10T21:15:00+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Yen
+",
+  "id" "443651965",
+  "lastModifiedDate" "2019-04-10T21:14:59+02:00",
+  "firstName" "Alex",
+  "assignedBranchKey" "8a81867d6a01398b016a01a0552b006a",
+  "encodedKey" "8a8186ca6a023000016a08acbd7b45af",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-04-09T12:27:17+02:00",
+  "approvedDate" "2019-04-09T12:27:18+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Tester",
+  "id" "758073830",
+  "lastModifiedDate" "2019-04-09T12:52:54+02:00",
+  "activationDate" "2019-04-09T12:28:42+02:00",
+  "firstName" "Currency",
+  "assignedBranchKey" "8a81867d6a01398b016a01a0552b006a",
+  "encodedKey" "8a81867d6a01398b016a01a2d2df0076",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-04-03T17:43:32+02:00",
+  "approvedDate" "2019-04-03T17:43:32+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Smith",
+  "id" "291403999",
+  "gender" "MALE",
+  "la
+stModifiedDate" "2019-04-03T17:43:32+02:00",
+  "firstName" "Dominic",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a81871669e33c3c0169e3d985024d24",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-04-03T13:11:13+02:00",
+  "approvedDate" "2019-04-03T13:11:13+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Giles22",
+  "id" "697019153",
+  "gender" "MALE",
+  "lastModifiedDate" "2019-04-03T13:11:13+02:00",
+  "firstName" "Dominic",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a81872069e269240169e2e553a30069",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-04-02T08:10:18+02:00",
+  "approvedDate" "2019-04-02T08:10:18+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Styles",
+  "id" "277343439",
+  "lastModifiedDate" "2019-04-02T08:14:09+02:00",
+  "activationDate" "2019-
+04-02T08:14:09+02:00",
+  "firstName" "Harry",
+  "assignedBranchKey" "8a81874769d943930169dca6303d22e8",
+  "encodedKey" "8a81874769d943930169dca9022f22f5",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-02-26T08:40:54+02:00",
+  "approvedDate" "2019-02-26T08:40:54+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Smith",
+  "id" "121693087",
+  "middleName" "ttteegg",
+  "lastModifiedDate" "2019-03-28T18:43:25+02:00",
+  "activationDate" "2019-02-26T08:54:45+02:00",
+  "profilePictureKey" "8a81872869349860016934f018710a5d",
+  "firstName" "Jim",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a8186ac692678910169288509c606bc",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2018-12-21T11:00:33+02:00",
+  "approvedDate" "2018-12-21T11:00:34+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "emailAddress" "gsgs@shs.com",
+  "las
+tName" "Kershaw",
+  "id" "556464151",
+  "middleName" "Harryg",
+  "lastModifiedDate" "2019-03-28T18:40:55+02:00",
+  "activationDate" "2018-12-21T11:02:48+02:00",
+  "firstName" "MK1",
+  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1c",
+  "encodedKey" "8a81866d67cfe3f20167cffd9fc50024",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+  "mobilePhone" "132132312"}
+ {"creationDate" "2019-01-30T16:16:15+02:00",
+  "approvedDate" "2019-01-30T16:16:16+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Tester3334455",
+  "id" "349353166",
+  "middleName" "John1rrr",
+  "lastModifiedDate" "2019-03-01T11:49:57+02:00",
+  "firstName" "MPO Test Cust1",
+  "assignedBranchKey" "8a8187cc689e66fc01689f1c452000d8",
+  "encodedKey" "8a8187cc689e66fc01689f1c452000da",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-02-28T17:42:26+02:00",
+  "approvedDate" "2019-02-28T17:42:26+02:00",
+  "groupLoanC
+ycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Diamond",
+  "id" "752974891",
+  "lastModifiedDate" "2019-02-28T18:29:03+02:00",
+  "firstName" "Bob",
+  "assignedCentreKey" "8a81861469342a71016934b7719303b0",
+  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "encodedKey" "8a81861469342a71016934c4c97103fd",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2018-12-12T18:44:05+02:00",
+  "approvedDate" "2018-12-12T18:44:05+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "Kershaw",
+  "id" "458863079",
+  "gender" "FEMALE",
+  "lastModifiedDate" "2019-02-28T18:06:51+02:00",
+  "firstName" "Sharon",
+  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1e",
+  "encodedKey" "8a81872d6787e9f30167a34dd00a4e2f",
+  "birthDate" "1970-12-31",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2019-01-31T17:02:20+02:00",
+  "approvedDate" "2019-01-31T17:02:21+02:00",
+
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "lastName" "James",
+  "id" "261794452",
+  "middleName" "john",
+  "lastModifiedDate" "2019-01-31T17:22:08+02:00",
+  "firstName" "MPO Test",
+  "assignedBranchKey" "8a8187fd68a4569e0168a46ac4ed0038",
+  "encodedKey" "8a8187fd68a4569e0168a46ac4ed003a",
+  "loanCycle" 0,
+  "state" "INACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+ {"creationDate" "2018-12-12T18:43:30+02:00",
+  "approvedDate" "2018-12-12T18:43:31+02:00",
+  "groupLoanCycle" 0,
+  "preferredLanguage" "ENGLISH",
+  "emailAddress" "mark.kershaw@mambu.com",
+  "lastName" "Kershaw",
+  "id" "322589208",
+  "gender" "MALE",
+  "lastModifiedDate" "2018-12-18T11:25:59+02:00",
+  "activationDate" "2018-12-18T11:03:52+02:00",
+  "firstName" "Mark",
+  "encodedKey" "8a81872d6787e9f30167a348cc214e28",
+  "birthDate" "1965-12-15",
+  "loanCycle" 0,
+  "state" "ACTIVE",
+  "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+  "mobilePhone" "+44 775 3771129"}]
+"Number of items:" 40
+"Elapsed time: 5389.403657 msecs"
+nil
+clj::http.api.mambu.customer=> 
+#'http.api.mambu.customer/NewCustomerID
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2019-05-02T15:15:34+02:00",
+ "idDocuments" [],
+ "approvedDate" "2019-05-02T15:15:35+02:00",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Smith",
+ "id" "072889113",
+ "middleName" "Terry",
+ "lastModifiedDate" "2020-03-31T11:30:28+02:00",
+ "activationDate" "2019-05-03T12:22:11+02:00",
+ "firstName" "John",
+ "assignedBranchKey" "8a8186016a73c831016a77fe7fcf2b21",
+ "encodedKey" "8a8186016a73c831016a788d7fa32d2e",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+ "notes" "test2",
+ "groupKeys" []}
+"Number of items:" 19
+"Elapsed time: 2219.663768 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2019-05-02T15:15:34+02:00",
+ "approvedDate" "2019-05-02T15:15:35+02:00",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Smith",
+ "id" "072889113",
+ "middleName" "Terry",
+ "lastModifiedDate" "2020-03-31T11:30:28+02:00",
+ "activationDate" "2019-05-03T12:22:11+02:00",
+ "firstName" "John",
+ "assignedBranchKey" "8a8186016a73c831016a77fe7fcf2b21",
+ "encodedKey" "8a8186016a73c831016a788d7fa32d2e",
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+"Number of items:" 15
+"Elapsed time: 158.162587 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"Successful Call: 201"
+{"creationDate" "2020-09-19T13:38:43+02:00",
+ "idDocuments" [],
+ "approvedDate" "2020-09-19T13:38:42+02:00",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Brown",
+ "id" "596337874",
+ "lastModifiedDate" "2020-09-19T13:38:43+02:00",
+ "firstName" "Jane",
+ "encodedKey" "8a81860b74a6004a0174a628c2750087",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}
+"Number of items:" 14
+"Elapsed time: 4013.098208 msecs"
+nil
+clj::http.api.mambu.customer=> 
+#'http.api.mambu.customer/NewCustomerID
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2020-09-19T13:38:43+02:00",
+ "idDocuments" [],
+ "approvedDate" "2020-09-19T13:38:43+02:00",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Brown",
+ "id" "596337874",
+ "lastModifiedDate" "2020-09-19T13:38:43+02:00",
+ "firstName" "Jane",
+ "encodedKey" "8a81860b74a6004a0174a628c2750087",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa",
+ "groupKeys" []}
+"Number of items:" 15
+"Elapsed time: 1894.158607 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"Successful Call: 204"
+"SUCCESS: 204"
+"Number of items:" 12
+"Elapsed time: 2376.485223 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"ERROR Status: " 404
+{"errors" [{"errorCode" 301, "errorReason" "INVALID_CLIENT_ID"}]}
+"Number of items:" 1
+"Elapsed time: 1958.044818 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"ERROR Status: " 404
+{"errors" [{"errorCode" 301, "errorReason" "INVALID_CLIENT_ID"}]}
+"Number of items:" 1
+"Elapsed time: 200.867358 msecs"
+nil
+clj::http.api.mambu.customer=> 
