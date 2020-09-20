@@ -1,7 +1,21 @@
-;;; Basics about Clojure functions
+;;; Basics about Clojure functions:
+;;; [1] Standard function definitions
+;;; [1a] Private function - only visible in namespace
+;;; [1b] Variadic Functions in Clojure
+;;; [2] Anonymous function definitions
+;;; [3] Recursive functions
+;;; [3b] Recursive functions using loop...recur
+;;; [4] Multi-Arity functions
+;;; [4b] Argument deconstruction (in general)
+;;; [5] Polymorphic Functions
+;;; [6] Higher-order function 
+;;; 
+;;; References:
+;;; http://clojure-doc.org/articles/language/functions.html
 (ns functions.func-basics)
 
 
+;;; [1] Standard function definitions
 ;; Defining a simple function which takes no arguments
 (defn test-func []
 (prn "test-func"))
@@ -32,6 +46,8 @@ test-func
 
 (docstring test-func3)
 
+;;; [1b] Variadic Functions in Clojure
+;;; i.e. functions with a variable number of arguments
 (defn test-func4
   "function with 1 mandatory arg and any number of optional"
   [x & args]
@@ -55,6 +71,15 @@ test-func
 ;;(apply +  10 [2 3 4] ARGS-LIST)
 
 
+;;; [1a] Private function - only visible in namespace
+;; Making a function definition private to the name space
+(defn- private-func []
+  (prn "I am a very private funtion - only available within my own namespace"))
+
+(private-func)
+
+
+;;; [2] Anonymous function definitions
 ;; following creates an anonymous function
 (fn [x]
    (prn "Function called with" x))
@@ -81,6 +106,7 @@ test-func
 (func8 7 8)
 
 
+;;; [3] Recursive functions
 ;; Simple recursive function that counts down
 (defn countdown1 [n]
   (prn n)
@@ -88,8 +114,12 @@ test-func
 
   (countdown1 5)
 
+;;; [3b] Recursive functions using loop...recur
 ;; Alternative recursive function that uses recur
 ;; Recur is more efficient than caling the function using standard recursion
+
+;; This first example just uses recur (i.e. there is no loop)
+;; the recur happens on the existing function
 (defn countdown2 [n]
   (prn n)
   (if (> n 0) (recur (dec n)) nil))
@@ -106,3 +136,63 @@ test-func
     (if (> m 0) (recur (dec m)) nil)))
 
 (countdown3 5)
+
+
+;;; [4] Multi-Arity functions
+;;; You can define functions in clojure that accept different numbers of arguments and do
+;;; something different depending on these arguments
+
+(defn multi-arity-test
+  ;; First definition is no args are passed
+  ([] (prn "called with 0 args"))
+  ([x](prn "called with 1 arg" x))
+  ([x & args] (prn "called with many args" x args)))
+
+(multi-arity-test 1 2 3 4)
+
+
+;; Extra Arguments (aka Named Parameters)
+
+(defn job-info
+  [& {:keys [name job income] :or {job "unemployed" income "$0.00"}}]
+  (if name  
+    [name job income]
+    (println "No name specified")))
+
+  (job-info :name "Robert" :job "Engineer" :income "$100K")
+  (job-info :job "Engineer")
+
+
+;; [4b] Argument deconstruction (in general)
+
+;; List/vector deconstruction
+(defn decon-test1 [[x y & restArgs]]
+  (prn "function takes a vector with 2 elements " x y restArgs ))
+
+(decon-test1 [1 2 3 4])
+(decon-test1 '(1 2 3 4))
+
+;; You can also similar deconstruction in a let block
+(defn decon-test2 [arg1]
+  (let
+   [[x y & restArgs] arg1]
+    (prn "function takes a vector with 2 elements " x y restArgs)))
+
+(decon-test2 [1 2])
+
+;; Map deconstruction
+(defn decon-test3 [{:keys [x y restArgs]}]
+  (prn "function takes a vector with 2 elements " x y restArgs))
+
+(decon-test3 {:x 33 :y 500 :restArgs [3 4 5 6]})
+
+;; If you want to define explicit defaults if parameters are missing then
+;; use the :or keyword in the deconstruction expression
+(defn decon-test4 [{:keys [x y restArgs] :or {x -1 y -1 restArgs "EMPTY"}}]
+  (prn "function takes a vector with 2 elements " x y restArgs))
+
+(decon-test4 {:x 33 :y 500 :restArgs [3 4 5 6]})
+
+
+;;; If you want more powerful argument deconstruction take a look at:
+;;; https://github.com/clojusc/defun

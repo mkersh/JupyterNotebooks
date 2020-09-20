@@ -1,21 +1,27 @@
-#'functions.func-basics/countdown3
-clj::functions.func-basics=> 
-5
-4
-3
-2
-1
-0
+"function takes a vector with 2 elements " 1 2 (3 4)
 nil
 clj::functions.func-basics=> 
-#'functions.func-basics/countdown3
+#'functions.func-basics/decon-test2
 clj::functions.func-basics=> 
-"This will only get called once"
-5
-4
-3
-2
-1
-0
+"function takes a vector with 2 elements " 1 2 nil
+nil
+clj::functions.func-basics=> 
+#'functions.func-basics/decon-test3
+clj::functions.func-basics=> 
+"function takes a vector with 2 elements " 33 500 [3 4 5 6]
+nil
+clj::functions.func-basics=> 
+"function takes a vector with 2 elements " 33 500 nil
+nil
+clj::functions.func-basics=> 
+"function takes a vector with 2 elements " nil 500 nil
+nil
+clj::functions.func-basics=> 
+#'functions.func-basics/decon-test3
+clj::functions.func-basics=> 
+"function takes a vector with 2 elements " 33 500 [3 4 5 6]
+nil
+clj::functions.func-basics=> 
+"function takes a vector with 2 elements " 33 500 "EMPTY"
 nil
 clj::functions.func-basics=> 
