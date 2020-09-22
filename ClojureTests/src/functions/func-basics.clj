@@ -194,5 +194,39 @@ test-func
 (decon-test4 {:x 33 :y 500 :restArgs [3 4 5 6]})
 
 
+
+;;; [5] Polymorphic Functions
+
+
+
+;;; [6] Higher-order function 
+
+;;; functional closures in clozure
+;; A closure is a function that has access to some 
+;; named value/variable outside its own scope, 
+;; so from a higher scope surrounding the function 
+;; when it was created (this excludes function arguments
+;; and local named values created within the function)
+
+
+(defn inc-by-n [n]
+  ;; we return a function that is a closure. It has access to the
+  ;; argument n that was passed into inc-by-n   
+  (fn [x] (+ x n)))
+
+(def inc11 (inc-by-n 11))
+
+(inc11 3)
+
+;; The standard function partial can be used to create some closures
+;; https://clojuredocs.org/clojure.core/partial
+
+(def inc11-v2 (partial + 11))
+(inc11-v2 3)
+
+;; Higher-order functions also refers to functions that take other
+;; functions as arguments and apply those functions to datastructures (normally sequences) passed in
+;; This includes the function filter, map, reduce, ...
+
 ;;; If you want more powerful argument deconstruction take a look at:
 ;;; https://github.com/clojusc/defun
