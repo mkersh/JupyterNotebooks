@@ -1,513 +1,2144 @@
-{:basic-auth ["apiUser" "complexPassword12345"], :headers {}, :query-params {"detailsLevel" "FULL_DETAILS", "limit" 500, "offset" 0, "viewfilter" "8a818684701c9a660170339c93f93004"}, :limit 500}
+{:basic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW"], :headers {}, :query-params {}, :env "env2"}
 "Successful Call: 200"
-[{"creationDate" "2020-05-24T07:18:46+0000",
-  "balance" "0",
-  "approvedDate" "2020-05-24T09:19:02+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "interestPaymentDates" [{"dayOfMonth" 1, "monthOfYear" 1, "year" 0}],
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81860972316788017240f17c56634a",
-  "id" "BCUH278",
-  "lastModifiedDate" "2020-05-24T07:19:02+0000",
-  "interestPaymentPoint" "ON_FIXED_DATES",
-  "name" "Annual Interest Capitalisation",
-  "technicalInterestDue" "0",
-  "assignedBranchKey" "8a81862a6b6a9f53016b709aa31244de",
-  "currencyCode" "EUR",
-  "encodedKey" "8a818609723167880172458c0d774bb3",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availa
-bleBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "10",
-   "encodedKey" "8a818609723167880172458c0d774bb4",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a818609723167880172458ad1e14b9e",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-11-16T21:38:17+0000",
-  "balance" "2567",
-  "approvedDate" "2019-11-16T22:38:23+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creatio
-nDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187e56c85032f016c85322fa70051",
-  "id" "WXZK471",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "1208_CUR",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:18+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-11-16T22:38:31+0000",
-  "assignedBranchKey" "8a8187106e751c66016e751c66d70001",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8186356e760405016e7626ffa303e8",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "2567",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a8186356e760405016e7625d12a03e4",
-  "accountType" "CURRENT_ACCOUNT",
-  "overdraftLimit" "0"}
- {"creationDate" "2018-12-21T10:02:09+0000",
-  "balance" "0",
-  "approvedDate" "2018-12-21T11:02:20+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount
-" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187bf67c21cd60167c253b0050038",
-  "id" "HLJG818",
-  "lastModifiedDate" "2018-12-21T10:02:43+0000",
-  "interestPaymentPoint" "ON_ACCOUNT_MATURITY",
-  "name" "6 Months Fixed Deposit - BACS",
-  "technicalInterestDue" "0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81866d67cfe3f20167d0237a660068",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "5.5",
-   "encodedKey" "8a81866d67cfe3f20167d03714200069",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED
-_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81872d6787e9f30167a348cc214e28",
-  "accountType" "FIXED_DEPOSIT",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-04-09T10:52:12+0000",
-  "balance" "8999999999999991",
-  "approvedDate" "2019-04-09T12:52:39+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "GBP",
-   "name" "Pound sterling",
-   "symbol" "£",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" false,
-   "creationDate" "2018-12-24T08:37:59+0000",
-   "lastModifiedDate" "2018-12-24T08:37:59+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81867d6a01398b016a01a20e3b0071",
-  "id" "CZOG162",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "DepGBP",
-  "lastAccountAppraisalDate" "2020-09-22T00:0
-8:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-04-09T12:52:54+0000",
-  "assignedBranchKey" "8a81867d6a01398b016a01a0552b006a",
-  "currencyCode" "GBP",
-  "encodedKey" "8a81867d6a01398b016a01b980be00d8",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "8999999999999991",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81867d6a01398b016a01a2d2df0076",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-01-02T10:57:06+0000",
-  "balance" "0",
-  "approvedDate" "2019-01-02T11:57:15+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
+[{"encodedKey" "8a818e74677a2e9201677ec2baf136ba",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2baf136bc",
+   "filterConstraints"
+   [{"dataItemType" "CLIENT",
+     "index" 0,
+     "dataFieldValue" "CLIENT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2baf136bd",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb7736bf",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bb7736c1",
+     "dataField" "FULL_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb7736c2",
+     "dataField" "ID",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb7736c3",
+     "dataField" "CLIENT_STATE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb7b36c4",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e7467
+7a2e9201677ec2bb7b36c5",
+     "dataField" "LOANS_BALANCE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb7b36c6",
+     "dataField" "DEPOSITS_BALANCE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb7b36c7",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "CLIENT"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bb7736c0",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "CLIENT"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2baf136be",
+   "name" "Active",
+   "dataViewType" "CLIENT",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:50+0000",
+   "lastModifiedDate" "2018-12-05T14:25:50+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2b5e236b3",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2baf136bb",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a81
+8e74677a2e9201677ec2bb7b36c8",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb7e36ca",
+   "filterConstraints"
+   [{"dataItemType" "CLIENT",
+     "index" 0,
+     "dataFieldValue" "CLIENT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "INACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bb7e36cb",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb7e36cd",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bb8936cf",
+     "dataField" "FULL_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8936d0",
+     "dataField" "ID",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8936d1",
+     "dataField" "CLIENT_STATE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8936d2",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8f
+36d3",
+     "dataField" "TOTAL_BALANCE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8f36d4",
+     "dataField" "PENDING_LOAN_AMOUNT",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8f36d5",
+     "dataField" "APPROVED_LOAN_AMOUNT",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bb8f36d6",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "CLIENT"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bb8936ce",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "CLIENT"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb7e36cc",
+   "name" "Inactive",
+   "dataViewType" "CLIENT",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:50+0000",
+   "lastModifiedDate" "2018-12-05T14:25:50+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2b5e236b3",
+  "viewRights"
+  {"encode
+dKey" "8a818e74677a2e9201677ec2bb7e36c9",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bb9936e9",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb9936eb",
+   "filterConstraints"
+   [{"dataItemType" "CLIENT",
+     "index" 0,
+     "dataFieldValue" "CLIENT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "EXITED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bb9b36ec",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb9b36ee",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bb9b36f0",
+     "dataField" "FULL_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba136f1",
+     "dataField" "ID",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba136f2",
+     "dataField" "CLIENT_STATE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba136f3",
+     "d
+ataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba136f4",
+     "dataField" "TOTAL_BALANCE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba136f5",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba336f6",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "CLIENT"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bb9b36ef",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "CLIENT"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bb9b36ed",
+   "name" "Exited",
+   "dataViewType" "CLIENT",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:50+0000",
+   "lastModifiedDate" "2018-12-05T14:25:50+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2b5e236b3",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e92016
+77ec2bb9936ea",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bba336f7",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bba336f9",
+   "filterConstraints"
+   [{"dataItemType" "CLIENT",
+     "index" 0,
+     "dataFieldValue" "CLIENT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "BLACKLISTED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bba336fa",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bba536fc",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bba536fe",
+     "dataField" "FULL_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba536ff",
+     "dataField" "ID",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba73700",
+     "dataField" "CLIENT_STATE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba73701",
+     "dataField" "CREDIT_OFF
+ICER_NAME",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba73702",
+     "dataField" "TOTAL_BALANCE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba73703",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "CLIENT"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bba73704",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "CLIENT"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bba536fd",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "CLIENT"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bba536fb",
+   "name" "Blacklisted",
+   "dataViewType" "CLIENT",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2b5e236b3",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bba336f8",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbaa3707",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbaa3709",
+   "filterConstraints"
+   [{"dataItemType" "GROUP",
+     "index" 0,
+     "dataFieldValue" "LOANS_BALANCE",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbb0370a",
+     "dataType" "MONEY",
+     "filterElement" "MORE_THAN",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbb0370c",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbb0370e",
+     "dataField" "GROUP_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb5370f",
+     "dataField" "ID",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb53710",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb53711",
+     "dataField" "NUMBER_OF_MEMBERS",
+     "d
+ataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb53712",
+     "dataField" "LOANS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb53713",
+     "dataField" "DEPOSITS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb83714",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbb83715",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "GROUP"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbb0370d",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "GROUP"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbb0370b",
+   "name" "Active Loan Accounts",
+   "dataViewType" "GROUP",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey"
+ "8a818e74677a2e9201677ec2bbaa3705",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbaa3708",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbb83716",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbb83718",
+   "filterConstraints"
+   [{"dataItemType" "GROUP",
+     "index" 0,
+     "dataFieldValue" "DEPOSITS_BALANCE",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbba3719",
+     "dataType" "MONEY",
+     "filterElement" "MORE_THAN",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbba371b",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbba371d",
+     "dataField" "GROUP_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc1371e",
+     "dataField" "ID",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc1371f",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "
+GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc13720",
+     "dataField" "NUMBER_OF_MEMBERS",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc13721",
+     "dataField" "LOANS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc13722",
+     "dataField" "DEPOSITS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc43723",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc43724",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "GROUP"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbba371c",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "GROUP"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbba371a",
+   "name" "Active Deposit Accounts",
+   "dataViewType" "GROUP",
+   "indexInList" -1,
+   "creationDate" "2018-12-05
+T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbaa3705",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbb83717",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbc43725",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbc43727",
+   "filterConstraints"
+   [{"dataItemType" "GROUP",
+     "index" 0,
+     "dataFieldValue" "LOANS_BALANCE",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbc63728",
+     "dataType" "MONEY",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}
+    {"dataItemType" "GROUP",
+     "index" 1,
+     "dataFieldValue" "DEPOSITS_BALANCE",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbc63729",
+     "dataType" "MONEY",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {
+"encodedKey" "8a818e74677a2e9201677ec2bbc6372b",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbc8372d",
+     "dataField" "GROUP_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc8372e",
+     "dataField" "ID",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc8372f",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc83730",
+     "dataField" "NUMBER_OF_MEMBERS",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbc83731",
+     "dataField" "LOANS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcb3732",
+     "dataField" "DEPOSITS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcb3733",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcb3734",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "GROUP"}],
+   "includeTotals"
+ true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbc6372c",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "GROUP"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbc6372a",
+   "name" "No Active Accounts",
+   "dataViewType" "GROUP",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbaa3705",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbc43726",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbcb3735",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbcd3737",
+   "filterConstraints"
+   [{"dataItemType" "GROUP",
+     "index" 0,
+     "dataFieldValue" "NUMBER_OF_MEMBERS",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbcd3738",
+     
+"dataType" "NUMBER",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbcd373a",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbcf373c",
+     "dataField" "GROUP_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcf373d",
+     "dataField" "ID",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcf373e",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcf373f",
+     "dataField" "NUMBER_OF_MEMBERS",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbcf3740",
+     "dataField" "LOANS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbd23741",
+     "dataField" "DEPOSITS_BALANCE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbd23742",
+     "dataField" "LOAN_CYCLE",
+     "dataItemType" "GROUP"}
+    {"encodedKey" "8a818e74677a2e92016
+77ec2bbd23743",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "GROUP"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbcd373b",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "GROUP"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbcd3739",
+   "name" "No Members",
+   "dataViewType" "GROUP",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbaa3705",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbcb3736",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbd43746",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbd43748",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "A
+CTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbd43749",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbd9374b",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbd9374d",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbd9374e",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbd9374f",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdb3750",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdb3751",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdb3752",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdb3753",
+     "dat
+aField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdb3754",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdd3755",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdd3756",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbdd3757",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbd9374c",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbd4374a",
+   "name" "Active",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMe
+nuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbd43747",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbdd3758",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbdf375a",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "PENDING_APPROVAL",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbdf375b",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbdf375d",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbe1375f",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe13760",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe13761",
+     "dataField" "LOAN_NAME",
+     "
+dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe13762",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe13763",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe33764",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe33765",
+     "dataField" "APPROVAL_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe33766",
+     "dataField" "EXPECTED_DISBURSEMENT_DATE",
+     "dataItemType" "DISBURSEMENT_DETAILS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe33767",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbdf375e",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"en
+codedKey" "8a818e74677a2e9201677ec2bbdf375c",
+   "name" "Pending Approval",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbdd3759",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbe33768",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbe5376a",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "APPROVED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbe5376b",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbe5376d",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbe7376f",
+     "dataField" "
+RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe73770",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe73771",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbe73772",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbee3773",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbee3774",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbee3775",
+     "dataField" "APPROVAL_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbee3776",
+     "dataField" "EXPECTED_DISBURSEMENT_DATE",
+     "dataItemType" "DISBURSEMENT_DETAILS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbee3777",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTota
+ls" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbe7376e",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbe5376c",
+   "name" "Pending Disbursement",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbe53769",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbf03778",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf0377a",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec
+2bbf0377b",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf1377d",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbf1377f",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf13780",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf13781",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf43782",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf43783",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf43784",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf43785",
+     "dataField" "DAYS_IN_ARREARS",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818
+e74677a2e9201677ec2bbf43786",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf63787",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf63788",
+     "dataField" "FEES_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf63789",
+     "dataField" "PENALTY_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbf6378a",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbf1377e",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf0377c",
+   "name" "In Arrears",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"}
+,
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf03779",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbf6378b",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf8378d",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "CLOSED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bbf8378e",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf83790",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bbfa3792",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfa3793",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfa3794",
+     "dataFi
+eld" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfa3795",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfd3796",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfd3797",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfd3798",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfd3799",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbfd379a",
+     "dataField" "DAYS_IN_ARREARS",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbff379b",
+     "dataField" "LAST_SET_TO_ARREARS_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bbff379c",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e7
+4677a2e9201677ec2bbff379d",
+     "dataField" "DISBURSEMENT_DATE",
+     "dataItemType" "DISBURSEMENT_DETAILS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bbfa3791",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf8378f",
+   "name" "Closed",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbf8378c",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bbff379e",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0037a0",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_SUB_STATE",
+     "dataFieldType"
+ "NATIVE",
+     "value" "RESCHEDULED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc0037a1",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0037a3",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bc0237a5",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0237a6",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0237a7",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0237a8",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0237a9",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0437aa",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2
+e9201677ec2bc0437ab",
+     "dataField" "CLOSED_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0437ac",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0437ad",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0437ae",
+     "dataField" "LAST_SET_TO_ARREARS_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0737af",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bc0037a4",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0037a2",
+   "name" "Rescheduled",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:
+25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bbff379f",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc0737b0",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0737b2",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "CLOSED_WRITTEN_OFF",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc0737b3",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0937b5",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bc0937b7",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0937b8",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec
+2bc0c37b9",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0c37ba",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0c37bb",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0c37bc",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0c37bd",
+     "dataField" "CLOSED_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0f37be",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0f37bf",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0f37c0",
+     "dataField" "LAST_SET_TO_ARREARS_DATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc0f37c1",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
    "
-lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81868e6808ec4501680df4d07626c2",
-  "id" "OHYD819",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "ON_ACCOUNT_MATURITY",
-  "name" "Notice Account",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-01-02T11:57:36+0000",
-  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1c",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81868e6808ec4501680e35b11926cf",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "interestSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a81868e6808ec4501680e35b11926d0",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81866d67cfe3f20167cffd9fc50024",
-  "accountType" "FIXED_DEPOSIT",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-01-02T12:10:37+0000",
-  "balance" "8829.09",
-  "approvedDate" "2019-01-02T13:11:00+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "10.1595008214",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81868e6808ec4501680e43f9dc26e0",
-  "id" "ADRO254",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings2",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "lastInterestStoredDa
-te" "2020-09-01T00:00:00+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2018-07-02T00:00:00+0000",
-  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1c",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81868e6808ec4501680e7898bf26e5",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "8829.09",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "interestSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a81868e6808ec4501680e7898bf26e6",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81866d67cfe3f20167cffd9fc50024",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-01-03T17:56:19+0000",
-  "balance" "0",
-  "appro
-vedDate" "2019-01-03T18:56:28+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81872a67c088d20167c089001e0006",
-  "id" "KOBF952",
-  "lastModifiedDate" "2019-01-03T17:56:28+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings Deposit1",
-  "technicalInterestDue" "0",
-  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1c",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81868e6808ec4501681406fea62f6b",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "2.5",
-   
-"encodedKey" "8a81868e6808ec45016814dbdd4b303e",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81866d67cfe3f20167cffd9fc50024",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-01-03T17:57:49+0000",
-  "balance" "10424.09",
-  "approvedDate" "2019-01-03T18:57:57+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "14.9935541091",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81872a67c0
-88d20167c089001e0006",
-  "id" "CXVS268",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings Deposit1",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "lastInterestStoredDate" "2020-09-01T00:00:00+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-01-03T18:58:23+0000",
-  "assignedBranchKey" "8a81872d6787e9f30167a344a74e4e1c",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81868e6808ec45016814dbdd4b3042",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "10424.09",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "interestSettings"
-  {"interestRate" "2.5",
-   "encodedKey" "8a81868e6808ec45016814dd397c3043",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity
-" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81866d67cfe3f20167cffd9fc50024",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-11-09T09:35:13+0000",
-  "balance" "500",
-  "approvedDate" "2019-11-09T10:35:21+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187e56c85032f016c85322fa70051",
-  "id" "TWHX613",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "1208_CUR",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-11-09T10:35:29+0000",
-  "assignedBranchKey" "8a8186af6e4f6cd
-d016e4f815cb101f0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8186af6e4f6cdd016e4f847fc601fe",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "500",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "GROUP",
-  "accountHolderKey" "8a8186af6e4f6cdd016e4f815cb101f3",
-  "accountType" "CURRENT_ACCOUNT",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-11-09T09:35:38+0000",
-  "balance" "5000",
-  "approvedDate" "2019-11-09T10:35:42+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187e56c85032f016c85322fa70051",
-  "id" "SQZT051",
+includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bc0937b6",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "LOANS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0937b4",
+   "name" "Written Off",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc0737b1",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f1671acaf300171b60fdf3a7602",
+  "filter"
+  {"encodedKey" "8a818f1671acaf300171b60fdf3a7604",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE,ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f1671acaf
+300171b60fdf3a7605",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 1,
+     "dataFieldType" "CUSTOM",
+     "value" "TRUE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f1671acaf300171b60fdf3a7606",
+     "dataType" "BOOLEAN",
+     "filterElement" "EQUALS",
+     "customFieldKey" "8a818f1671acaf300171b5fdd7ba72f1",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f1671acaf300171b60b242975f1",
+   "fieldColumns"
+   [{"encodedKey" "8a818f1671acaf300171b613d7f67623",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b613d7f67624",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156edb7625",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156edb7626",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156edb7627",
  
- "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "1208_CUR",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-11-09T10:35:49+0000",
-  "assignedBranchKey" "8a8186af6e4f6cdd016e4f815cb101f0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8186af6e4f6cdd016e4f84bcaf0207",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "5000",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "GROUP",
-  "accountHolderKey" "8a8186af6e4f6cdd016e4f815cb101f3",
-  "accountType" "CURRENT_ACCOUNT",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-11-09T09:36:04+0000",
-  "balance" "1234",
-  "approvedDate" "2019-11-09T10:36:09+0000",
+    "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156edb7628",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156edb7629",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156ede762a",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156ede762b",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156ede762c",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6156ede762d",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f1671acaf300171b60fdf3c7607",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "Standing Orders",
+   "dataView
+Type" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-04-26T10:43:10+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818f1671acaf300171b60fdf3a7603",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f1671acaf300171b6130ca27614",
+  "filter"
+  {"encodedKey" "8a818f1671acaf300171b6130ca37616",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE,ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f1671acaf300171b6130ca37617",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 1,
+     "dataFieldType" "CUSTOM",
+     "value" "TRUE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f1671acaf300171b6130ca37618",
+     "dataType" "BOOLEAN",
+     "filterElement" "EQUALS",
+     
+"customFieldKey" "8a818f1671acaf300171b5fdd7ba72f1",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 2,
+     "dataFieldValue" "TOTAL_DUE",
+     "dataFieldType" "NATIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f1671acaf300171b6130ca37619",
+     "dataType" "MONEY",
+     "filterElement" "NOT_EMPTY",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f1671acaf300171b60fdf3c7608",
+   "fieldColumns"
+   [{"encodedKey" "8a818f1671acaf300171b60fdf3c7609",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b60fdf3c760a",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b60fdf3c760b",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca0760c",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca0760d",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+  
+  {"encodedKey" "8a818f1671acaf300171b6130ca0760e",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca0760f",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca07610",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca27611",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca27612",
+     "dataField" "TOTAL_PAID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f1671acaf300171b6130ca27613",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f1671acaf300171b6130ca3761a",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "Standing Orders (Due)",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2
+018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-04-26T10:43:38+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818f1671acaf300171b6130ca27615",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f6e73b419d60173b496667d297a",
+  "filter"
+  {"encodedKey" "8a818f6e73b419d60173b4966680297c",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b4966680297d",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 1,
+     "dataFieldValue" "DAYS_IN_ARREARS",
+     "dataFieldType" "NATIVE",
+     "value" "29",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b4966680297e",
+     "dataType" "NUMBER",
+     "filterElement" "MORE_THAN",
+     "secondValue" "",
+    
+ "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 2,
+     "dataFieldValue" "DAYS_IN_ARREARS",
+     "dataFieldType" "NATIVE",
+     "value" "60",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b4966680297f",
+     "dataType" "NUMBER",
+     "filterElement" "LESS_THAN",
+     "secondValue" "",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f6e73b419d60173b4966672296d",
+   "fieldColumns"
+   [{"encodedKey" "8a818f6e73b419d60173b49ad9dd2a02",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b70672a03",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b70672a04",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b70672a05",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b70672a06",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"enco
+dedKey" "8a818f6e73b419d60173b49b70672a07",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b706c2a08",
+     "dataField" "DAYS_IN_ARREARS",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b706c2a09",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b706c2a0a",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b706c2a0b",
+     "dataField" "FEES_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b706c2a0c",
+     "dataField" "PENALTY_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49b70702a0d",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f6e73b419d60173b49666802980",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+ 
+  "name" "In Arrears (30-60 days)",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-08-03T13:55:53+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818f6e73b419d60173b496667d297b",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f6e73b419d60173b496cc53298e",
+  "filter"
+  {"encodedKey" "8a818f6e73b419d60173b496cc5c2990",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b496cc5c2991",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 1,
+     "dataFieldValue" "DAYS_IN_ARREARS",
+     "dataFieldType" "NATIVE",
+     "value" "59",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d601
+73b496cc5c2992",
+     "dataType" "NUMBER",
+     "filterElement" "MORE_THAN",
+     "secondValue" "",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 2,
+     "dataFieldValue" "DAYS_IN_ARREARS",
+     "dataFieldType" "NATIVE",
+     "value" "90",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b496cc5c2993",
+     "dataType" "NUMBER",
+     "filterElement" "LESS_THAN",
+     "secondValue" "",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f6e73b419d60173b496cc3c2981",
+   "fieldColumns"
+   [{"encodedKey" "8a818f6e73b419d60173b49a7f4c29ea",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f4c29eb",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f4c29ec",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f4c29ed",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a
+818f6e73b419d60173b49a7f4c29ee",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5029ef",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5029f0",
+     "dataField" "DAYS_IN_ARREARS",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5029f1",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5029f2",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5029f3",
+     "dataField" "FEES_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5429f4",
+     "dataField" "PENALTY_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5429f5",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo
+"
+  {"encodedKey" "8a818f6e73b419d60173b496cc5c2994",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "In Arrears (60-90 days) ",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-08-03T13:54:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818f6e73b419d60173b496cc53298f",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f6e73b419d60173b498b35529b8",
+  "filter"
+  {"encodedKey" "8a818f6e73b419d60173b498b35529ba",
+   "filterConstraints"
+   [{"dataItemType" "LOANS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE_IN_ARREARS",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b498b35529bb",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "LOANS",
+     "index" 1,
+     "dataFieldValue" "DAYS_IN_ARREARS",
+     "dataFi
+eldType" "NATIVE",
+     "value" "89",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f6e73b419d60173b498b35529bc",
+     "dataType" "NUMBER",
+     "filterElement" "MORE_THAN",
+     "secondValue" "",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f6e73b419d60173b4975ccc29a1",
+   "fieldColumns"
+   [{"encodedKey" "8a818f6e73b419d60173b49a7f5429f6",
+     "dataField" "RECIPIENT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5429f7",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49a7f5429f8",
+     "dataField" "LOAN_NAME",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9d829f9",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9d829fa",
+     "dataField" "LOAN_AMOUNT",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9d829fb",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "LOANS"}
+    
+{"encodedKey" "8a818f6e73b419d60173b49ad9d829fc",
+     "dataField" "DAYS_IN_ARREARS",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9d829fd",
+     "dataField" "PRINCIPAL_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9dd29fe",
+     "dataField" "INTEREST_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9dd29ff",
+     "dataField" "FEES_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9dd2a00",
+     "dataField" "PENALTY_DUE",
+     "dataItemType" "LOANS"}
+    {"encodedKey" "8a818f6e73b419d60173b49ad9dd2a01",
+     "dataField" "TOTAL_DUE",
+     "dataItemType" "LOANS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f6e73b419d60173b498b35a29bd",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "In Arrears (90> days) ",
+   "dataViewType" "LOANS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:2
+5:51+0000",
+   "lastModifiedDate" "2020-08-03T13:55:14+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bbd23744",
+  "viewRights"
+  {"encodedKey" "8a818f6e73b419d60173b498b35529b9",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e2e74c022de0174c0f63db234c8",
+  "filter"
+  {"encodedKey" "8a818e2e74c022de0174c0f63db234ca",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e2e74c022de0174c0f63ecf34cb",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e2e74c022de0174c0f63db234c6",
+   "fieldColumns"
+   [{"encodedKey" "8a818e2e74c022de0174c0f63db234c7",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e2e74c022de0174c0f63ecf34cc",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "Active (min)",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-09-24T16:33:17+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e2e74c022de0174c0f63db234c9",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc1137c4",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1137c6",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc1137c7",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1337c9",
+   "fieldColumns"
+   [{"encodedKey" "
+8a818e74677a2e9201677ec2bc1337cb",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1337cc",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1537cd",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1537ce",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1537cf",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1537d0",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1537d1",
+     "dataField" "INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1737d2",
+     "dataField" "ACCRUED_INTEREST",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1737d3",
+     "dataField" "MATURITY_DATE",
+     "da
+taItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc1737d4",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bc1337ca",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "SAVINGS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1337c8",
+   "name" "Active",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1137c5",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc1737d5",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1a37d7",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue
+" "CURRENCY_CODE",
+     "dataFieldType" "NATIVE",
+     "value" "EUR",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc1a37d8",
+     "dataType" "KEY",
+     "filterElement" "IN",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1a37da",
+   "fieldColumns"
+   [{"encodedKey" "8a818fbd7066f5c5017067103153097a",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103153097b",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103153097c",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103153097d",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067131da509d8",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067131da509d9",
+     "dataField" "CREATION_DATE",
+     "dataItemType"
+ "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067131da509da",
+     "dataField" "ACTIVATION_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067131da509db",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067131da509dc",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1a37d9",
+   "name" "EUR Accounts",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-02-21T09:27:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc1737d6",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc2137e5",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2437e
+7",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "MATURED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc2437e8",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2437ea",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bc2637ec",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2637ed",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2637ee",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2637ef",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2937f0",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {
+"encodedKey" "8a818e74677a2e9201677ec2bc2937f1",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2937f2",
+     "dataField" "INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2937f3",
+     "dataField" "ACCRUED_INTEREST",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2937f4",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2b37f5",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bc2637eb",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "SAVINGS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2437e9",
+   "name" "Matured",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "l
+astModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2437e6",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc2b37f6",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2b37f8",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "CLOSED",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc2b37f9",
+     "dataType" "ENUM",
+     "filterElement" "EQUALS",
+     "groupNumber" 0}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2d37fb",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bc2d37fd",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2d37fe",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey
+" "8a818e74677a2e9201677ec2bc2f37ff",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2f3800",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2f3801",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2f3802",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc2f3803",
+     "dataField" "INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc313804",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc313805",
+     "dataField" "CLOSED_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc313806",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encode
+dKey" "8a818e74677a2e9201677ec2bc2d37fc",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "SAVINGS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2d37fa",
+   "name" "Closed",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc2b37f7",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818e74677a2e9201677ec2bc313807",
+  "filter"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc333809",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "OVERDRAFT_LIMIT",
+     "dataFieldType" "NATIVE",
+     "value" "0",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818e74677a2e9201677ec2bc33380a",
+     "dataType" "MONEY",
+     "filterElement" "MORE_THAN",
+     "groupNumber" 0
+}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc33380c",
+   "fieldColumns"
+   [{"encodedKey" "8a818e74677a2e9201677ec2bc36380e",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc36380f",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc363810",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc363811",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc363812",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc373813",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc373814",
+     "dataField" "OVERDRAFT_LIMIT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc373815",
+     "dataField" "OVERDRAFT_INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc373816",
+     "dataField" "OVERDRAFT_AMOUNT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc373817",
+     "dataField" "OVERDRAFT_INTEREST_ACCRUED",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc393818",
+     "dataField" "OVERDRAFT_EXPIRY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818e74677a2e9201677ec2bc393819",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingColumn"
+   {"encodedKey" "8a818e74677a2e9201677ec2bc33380d",
+    "dataField" "LAST_MODIFIED_DATE",
+    "dataItemType" "SAVINGS"},
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc33380b",
+   "name" "Overdraft Accounts",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2018-12-05T14:25:51+0000"},
+
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818e74677a2e9201677ec2bc313808",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f2e6eaa335a016ead15ecbd3bd8",
+  "filter"
+  {"encodedKey" "8a818f2e6eaa335a016ead15ecc03bda",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldType" "NATIVE",
+     "value" "ACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f2e6eaa335a016ead15ecc03bdb",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "SAVINGS",
+     "index" 1,
+     "dataFieldType" "CUSTOM",
+     "value" "TRUE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f2e6eaa335a016ead15ecc03bdc",
+     "dataType" "BOOLEAN",
+     "filterElement" "EQUALS",
+     "customFieldKey" "8a818f2e6eaa335a016ead1268d839a1",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f2e6eaa335a016ead14a4
+363b19",
+   "fieldColumns"
+   [{"encodedKey" "8a818f2e6eaa335a016ead14a4363b1a",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead14a4363b1b",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecb93bd0",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecb93bd1",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecb93bd2",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecb93bd3",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecb93bd4",
+     "dataField" "INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecbd3bd5",
+     "dataField" "ACCRUED_INTEREST",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecbd3bd
+6",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead15ecbd3bd7",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" true,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f2e6eaa335a016ead15ecc03bdd",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "ISA report (all)",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2019-11-27T13:38:46+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818f2e6eaa335a016ead15ecbd3bd9",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818f2e6eaa335a016ead1740023cb6",
+  "filter"
+  {"encodedKey" "8a818f2e6eaa335a016ead1740023cb8",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "ACCOUNT_STATE",
+     "dataFieldTyp
+e" "NATIVE",
+     "value" "ACTIVE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f2e6eaa335a016ead1740023cb9",
+     "dataType" "ENUM",
+     "filterElement" "IN",
+     "groupNumber" 10}
+    {"dataItemType" "SAVINGS",
+     "index" 1,
+     "dataFieldType" "CUSTOM",
+     "value" "TRUE",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f2e6eaa335a016ead1740023cba",
+     "dataType" "BOOLEAN",
+     "filterElement" "EQUALS",
+     "customFieldKey" "8a818f2e6eaa335a016ead1268d839a1",
+     "groupNumber" 10}
+    {"dataItemType" "SAVINGS",
+     "index" 2,
+     "dataFieldValue" "RECIPIENT",
+     "dataFieldType" "NATIVE",
+     "value" "Tester",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818f2e6eaa335a016ead1740063cbb",
+     "dataType" "STRING",
+     "filterElement" "STARTS_WITH",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818f2e6eaa335a016ead15ecc03bde",
+   "fieldColumns"
+   [{"encodedKey" "8a818f2e6eaa335a016ead173ff93cac",
+     "dataField" "RECIPIENT",
+     "dataItemType" "S
+AVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ff93cad",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ff93cae",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ff93caf",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ff93cb0",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ffd3cb1",
+     "dataField" "BALANCE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ffd3cb2",
+     "dataField" "INTEREST_RATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ffd3cb3",
+     "dataField" "ACCRUED_INTEREST",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ffd3cb4",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818f2e6eaa335a016ead173ffd3cb5",
+     "data
+Field" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" true,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818f2e6eaa335a016ead1740063cbc",
+   "userKey" "8a818e74677a2e9201677ec2ac0a3696",
+   "name" "ISA report (customer) ",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2019-11-27T13:40:12+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818f2e6eaa335a016ead1740023cb7",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818fbd7066f5c501706710314e0974",
+  "filter"
+  {"encodedKey" "8a818fbd7066f5c501706710314e0976",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "BALANCE",
+     "dataFieldType" "NATIVE",
+     "value" "100000.00",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818fbd7066f5c501706710314e0977",
+     "data
+Type" "MONEY",
+     "filterElement" "MORE_THAN",
+     "secondValue" "",
+     "groupNumber" 10}
+    {"dataItemType" "SAVINGS",
+     "index" 1,
+     "dataFieldValue" "CURRENCY_CODE",
+     "dataFieldType" "NATIVE",
+     "value" "EUR",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818fbd7066f5c501706710314e0978",
+     "dataType" "KEY",
+     "filterElement" "IN",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818fbd7066f5c5017067103143096a",
+   "fieldColumns"
+   [{"encodedKey" "8a818fbd7066f5c5017067103143096b",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103143096c",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103143096d",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103143096e",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5017067103149096f",
+     "dataField"
+ "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170671031490970",
+     "dataField" "CREATION_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170671031490971",
+     "dataField" "ACTIVATION_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170671031490972",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170671031490973",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818fbd7066f5c50170671031530979",
+   "userKey" "8a818ec96ee5ed39016eea3fdc16686b",
+   "name" "Pending Approval (Copy)",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-02-21T09:24:39+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e9201677ec2bc0f37c2",
+  "vi
+ewRights"
+  {"encodedKey" "8a818fbd7066f5c501706710314e0975",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}
+ {"encodedKey" "8a818fbd7066f5c501706755585a1d19",
+  "filter"
+  {"encodedKey" "8a818fbd7066f5c501706755585d1d1b",
+   "filterConstraints"
+   [{"dataItemType" "SAVINGS",
+     "index" 0,
+     "dataFieldValue" "CURRENCY_CODE",
+     "dataFieldType" "NATIVE",
+     "value" "EUR",
+     "linkingOperator" "AND",
+     "encodedKey" "8a818fbd7066f5c501706755585d1d1c",
+     "dataType" "KEY",
+     "filterElement" "IN",
+     "groupNumber" 10}]},
+  "columnConfiguration"
+  {"encodedKey" "8a818fbd7066f5c50170675558551d10",
+   "fieldColumns"
+   [{"encodedKey" "8a818fbd7066f5c50170675558551d11",
+     "dataField" "RECIPIENT",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170675558551d12",
+     "dataField" "ACCOUNT_ID",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c50170675558551d13",
+     "dataField" "PRODUCT_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c5
+0170675558551d14",
+     "dataField" "ACCOUNT_STATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c501706755585a1d15",
+     "dataField" "CREDIT_OFFICER_NAME",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c501706755585a1d16",
+     "dataField" "CREATION_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c501706755585a1d17",
+     "dataField" "MATURITY_DATE",
+     "dataItemType" "SAVINGS"}
+    {"encodedKey" "8a818fbd7066f5c501706755585a1d18",
+     "dataField" "LAST_MODIFIED_DATE",
+     "dataItemType" "SAVINGS"}],
+   "includeTotals" true,
+   "includeTimestamp" false,
+   "sortingOrder" "DESCENDING"},
+  "customConfigurationInfo"
+  {"encodedKey" "8a818fbd7066f5c501706755585d1d1d",
+   "userKey" "8a818ec96ee5ed39016eea3fdc16686b",
+   "name" "Sam's View",
+   "dataViewType" "SAVINGS",
+   "indexInList" -1,
+   "creationDate" "2018-12-05T14:25:51+0000",
+   "lastModifiedDate" "2020-02-21T10:40:11+0000"},
+  "viewMode" "LIST",
+  "parentMenuItemKey" "8a818e74677a2e920167
+7ec2bc0f37c2",
+  "viewRights"
+  {"encodedKey" "8a818fbd7066f5c501706755585d1d1a",
+   "isAccessibleByAllUsers" true,
+   "roles" []}}]
+"Number of items:" 30
+nil
+clj::http.api.mambu.customer=> 
+{:basic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW"], :headers {}, :query-params {"resultType" "BASIC", "limit" 2, "offset" 0, "viewfilter" "8a818e2e74c022de0174c0f63db234c8"}, :env "env2"}
+"Successful Call: 200"
+[{"creationDate" "2019-11-26T15:24:17+0000",
+  "balance" "10912.8",
+  "approvedDate" "2019-11-26T16:24:25+0000",
   "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbo
-lPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187e56c85032f016c85322fa70051",
-  "id" "EDXY591",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "1208_CUR",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-11-09T10:36:18+0000",
-  "assignedBranchKey" "8a8186af6e4f6cdd016e4f815cb101f0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8186af6e4f6cdd016e4f85443b020d",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "1234",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "GROUP",
-  "accountHolderKey" "8a8186af6e4f6cdd016e4f815cb101f3",
-  "accountType" "CURRENT_ACCOUNT",
-  "overdraftLimit" "0"}
- {"creationDate" "2018-12-18T10:09:51+0000",
-  "balance" "50000.44",
-  "approvedDate" "2018-12-18T11:10:02+0000",
-  "allo
-wOverdraft" false,
-  "accruedInterest" "18.4933134245",
+  "accruedInterest" "43.3522191784",
+  "maturityDate" "2020-11-26T00:00:00+0000",
   "technicalOverdraftAmount" "0",
   "overdraftInterestAccrued" "0",
   "overdraftAmount" "0",
@@ -521,107 +2152,49 @@ wOverdraft" false,
    "creationDate" "2018-12-05T14:25:48+0000",
    "lastModifiedDate" "2018-12-05T14:25:48+0000"},
   "feesDue" "0",
-  "productTypeKey" "8a8186b967c08f660167c0a2e30b0062",
-  "id" "KIXN632",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "EVERY_WEEK",
-  "name" "Savings Deposit1 (Copy)",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "lastInterestStoredDate" "2020-09-17T00:00:00+0000",
+  "productTypeKey" "8a818e2b6ea7da3f016ea84f48b94989",
+  "id" "MFAJ208",
+  "lastModifiedDate" "2020-09-23T22:05:08+0000",
+  "interestPaymentPoint" "EVERY_MONTH",
+  "name" "Fixed Deposit",
+  "lastAccountAppraisalDate" "2020-09-24T00:05:08+0000",
+  "lastInterestStoredDate" "2020-08-26T00:00:00+0000",
   "technicalInterestDue" "0",
-  "activationDate" "2018-12-18T11:11:04+0000",
+  "activationDate" "2018-11-26T00:00:00+0000",
+  "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09"
+,
   "currencyCode" "EUR",
-  "encodedKey" "8a8186b967c08f660167c0c60ae40066",
+  "encodedKey" "8a818e2b6ea7da3f016ea85030384b19",
   "lockedBalance" "0",
   "holdBalance" "0",
-  "availableBalance" "50000.44",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" 
-"ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "interestSettings"
-  {"interestRate" "2.7",
-   "encodedKey" "8a8186b967c08f660167c0c60ae40067",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81872d6787e9f30167a348cc214e28",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2018-12-18T10:17:39+0000",
-  "balance" "1000",
-  "approvedDate" "2018-12-18T11:18:21+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "88.2191781008",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate"
- "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8186b967c08f660167c0cc25030070",
-  "id" "GOYG166",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "ON_ACCOUNT_MATURITY",
-  "name" "Fixed1",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2018-12-18T11:18:34+0000",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8186b967c08f660167c0d22faa0073",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "1000",
+  "availableBalance" "10912.8",
   "technicalOverdraftInterestAccrued" "0",
   "accountState" "ACTIVE",
   "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
+  "lastInterestCalculationDate" "2020-09-24T00:00:00+0000",
   "interestSettings"
   {"interestRate" "5",
-   "encodedKey" "8a8186b967c08f660167c0d22faa0074",
+   "encodedKey" "8a818e2b6ea7da3f016ea85030384b1a",
    "interestChargeFrequency" "ANNUALIZED",
    "interestChargeFrequencyCount" 1,
    "interestRateSource" "FIXED_INTEREST_RATE",
    "interestRateTerms" "FIXED",
    "interestRateTiers" [],
-   "accrueInterestAfterMaturit
-y" false},
+   "accrueInterestAfterMaturity" false},
   "interestDue" "0",
   "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81872d6787e9f30167a348cc214e28",
+  "accountHolderKey" "8a818e4e6e25574e016e267cecdc49f0",
   "accountType" "FIXED_DEPOSIT",
   "overdraftLimit" "0"}
- {"creationDate" "2019-04-18T10:07:31+0000",
-  "balance" "0",
-  "approvedDate" "2019-04-18T12:07:41+0000",
-  "allowOverdraft" true,
+ {"creationDate" "2019-10-23T14:13:35+0000",
+  "balance" "100000",
+  "approvedDate" "2019-10-23T16:14:33+0000",
+  "allowOverdraft" false,
   "accruedInterest" "0",
   "technicalOverdraftAmount" "0",
   "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "overdraftInterestSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a81872c6a2fb3d4016a2fca68f1003f",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
+  "ove
+rdraftAmount" "0",
   "currency"
   {"code" "EUR",
    "name" "Euro",
@@ -631,368 +2204,87 @@ y" false},
    "isBaseCurrency" true,
    "creationDate" "2018-12-05T14:25:48+0000",
    "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "f
-eesDue" "0",
-  "productTypeKey" "8a8186aa69491c25016949888aeb10d2",
-  "id" "BUKO329",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "Current Account2",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
+  "feesDue" "0",
+  "productTypeKey" "8a818f5f6cbe6621016cbf528c6157fc",
+  "id" "WNAV708",
+  "lastModifiedDate" "2020-09-23T22:05:08+0000",
+  "name" "Standard Current Account - Without Overdraft",
+  "lastAccountAppraisalDate" "2020-09-24T00:05:08+0000",
   "technicalInterestDue" "0",
-  "activationDate" "2019-08-07T15:52:43+0000",
-  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
+  "activationDate" "2019-10-23T16:18:34+0000",
+  "assignedBranchKey" "8a818f5f6cbe6621016cbf217c9e5060",
   "currencyCode" "EUR",
-  "encodedKey" "8a81872c6a2fb3d4016a2fca68f1003e",
+  "encodedKey" "8a818e336df8d45f016df8f73b5f0d0c",
   "lockedBalance" "0",
   "holdBalance" "0",
-  "availableBalance" "1000",
+  "availableBalance" "100000",
   "technicalOverdraftInterestAccrued" "0",
   "accountState" "ACTIVE",
   "notes" "",
   "interestDue" "0",
   "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a8186ac692678910169288509c606bc",
-  "accountType" "CURRENT_ACCOUNT",
-  "overdraftLimit" "1000"}
- {"creationDate" "2019-04-02T06:13:31+0000",
-  "balance" "10287.67",
-  "approvedDate" "2019-04-02T08:14:01+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "11.8378668492",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount"
- "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81868e6808ec4501680e43f9dc26e0",
-  "id" "PMIG178",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings2",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "lastInterestStoredDate" "2020-09-01T00:00:00+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-04-02T08:14:09+0000",
-  "assignedBranchKey" "8a81874769d943930169dca6303d22e8",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81874769d943930169dcab778722f9",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "10287.67",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "inter
-estSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a81874769d943930169dcab778722fa",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81874769d943930169dca9022f22f5",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-04-02T07:43:54+0000",
-  "balance" "10000",
-  "approvedDate" "2019-04-02T09:44:05+0000",
-  "allowOverdraft" true,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "overdraftInterestSettings"
-  {"interestRate" "0",
-   "encodedKey" "8a81874769d943930169dd0128692450",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers"
- [],
-   "accrueInterestAfterMaturity" false},
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81874769d943930169dcfc2b0d2424",
-  "id" "ASSETLKPA328",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "Asset",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-04-02T09:44:24+0000",
-  "assignedBranchKey" "8a81874769d943930169dca6303d22e8",
-  "currencyCode" "EUR",
-  "encodedKey" "8a81874769d943930169dd012869244f",
-  "lockedBalance" "4000",
-  "holdBalance" "0",
-  "availableBalance" "6000",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81874769d943930169dca9022f22f5",
-  "accountType" "CU
-RRENT_ACCOUNT",
-  "overdraftLimit" "1000000"}
- {"creationDate" "2019-11-05T13:41:03+0000",
-  "balance" "0",
-  "approvedDate" "2019-11-06T08:29:49+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81868e6808ec4501680e43f9dc26e0",
-  "id" "TFEJ031",
-  "lastModifiedDate" "2019-11-06T07:29:49+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings2",
-  "technicalInterestDue" "0",
-  "assignedBranchKey" "8a8186016a73c831016a77fe7fcf2b21",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8187a36e3bb4ca016e3bcc1e6d00be",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftIntere
-stAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a8187a36e3bb4ca016e3bcc1e6d00bf",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a8186016a73c831016a788d7fa32d2e",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2018-12-18T17:22:10+0000",
-  "balance" "0",
-  "approvedDate" "2018-12-18T18:22:20+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModif
-iedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187bf67c21cd60167c253b0050038",
-  "id" "NYFH457",
-  "lastModifiedDate" "2018-12-18T23:07:43+0000",
-  "interestPaymentPoint" "ON_ACCOUNT_MATURITY",
-  "name" "6 Months Fixed Deposit",
-  "technicalInterestDue" "0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8187bf67c21cd60167c256d5d0003c",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "5.5",
-   "encodedKey" "8a8187bf67c21cd60167c256d5d0003d",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81872d6787e9f30167a348cc214e28",
-  "accountType" "FIXED_DEPOSIT",
-  "overdraftLimit" "0"}
- {"creation
-Date" "2018-12-19T18:41:11+0000",
-  "balance" "0",
-  "approvedDate" "2018-12-19T19:41:20+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187bf67c21cd60167c253b0050038",
-  "id" "ECJG662",
-  "lastModifiedDate" "2018-12-19T18:41:20+0000",
-  "interestPaymentPoint" "ON_ACCOUNT_MATURITY",
-  "name" "6 Months Fixed Deposit",
-  "technicalInterestDue" "0",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8187ca67c75fec0167c7c507460024",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "0",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "APPROVED",
-  "notes" "",
-  "interestSettings"
-  {"interestRate" "5
-.5",
-   "encodedKey" "8a8187ca67c75fec0167c7c507460025",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81872d6787e9f30167a348cc214e28",
-  "accountType" "FIXED_DEPOSIT",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-03-06T18:01:28+0000",
-  "balance" "1430.37",
-  "approvedDate" "2019-03-07T15:57:25+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "1.6459052064",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a81868e
-6808ec4501680e43f9dc26e0",
-  "id" "XDSB665",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "interestPaymentPoint" "FIRST_DAY_OF_MONTH",
-  "name" "Savings2",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "lastInterestStoredDate" "2020-09-01T00:00:00+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-03-07T15:57:42+0000",
-  "assignedBranchKey" "8a8186ac692678910169287cf43606af",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8187d4695381f20169542adb4860fe",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "1430.37",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "lastInterestCalculationDate" "2020-09-22T00:00:00+0000",
-  "interestSettings"
-  {"interestRate" "2",
-   "encodedKey" "8a8187d4695381f20169542adb4860ff",
-   "interestChargeFrequency" "ANNUALIZED",
-   "interestChargeFrequencyCount" 1,
-   "interestRateSource" "FIXED_INTEREST_RATE",
-   "interestRateTerms" "FIXED",
-   "interestRateTiers" [],
-   "accrueInterestAfterMaturity" false
-},
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a8186ac692678910169288509c606bc",
-  "accountType" "REGULAR_SAVINGS",
-  "overdraftLimit" "0"}
- {"creationDate" "2019-08-12T09:42:15+0000",
-  "balance" "8000",
-  "approvedDate" "2019-08-12T11:42:23+0000",
-  "allowOverdraft" false,
-  "accruedInterest" "0",
-  "technicalOverdraftAmount" "0",
-  "overdraftInterestAccrued" "0",
-  "overdraftAmount" "0",
-  "currency"
-  {"code" "EUR",
-   "name" "Euro",
-   "symbol" "€",
-   "digitsAfterDecimal" 2,
-   "currencySymbolPosition" "BEFORE_NUMBER",
-   "isBaseCurrency" true,
-   "creationDate" "2018-12-05T14:25:48+0000",
-   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
-  "feesDue" "0",
-  "productTypeKey" "8a8187e56c85032f016c85322fa70051",
-  "id" "SHCT943",
-  "lastModifiedDate" "2020-09-21T22:08:18+0000",
-  "name" "1208_CUR",
-  "lastAccountAppraisalDate" "2020-09-22T00:08:19+0000",
-  "technicalInterestDue" "0",
-  "activationDate" "2019-08-12T11:42:32+0000",
-  "assignedBranchKey" "8a81862a6b6a9f53016b7
-09aa31244de",
-  "currencyCode" "EUR",
-  "encodedKey" "8a8187e56c85032f016c8533762b0062",
-  "lockedBalance" "0",
-  "holdBalance" "0",
-  "availableBalance" "8000",
-  "technicalOverdraftInterestAccrued" "0",
-  "accountState" "ACTIVE",
-  "notes" "",
-  "interestDue" "0",
-  "accountHolderType" "CLIENT",
-  "accountHolderKey" "8a81862a6b6a9f53016b709aa31244e1",
-  "accountType" "CURRENT_ACCOUNT",
+  "accountHolderKey" "8a818e276cd93908016cda0a43ac0cc6",
+  "accountTyp
+e" "CURRENT_ACCOUNT",
   "overdraftLimit" "0"}]
-"Number of items:" 21
+"Number of items:" 2
+nil
+clj::http.api.mambu.customer=> 
+{:basic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW"], :headers {}, :query-params {"resultType" "BASIC", "limit" 2, "offset" 0, "viewfilter" "8a818e2e74c022de0174c0f63db234c8"}, :env "env2"}
+"Successful Call: 200"
+[{"creationDate" "2019-11-26T15:24:17+0000",
+  "balance" "10912.8",
+  "approvedDate" "2019-11-26T16:24:25+0000",
+  "allowOverdraft" false,
+  "accruedInterest" "43.3522191784",
+  "maturityDate" "2020-11-26T00:00:00+0000",
+  "technicalOverdraftAmount" "0",
+  "overdraftInterestAccrued" "0",
+  "overdraftAmount" "0",
+  "currency"
+  {"code" "EUR",
+   "name" "Euro",
+   "symbol" "€",
+   "digitsAfterDecimal" 2,
+   "currencySymbolPosition" "BEFORE_NUMBER",
+   "isBaseCurrency" true,
+   "creationDate" "2018-12-05T14:25:48+0000",
+   "lastModifiedDate" "2018-12-05T14:25:48+0000"},
+  "feesDue" "0",
+  "productTypeKey" "8a818e2b6ea7da3f016ea84f48b94989",
+  "id" "MFAJ208",
+  "lastModifiedDate" "2020-09-23T22:05:08+0000",
+  "interestPaymentPoint" "EVERY_MONTH",
+  "name" "Fixed Deposit",
+  "lastAccountAppraisalDate" "2020-09-24T00:05:08+0000",
+  "lastInterestStoredDate" "2020-08-26T00:00:00+0000",
+  "technicalInterestDue" "0",
+  "activationDate" "2018-11-26T00:00:00+0000",
+  "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09"
+,
+  "currencyCode" "EUR",
+  "encodedKey" "8a818e2b6ea7da3f016ea85030384b19",
+  "lockedBalance" "0",
+  "holdBalance" "0",
+  "availableBalance" "10912.8",
+  "technicalOverdraftInterestAccrued" "0",
+  "accountState" "ACTIVE",
+  "notes" "",
+  "lastInterestCalculationDate" "2020-09-24T00:00:00+0000",
+  "interestSettings"
+  {"interestRate" "5",
+   "encodedKey" "8a818e2b6ea7da3f016ea85030384b1a",
+   "interestChargeFrequency" "ANNUALIZED",
+   "interestChargeFrequencyCount" 1,
+   "interestRateSource" "FIXED_INTEREST_RATE",
+   "interestRateTerms" "FIXED",
+   "interestRateTiers" [],
+   "accrueInterestAfterMaturity" false},
+  "interestDue" "0",
+  "accountHolderType" "CLIENT",
+  "accountHolderKey" "8a818e4e6e25574e016e267cecdc49f0",
+  "accountType" "FIXED_DEPOSIT",
+  "overdraftLimit" "0"}]
+"Number of items:" 1
 nil
 clj::http.api.mambu.customer=> 

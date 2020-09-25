@@ -3,25 +3,28 @@
 
  (defn list-views-v1 [& opt-overrides]
    (let [moreOpts (first opt-overrides)
-         optdefs {:basic-auth (api/get-auth "env1")
+         env (or (:env moreOpts) "env1")
+         optdefs {:basic-auth (api/get-auth env)
                   :headers {}
                   :query-params {}}
          options (merge optdefs moreOpts)
-         url "{{env1}}/users/apiUser/views"]
+         url (str "{{" env "}}/users/apiUser/views")]
      (prn options)
      (api/PRINT (api/GET url options)))) 
 
 ;; For valid values of type see: https://support.mambu.com/docs/en/custom-views-api
 (defn get-views-v1 [type viewfilter & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        detailLevel (or (:details-level moreOpts) "FULL_DETAILS")
+        env (or (:env moreOpts) "env1")
+        ;; FULL_DETAILS, BASIC, SUMMARY
+        detailLevel (or (:details-level moreOpts) "FULL_DETAILS") 
         limit (or (:limit moreOpts) 2)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth "env1")
-                 :headers {}
-                 :query-params {"detailsLevel" detailLevel, "limit" limit, "offset" offset, "viewfilter" viewfilter}}
+        optdefs {:basic-auth (api/get-auth env)
+                 :headers {}  ;; detailsLevel
+                 :query-params {"resultType" detailLevel, "limit" limit, "offset" offset, "viewfilter" viewfilter}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/" type)]
+        url (str "{{" env "}}/" type)]
     (prn options)
     (api/PRINT (api/GET url options))))
 
@@ -32,6 +35,9 @@
   
   (get-views-v1 "savings" "8a818684701c9a660170339c93f93004")
   (get-views-v1 "savings" "8a818684701c9a660170339c93f93004" {:limit 500})
-  
+
+  (list-views-v1 {:env "env2"})
+  (get-views-v1 "savings" "8a818e2e74c022de0174c0f63db234c8" {:env "env2"})
+
   )
 
