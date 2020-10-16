@@ -5,7 +5,7 @@
 ;;;  GITHUB: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/sandbox/ClojureNotebook.clj 
 ;;;
 ;;; ************************************************************
-(ns ClojureNotebook
+(ns sandbox.ClojureNotebook
   (:refer-clojure))
 ; (in-ns 'ClojureNotebook)
 ; (ns-name *ns*)

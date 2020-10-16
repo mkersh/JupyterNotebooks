@@ -30,5 +30,6 @@
              :production {:resource-paths ["resources-prod"]}}
   :test-paths ["test" "src"]
   ; Setting this to ClojureNotebook breaks the REPL load
-  :xmain XXClojureNotebook
+  :aot :all
+  :main sandbox.ClojureNotebook
   )

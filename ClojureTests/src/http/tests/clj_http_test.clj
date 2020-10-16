@@ -5,7 +5,7 @@
 ;;; in clj-http appeared to be too complicated 
 ;;; i.e. I just could not easily get the http response code
 ;;; 
-(ns http.clj_http_test
+(ns http.tests.clj-http-test
   (:require
    [clj-http.client :as client]))
 

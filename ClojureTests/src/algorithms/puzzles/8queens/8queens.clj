@@ -1,7 +1,7 @@
 ;;; https://docs.google.com/document/d/1tiz0qjGfqv0On5k0R3EeIdOgf_9ZZovqcW8yPb5QhCs/edit
 ;;; GitHub: https://github.com/mkersh/JupyterNotebooks/blob/master/ClojureTests/src/algorithms/puzzles/8queens/8queens.clj
 ;;; 
-(ns algorithms.puzzles.8queens
+(ns algorithms.puzzles.8queens.8queens
 ;;   (:require
 ;;    [clojure.pprint :as pp]
 ;;    )

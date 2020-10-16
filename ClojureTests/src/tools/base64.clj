@@ -2,7 +2,7 @@
 
 (ns ^{ :doc "Base64 Encoding/Decoding in Clojure"
       :author "Yannick Scherer"}
-  base64)
+  tools.base64)
 
 ;; ## Conversion Functions
 

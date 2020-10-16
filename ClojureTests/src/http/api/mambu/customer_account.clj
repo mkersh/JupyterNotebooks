@@ -1,6 +1,6 @@
 (ns http.api.mambu.customer_account
   (:require [http.api.json_helper :as api]
-            [http.api.mambu.account :as acc]
+            [http.api.mambu.loan-account :as acc]
             [http.api.mambu.customer :as cust]))
 
 (defn get-customer-loans [id & opt-overrides]
