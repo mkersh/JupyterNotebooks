@@ -6,4 +6,22 @@
 
 ; Connecting ...
 ; Hooking up nREPL sessions...
-; Interrupting Jack-in process.
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::tools.repl-navigate=> 
+; Syntax error compiling at (src/algorithms/puzzles/8queens/8queens.clj:165:14).
+; Unable to resolve symbol: eight-queens2 in this context
+clj::algorithms.puzzles.8queens.8queens=> 
+; Evaluating file: 8queens.clj
+"Elapsed time: 546.410986 msecs"
+nil
+clj::algorithms.puzzles.8queens.8queens=> 
+"Elapsed time: 69.248032 msecs"
+92
+clj::algorithms.puzzles.8queens.8queens=> 

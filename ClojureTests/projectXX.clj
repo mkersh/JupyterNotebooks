@@ -27,6 +27,12 @@
                    :dependencies [[org.clojure/tools.namespace "0.2.3"]]
                    :jvm-opts ["-Xmx1g" "-server"
                               "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"]}
+             :dev2 {:resource-paths ["resources-dev"]
+                    :dependencies [[org.clojure/tools.namespace "0.2.3"]
+                                   [org.clojure/tools.nrepl "0.2.13"]
+                                   [nrepl/nrepl "0.8.2"]]
+                    :jvm-opts ["-Xmx1g" "-server"
+                               "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8030"]}
              :production {:resource-paths ["resources-prod"]}}
   :test-paths ["test" "src"]
   ; Setting this to ClojureNotebook breaks the REPL load

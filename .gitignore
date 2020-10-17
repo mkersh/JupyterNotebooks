@@ -13,3 +13,6 @@ ClojureTests/.calva/output-window/.clj-kondo/.cache/2020.07.29/lock
 ClojureTests/src/http/ENV.clj
 ClojureTests/.idea
 target/classes
+ClojureTests/.calva/output-window/output.calva-repl
+ClojureTests/.calva/output-window/output.calva-repl
+ClojureTests/target/clojure-notebook-0.0.1.jar

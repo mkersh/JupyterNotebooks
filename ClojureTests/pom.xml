@@ -25,6 +25,9 @@
     </resources>
     <testResources>
       <testResource>
+        <directory>resources-dev</directory>
+      </testResource>
+      <testResource>
         <directory>resources</directory>
       </testResource>
     </testResources>
@@ -170,6 +173,12 @@
       <groupId>dk.ative</groupId>
       <artifactId>docjure</artifactId>
       <version>1.14.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>tools.namespace</artifactId>
+      <version>0.2.3</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
