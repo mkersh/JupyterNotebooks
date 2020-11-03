@@ -7,8 +7,6 @@
 ;;    )
   )
 
-
-
 (declare permute2)
 
 ;; loop-through-items:
