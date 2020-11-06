@@ -26,5 +26,5 @@
 
 ;; Generate an IBAN from country-code and BBAN
 ;; 
-
-(iban/iban "RO" "BTRLLGBO94B2P72HNFGM") 
+ 
+(iban/iban "RO" "BTRLLGBO89B2P72HNFGM")
