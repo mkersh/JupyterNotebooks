@@ -28,3 +28,5 @@
 ;; 
  
 (iban/iban "RO" "BTRLLGBO89B2P72HNFGM")
+
+(* 20000 0.23)

@@ -12,6 +12,8 @@
 
 (declare expandURL expand-options best-response request GET2)
 
+(defn uuid [] (.toString (java.util.UUID/randomUUID)))
+
 ;;; ----------------------------------------------------------------------
 ;;; JSON - Helper Methods:
 ;;; 
@@ -260,7 +262,7 @@
       (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
       options)))
 
-(def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
+;;(def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
 
 (comment
 (find-path "https://{{config.url}}" nCinoConnectorJson))
