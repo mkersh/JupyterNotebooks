@@ -7,7 +7,7 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
@@ -20,7 +20,7 @@
 (defn get-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         detailLevel (or (:details-level moreOpts) "FULL")
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
@@ -31,7 +31,7 @@
 (defn create-loan [prodid clientIdOrEncId & opt-overrides]
   (let [moreOpts (first opt-overrides)
         clientId (cust/get-customer-encid clientIdOrEncId)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -58,7 +58,7 @@
 
 (defn delete-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
         options (merge optdefs moreOpts)
@@ -67,7 +67,7 @@
 
 (defn put-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -79,7 +79,7 @@
 
 (defn patch-loan [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -94,7 +94,7 @@
 (defn writeoff-loan [accid & opt-overrides]
   (prn "*****IN writeoff-loan")
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Content-Type" "application/json"}
                  :query-params {}
                  :body {"type" "WRITE_OFF"
@@ -109,7 +109,7 @@
 (defn reject-loan [accid & opt-overrides]
   (prn "*****IN reject-loan")
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Content-Type" "application/json"}
                  :query-params {}
                  :body {"type" "REJECT"
@@ -128,6 +128,15 @@
              (catch Exception _ (writeoff-loan accid)))))
     )
   )
+
+  (defn loan-schedule [id & opt-overrides]
+    (let [moreOpts (first opt-overrides)
+          optdefs {:basic-auth (api/get-auth)
+                   :headers {"Accept" "application/vnd.mambu.v2+json"}
+                   :query-params {}}
+          options (merge optdefs moreOpts)
+          url (str "{{env1}}/loans/" id "/schedule")]
+       (api/GET url options)))
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results

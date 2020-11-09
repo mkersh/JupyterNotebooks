@@ -2,7 +2,7 @@
   (:require [http.api.json_helper :as api]))
 
 (defn list-cards [accid]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}
         url (str "{{env1}}/deposits/" accid "/cards")]
@@ -10,7 +10,7 @@
 
 
 (defn link-card [accid card-token]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -19,7 +19,7 @@
     (api/PRINT (api/POST url options))))
 
 (defn unlink-card [accid card-token]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}}
@@ -28,7 +28,7 @@
 
 
 (defn create-hold [card-token amount transRef]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -47,7 +47,7 @@
     (api/PRINT (api/POST url options))))
 
 (defn increase-hold [card-token amount transRef]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -56,7 +56,7 @@
     (api/PRINT (api/POST url options))))
 
 (defn decrease-hold [card-token amount transRef]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -68,7 +68,7 @@
 (defn list-holds [accid & opt-overrides]
   (let [moreOpts (first opt-overrides)
         status (:status moreOpts) 
-        options {:basic-auth (api/get-auth "env1")
+        options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"
                                 "status" status}}
@@ -76,7 +76,7 @@
     (api/PRINT (api/GET url options))))
 
 (defn delete-hold [card-token transRef]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}}
@@ -85,7 +85,7 @@
 
 (defn get-hold [card-token transRef & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        options {:basic-auth (api/get-auth "env1")
+        options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}}
@@ -101,7 +101,7 @@
         (decrease-hold card-token near-zero transRef)))
 
 (defn settle-transaction [card-token amount transRef]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -116,7 +116,7 @@
 
 (defn create-transaction [card-token amount transRef]
   (let [tref (or transRef (api/uuid))
-        options {:basic-auth (api/get-auth "env1")
+        options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -136,16 +136,16 @@
   (time (unlink-card "BUKO329" "token1"))
 
 
-  (time (create-hold "token1" 12.33 "0711_1"))
+
+  (api/setenv "env1")
   (time (list-holds "BUKO329"))
   (time (list-holds "BUKO329" {:status "PENDING"}))
-  (time (delete-hold "token1" "0711_1"))
-  (time (get-hold "token1" "0711_1"))
 
   (def transRef (api/uuid))
-  (time (create-hold "token1" 100 transRef))
-  (time (increase-hold "token1" 200.00 transRef))
+  (time (create-hold "token1" 169.87 transRef))
+  (time (increase-hold "token1" 20.00 transRef))
   (time (decrease-hold "token1" 100.00 transRef))
+  (time (delete-hold "token1" transRef))
   (time (zero-hold "token1" transRef))
   (time (get-hold "token1" transRef))
 
@@ -155,22 +155,12 @@
   (time (create-transaction "token1" 377 nil))
 
 
-  (- 100 0.00001)
-  (def hold1 {"advice" false
-              "cardToken" "token1"
-              "creditDebitIndicator" "DBIT"
-              "cardAcceptor"
-              {"mcc" 77
-               "name" "Merchant Name"
-               "city" "CityStr"
-               "state" "State"
-               "zip" "zipCode"
-               "country" "CountryStr"}
-              "status" "PENDING"
-              "externalReferenceId" "0711_4"
-              "currencyCode" "EUR"
-              "encodedKey" "8a8186fc75a2bb460175a2f330960069"
-              "userTransactionTime" "11:10:15"
-              "amount" 100.0})
 
-  (get  hold1 "amount"))
+  ;; ZMGF768
+  (time (link-card "ZMGF768" "token3"))
+  (time (unlink-card "ZMGF768" "token3"))
+  (def transRef (api/uuid))
+  (time (create-hold "token3" 1000 transRef))
+  (time (increase-hold "token3" 20.00 transRef))
+  
+  )

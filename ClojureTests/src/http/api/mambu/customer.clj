@@ -7,7 +7,7 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {
                                 "detailsLevel" (or detailLevel "FULL")
@@ -22,7 +22,7 @@
 (defn get-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         detailLevel (or (:details-level moreOpts) "FULL")
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
@@ -31,7 +31,7 @@
 
 (defn create-customer [& opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -49,7 +49,7 @@
 
 (defn delete-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
         url (str "{{env1}}/clients/" id)
@@ -58,7 +58,7 @@
 
 (defn put-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -88,7 +88,7 @@
 
 (defn patch-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}

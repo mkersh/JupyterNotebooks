@@ -20,6 +20,10 @@
 ;;; GET, POST, DELETE, PATCH, PUT
 ;;; 
 
+(defn setenv [envId]
+  (def ENV envId))
+(setenv "env1")
+
 (defn convertJsonFileToEdn [fn]
   (let [fileStr (slurp fn)]
     (json/read-str fileStr)))
@@ -75,9 +79,11 @@
       (pp/pprint http-kit-response) ; This was pretty-printing the complete result
       (prn "Number of items:" num-items))))
 
-
-(defn get-auth [envId]
-  (:basic-auth (get env/ENV-MAP envId)))
+(defn get-auth 
+  ([] (get-auth ENV))
+  ([envId]
+    (:basic-auth (get env/ENV-MAP envId)))
+  )
 
 (declare get-lists-from tidyup-results findPath-aux)
 
@@ -229,12 +235,13 @@
 
 
 
-
 (defn- replacePlaceholder [currentStr placeHolder]
   (let [;; Need to strip the {{ and }} from the placeholder before doing the lookup
         p2 (str/replace placeHolder "{{" "")
         p3 (str/replace p2 "}}" "")
-        placeHolderValue (:url (get env/ENV-MAP p3))]
+        ;;placeHolderValue (:url (get env/ENV-MAP p3))
+        placeHolderValue (:url (get env/ENV-MAP ENV))
+        ]
     (str/replace currentStr placeHolder placeHolderValue)))
 
 ;; Support the expansion of placeholder in URLs 

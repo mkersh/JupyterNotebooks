@@ -7,7 +7,7 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
@@ -20,7 +20,7 @@
 (defn get-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         detailLevel (or (:details-level moreOpts) "FULL")
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
@@ -31,7 +31,7 @@
 (defn create-deposit [prodid clientIdOrEncId & opt-overrides]
   (let [moreOpts (first opt-overrides)
         clientId (cust/get-customer-encid clientIdOrEncId)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -47,7 +47,7 @@
 
 (defn approve-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"action" "APPROVE"
@@ -59,7 +59,7 @@
 
 (defn deposit-transaction [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"depositAccountId" id
@@ -71,7 +71,7 @@
 
 (defn withdrawal-transaction [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"depositAccountId" id
@@ -83,7 +83,7 @@
 
 (defn transfer-transaction [from-id to-id2 & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"amount" 10.0
@@ -99,7 +99,7 @@
 
 (defn delete-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
         options (merge optdefs moreOpts)
@@ -108,7 +108,7 @@
 
 (defn put-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
@@ -120,7 +120,7 @@
 
 (defn patch-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth "env1")
+        optdefs {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}

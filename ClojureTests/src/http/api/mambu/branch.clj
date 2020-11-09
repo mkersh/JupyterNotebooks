@@ -2,21 +2,21 @@
   (:require [http.api.json_helper :as api]))
 
 (defn list-branches []
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}
         url "{{env1}}/branches"]
     (api/PRINT (api/GET url options))))
 
 (defn get-branch [id]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}
         url (str "{{env1}}/branches/" id)]
     (api/PRINT (api/GET url options))))
 
 (defn patch-branch [id]
-  (let [options {:basic-auth (api/get-auth "env1")
+  (let [options {:basic-auth (api/get-auth)
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
