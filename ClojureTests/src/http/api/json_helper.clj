@@ -272,4 +272,5 @@
 ;;(def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
 
 (comment
-(find-path "https://{{config.url}}" nCinoConnectorJson))
+;;(find-path "https://{{config.url}}" nCinoConnectorJson
+)

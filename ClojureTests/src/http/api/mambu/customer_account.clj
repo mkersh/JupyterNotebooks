@@ -52,7 +52,7 @@
 (comment
   (get-customer-loans "896933805" {:details-level "BASIC" :limit 999 :no-print false})
   
-  (closeAllLoans (get-customer-loans "896933805" {:details-level "BASIC" :limit 999 :no-print true}))
+  ;;(closeAllLoans (get-customer-loans "896933805" {:details-level "BASIC" :limit 999 :no-print true}))
   
   (close-customer-and-accounts "896933805")
   

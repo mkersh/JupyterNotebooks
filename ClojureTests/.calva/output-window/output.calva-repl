@@ -1,0 +1,3557 @@
+"Elapsed time: 2166.180504 msecs"
+"Apply VAT: " 1
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+(nil"Apply VAT: " 2
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 3
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 4
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 5
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 6
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 7
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 8
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 9
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 10
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 11
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 12
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 13
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 14
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 15
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 16
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 17
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 18
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 19
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 20
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 21
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 22
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 23
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 24
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 25
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 26
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 27
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 28
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 29
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 30
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 31
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 32
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 33
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 34
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 35
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil"Apply VAT: " 36
+"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
+ nil)
+clj::http.api.mambu.loan-account=> 
+#'http.api.mambu.loan-account/apply-VAT
+clj::http.api.mambu.loan-account=> 
+"Elapsed time: 6506.723278 msecs"
+"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:13+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1539",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:12+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f5575ad761b0175ae18f8820d5c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25224.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:12+01:00"}
+"Number of items:" 16
+(nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:15+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1540",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:15+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e0675acdc750175adfb0624393e",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25247.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:15+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:22+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1541",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f9975acca930175ae191a513bab",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25270.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:25+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1542",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:24+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e2975accbd20175ae1927a9403d",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25293.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:24+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:26+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1543",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:26+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5e75acd6fc0175adf8ecaa309c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25316.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:26+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:27+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1544",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:27+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e6975acd1350175adfb60bf3907",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25339.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:27+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:28+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1545",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:28+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fe875accb170175ae19349e433a",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25362.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:28+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:37+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1546",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:36+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f0275accd820175ae195590396c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25385.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:36+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:39+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1547",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:39+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fd575ad709d0175adfcbd0407a2",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25408.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:39+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:41+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1548",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:40+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fed75ad74ea0175ae1965860bae",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25431.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:40+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:43+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1549",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:43+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e0675acdc750175ae18ffe13c12",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25454.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:43+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:43+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1550",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:43+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f9975acca930175ae191a513baf",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25477.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:43+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:50+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1551",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:49+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f7375acd0be0175ae198a2c38e5",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25500.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:49+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:41:57+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1552",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:41:57+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e1175acce040175ae19a4f93f2f",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25523.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:41:57+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:01+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1553",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:00+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f1475ad65ea0175ae19b33121ca",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25546.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:00+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:06+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1554",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:05+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818eda75ad6fc40175ae19c5ff0843",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25569.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:05+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:14+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1555",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:13+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ffc75ad6fdb0175ae19e5a50ed8",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25592.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:13+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:18+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1556",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:17+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e8f75ad70260175ae19f4c40cb2",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25615.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:17+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:19+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1557",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:19+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f5575ad761b0175ae18f8820d60",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25638.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:19+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:19+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1558",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:19+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e0675acdc750175ae196c6e3c16",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25661.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:19+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:20+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1559",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:20+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f7375acd0be0175ae198a2c38e9",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25684.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:20+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:20+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1560",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:20+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5e75acd6fc0175ae192d0e33cf",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25707.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:20+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:20+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1561",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:20+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e6975acd1350175ae192e6c3d52",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25730.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:20+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:21+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1562",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fe875accb170175ae19349e433e",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25753.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:21+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1563",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e1175acce040175ae19a4f93f33",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25776.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:42:22+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1564",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:42:22+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f0275accd820175ae1955903970",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 25799.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:42:22+01:00"}
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ...)
+clj::http.api.mambu.loan-account=> 
+"Elapsed time: 1648.685276 msecs"
+"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:08+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1575",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:08+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e1175acce040175ae1a035c3f3c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26052.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:08+01:00"}
+"Number of items:" 16
+(nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:09+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1576",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:09+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f0275accd820175ae1a052e3974",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26075.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:09+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:09+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1577",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:09+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ebf75ad657f0175ae1a0b842291",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26098.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:09+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:10+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1578",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:09+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ff675ad65a10175ae1a2bba2615",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26121.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:09+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:14+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1579",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:14+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ef675ad658f0175ae1ca69b2143",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26144.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:14+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:16+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1580",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:16+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e8f75ad70260175ae1a393f0cfb",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26167.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:16+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:16+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1581",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:16+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818edc75ad703a0175ae1a49670a6d",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26190.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:16+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:16+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1582",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:16+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fd575ad709d0175ae1a4f560ade",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26213.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:16+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:17+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1583",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:17+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fed75ad74ea0175ae1a50f90bbb",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26236.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:17+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:17+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1584",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:17+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f5575ad761b0175ae1a52e40d77",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26259.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:17+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:18+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1585",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:18+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e0675acdc750175ae1cb4f13c87",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26282.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:18+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:18+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1586",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:18+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f9975acca930175ae1a55be3c3e",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26305.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:18+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:19+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1587",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:19+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f7375acd0be0175ae1a578e39b9",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26328.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:19+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:19+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1588",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:19+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e2975accbd20175ae1927a94041",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26351.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:19+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:20+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1589",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:20+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5e75acd6fc0175ae19feed340f",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26374.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:20+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:20+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1590",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:20+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fe875accb170175ae1a01e54360",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26397.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:20+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:21+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1591",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f0275accd820175ae1c918b39af",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26420.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:21+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1592",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ebf75ad657f0175ae1c92e722ae",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26443.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:22+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1593",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:21+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ff675ad65a10175ae1c94c6263c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26466.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:21+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:22+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1594",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:22+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5b75ad658b0175ae1cc56a22f6",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26489.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:22+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:22+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1595",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:22+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ef675ad658f0175ae1ca69b2147",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26512.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:22+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:23+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1596",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:23+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f1475ad65ea0175ae19b33121ce",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26535.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:23+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:30+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1597",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:29+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fc875ad66020175ae1ce50a2562",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26558.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:29+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:33+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1598",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:33+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ffc75ad6fdb0175ae19e5a50edc",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26581.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:33+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:33+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1599",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:33+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e8f75ad70260175ae1cac8e0d36",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26604.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:33+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:34+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1600",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:34+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818edc75ad703a0175ae1cadbc0a8a",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26627.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:34+01:00"}
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ...)
+clj::http.api.mambu.loan-account=> 
+"Elapsed time: 304.173932 msecs"
+"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:58+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1611",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:58+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f1475ad65ea0175ae1cc8ac21f5",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26880.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:58+01:00"}
+"Number of items:" 16
+(nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:58+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1612",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:58+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fc875ad66020175ae1ce50a2566",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26903.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:58+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:59+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1613",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:59+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818eda75ad6fc40175ae19c5ff0847",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26926.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:59+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:45:59+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1614",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:45:59+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ffc75ad6fdb0175ae1cef880f58",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26949.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:45:59+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:00+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1615",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:00+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e8f75ad70260175ae1cf11a0d3f",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26972.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:00+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:00+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1616",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:00+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818edc75ad703a0175ae1cf2780a98",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 26995.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:00+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:00+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1617",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:00+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fd575ad709d0175ae1d5b2c0af5",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27018.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:00+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:01+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1618",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:01+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fed75ad74ea0175ae1cf6250bff",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27041.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:01+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:01+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1619",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:01+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e0675acdc750175ae1cf9383c8f",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27064.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:01+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:02+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1620",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:02+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f9975acca930175ae1d609e3c69",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27087.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:02+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:02+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1621",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:02+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f7375acd0be0175ae1d62a939ee",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27110.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:02+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:03+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1622",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:03+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5e75acd6fc0175ae1d64193476",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27133.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:03+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:03+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1623",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:03+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fe875accb170175ae1d018443d1",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27156.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:03+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:04+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1624",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:03+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e1175acce040175ae1c8fcb4035",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27179.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:03+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:04+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1625",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:04+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f0275accd820175ae1cc09a39bd",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27202.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:04+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:04+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1626",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:04+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ebf75ad657f0175ae1d041b22b6",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27225.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:04+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:05+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1627",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:05+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ff675ad65a10175ae1cc3db2645",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27248.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:05+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:05+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1628",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:05+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e5b75ad658b0175ae1cc56a22fa",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27271.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:05+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:06+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1629",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:05+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ef675ad658f0175ae1cc6c3214b",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27294.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:05+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:06+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1630",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:06+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818f1475ad65ea0175ae1d519e2203",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27317.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:06+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:07+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1631",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:06+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fc875ad66020175ae1d5385256a",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27340.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:06+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:07+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1632",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:07+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818eda75ad6fc40175ae1d551808be",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27363.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:07+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:07+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1633",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:07+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818ffc75ad6fdb0175ae1d56e10f6b",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27386.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:07+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:08+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1634",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:08+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818e8f75ad70260175ae1d77d30d43",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27409.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:08+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:08+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1635",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:08+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818edc75ad703a0175ae1d59790a9c",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27432.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:08+01:00"}
+"Number of items:" 16
+
+ nil"Successful Call: 201"
+{"creationDate" "2020-11-09T18:46:09+01:00",
+ "transactionDetails" {},
+ "taxes"
+ {"taxOnInterestAmount" 0,
+  "taxOnInterestFromArrearsAmount" 0,
+  "deferredTaxOnInterestAmount" 0,
+  "taxOnFeesAmount" 0,
+  "taxOnPenaltyAmount" 0},
+ "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
+ "id" "1636",
+ "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
+ "valueDate" "2020-11-09T18:46:08+01:00",
+ "affectedAmounts"
+ {"principalAmount" 0,
+  "interestAmount" 0,
+  "interestFromArrearsAmount" 0,
+  "deferredInterestAmount" 0,
+  "feesAmount" 23.0,
+  "penaltyAmount" 0,
+  "fundersInterestAmount" 0,
+  "organizationCommissionAmount" 0},
+ "branchKey" "8a818ece75a3211a0175a8239c454d8b",
+ "encodedKey" "8a818fd575ad709d0175ae1d5b2c0af9",
+ "fees"
+ [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
+   "name" "Documentation Fee",
+   "amount" 23.0,
+   "taxAmount" 0,
+   "trigger" "MANUAL"}],
+ "type" "FEE_APPLIED",
+ "amount" 23.0,
+ "accountBalances"
+ {"totalBalance" 27455.84,
+  "advancePosition" 0,
+  "arrearsPosition" 0,
+  "expectedPrincipalRedraw" 0,
+  "redrawBalance" 0,
+  "principalBalance" 21100.0},
+ "terms" {"interestSettings" {}},
+ "bookingDate" "2020-11-09T18:46:08+01:00"}
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ..."Successful Call: 201"
+...
+"Number of items:" 16
+
+ ...)
+clj::http.api.mambu.loan-account=> 
