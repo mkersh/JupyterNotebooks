@@ -131,6 +131,9 @@
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment
+  ;; Setup which Mambu environment you are working against
+  (api/setenv "env1")
+
   (time (list-cards "BUKO329"))
   (time (link-card "BUKO329" "token1"))
   (time (unlink-card "BUKO329" "token1"))
@@ -161,6 +164,4 @@
   (time (unlink-card "ZMGF768" "token3"))
   (def transRef (api/uuid))
   (time (create-hold "token3" 1000 transRef))
-  (time (increase-hold "token3" 20.00 transRef))
-  
-  )
+  (time (increase-hold "token3" 20.00 transRef)))
