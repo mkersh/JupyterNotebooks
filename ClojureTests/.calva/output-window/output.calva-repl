@@ -1,83 +1,6 @@
-"Elapsed time: 2166.180504 msecs"
-"Apply VAT: " 1
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
-(nil"Apply VAT: " 2
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 3
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 4
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 5
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 6
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 7
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 8
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 9
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 10
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 11
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 12
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 13
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 14
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 15
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 16
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 17
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 18
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 19
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 20
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 21
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 22
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 23
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 24
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 25
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 26
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 27
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 28
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 29
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 30
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 31
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 32
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 33
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 34
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 35
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil"Apply VAT: " 36
-"QRAL117" "8a818ece75a3211a0175a84cd03d1307" 23.0
- nil)
-clj::http.api.mambu.loan-account=> 
-#'http.api.mambu.loan-account/apply-VAT
-clj::http.api.mambu.loan-account=> 
-"Elapsed time: 6506.723278 msecs"
+"Elapsed time: 1678.005451 msecs"
 "Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:13+01:00",
+{"creationDate" "2020-11-10T11:42:46+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -86,40 +9,40 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1539",
+ "id" "1667",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:12+01:00",
+ "valueDate" "2020-11-10T11:42:46+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f5575ad761b0175ae18f8820d5c",
+ "encodedKey" "8a818e4a75b09fb80175b1c03b031dc9",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25224.84,
+ {"totalBalance" 27903.88,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:12+01:00"}
+ "bookingDate" "2020-11-10T11:42:46+01:00"}
 "Number of items:" 16
 (nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:15+01:00",
+{"creationDate" "2020-11-10T11:42:48+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -128,41 +51,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1540",
+ "id" "1668",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:15+01:00",
+ "valueDate" "2020-11-10T11:42:48+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e0675acdc750175adfb0624393e",
+ "encodedKey" "8a818f3175b0d3160175b18951cb12c3",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25247.84,
+ {"totalBalance" 28064.89,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:15+01:00"}
+ "bookingDate" "2020-11-10T11:42:48+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:22+01:00",
+{"creationDate" "2020-11-10T11:42:48+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -171,41 +94,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1541",
+ "id" "1669",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:21+01:00",
+ "valueDate" "2020-11-10T11:42:48+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f9975acca930175ae191a513bab",
+ "encodedKey" "8a818fce75aea51d0175b1c042c26275",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25270.84,
+ {"totalBalance" 28225.9,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:21+01:00"}
+ "bookingDate" "2020-11-10T11:42:48+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:25+01:00",
+{"creationDate" "2020-11-10T11:42:49+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -214,41 +137,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1542",
+ "id" "1670",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:24+01:00",
+ "valueDate" "2020-11-10T11:42:48+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e2975accbd20175ae1927a9403d",
+ "encodedKey" "8a818eda75ad6fc40175b1c0443c17d1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25293.84,
+ {"totalBalance" 28386.91,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:24+01:00"}
+ "bookingDate" "2020-11-10T11:42:48+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:26+01:00",
+{"creationDate" "2020-11-10T11:42:49+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -257,41 +180,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1543",
+ "id" "1671",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:26+01:00",
+ "valueDate" "2020-11-10T11:42:49+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5e75acd6fc0175adf8ecaa309c",
+ "encodedKey" "8a818f9875aea4a60175b18755d96a20",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25316.84,
+ {"totalBalance" 28547.92,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:26+01:00"}
+ "bookingDate" "2020-11-10T11:42:49+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:27+01:00",
+{"creationDate" "2020-11-10T11:42:49+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -300,41 +223,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1544",
+ "id" "1672",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:27+01:00",
+ "valueDate" "2020-11-10T11:42:49+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e6975acd1350175adfb60bf3907",
+ "encodedKey" "8a818e8f75ad70260175b19857961855",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25339.84,
+ {"totalBalance" 28708.93,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:27+01:00"}
+ "bookingDate" "2020-11-10T11:42:49+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:28+01:00",
+{"creationDate" "2020-11-10T11:42:50+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -343,41 +266,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1545",
+ "id" "1673",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:28+01:00",
+ "valueDate" "2020-11-10T11:42:50+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fe875accb170175ae19349e433a",
+ "encodedKey" "8a818edc75ad703a0175b198880e1de1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25362.84,
+ {"totalBalance" 28869.94,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:28+01:00"}
+ "bookingDate" "2020-11-10T11:42:50+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:37+01:00",
+{"creationDate" "2020-11-10T11:42:50+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -386,41 +309,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1546",
+ "id" "1674",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:36+01:00",
+ "valueDate" "2020-11-10T11:42:50+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f0275accd820175ae195590396c",
+ "encodedKey" "8a818e4a75b09fb80175b1c03b031dcd",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25385.84,
+ {"totalBalance" 29030.95,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:36+01:00"}
+ "bookingDate" "2020-11-10T11:42:50+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:39+01:00",
+{"creationDate" "2020-11-10T11:42:51+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -429,41 +352,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1547",
+ "id" "1675",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:39+01:00",
+ "valueDate" "2020-11-10T11:42:51+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fd575ad709d0175adfcbd0407a2",
+ "encodedKey" "8a818f0075b09f3e0175b18cd16f15b2",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25408.84,
+ {"totalBalance" 29191.96,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:39+01:00"}
+ "bookingDate" "2020-11-10T11:42:51+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:41+01:00",
+{"creationDate" "2020-11-10T11:42:51+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -472,41 +395,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1548",
+ "id" "1676",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:40+01:00",
+ "valueDate" "2020-11-10T11:42:51+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fed75ad74ea0175ae1965860bae",
+ "encodedKey" "8a818f3175b0d3160175b1c040ea1bf0",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25431.84,
+ {"totalBalance" 29352.97,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:40+01:00"}
+ "bookingDate" "2020-11-10T11:42:51+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:43+01:00",
+{"creationDate" "2020-11-10T11:42:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -515,41 +438,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1549",
+ "id" "1677",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:43+01:00",
+ "valueDate" "2020-11-10T11:42:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e0675acdc750175ae18ffe13c12",
+ "encodedKey" "8a818fce75aea51d0175b1c042c26279",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25454.84,
+ {"totalBalance" 29513.98,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:43+01:00"}
+ "bookingDate" "2020-11-10T11:42:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:43+01:00",
+{"creationDate" "2020-11-10T11:42:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -558,41 +481,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1550",
+ "id" "1678",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:43+01:00",
+ "valueDate" "2020-11-10T11:42:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f9975acca930175ae191a513baf",
+ "encodedKey" "8a818eda75ad6fc40175b1c0443c17d5",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25477.84,
+ {"totalBalance" 29674.99,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:43+01:00"}
+ "bookingDate" "2020-11-10T11:42:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:50+01:00",
+{"creationDate" "2020-11-10T11:42:53+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -601,41 +524,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1551",
+ "id" "1679",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:49+01:00",
+ "valueDate" "2020-11-10T11:42:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f7375acd0be0175ae198a2c38e5",
+ "encodedKey" "8a818f9875aea4a60175b1c04668737f",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25500.84,
+ {"totalBalance" 29836.0,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:49+01:00"}
+ "bookingDate" "2020-11-10T11:42:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:41:57+01:00",
+{"creationDate" "2020-11-10T11:42:53+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -644,41 +567,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1552",
+ "id" "1680",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:41:57+01:00",
+ "valueDate" "2020-11-10T11:42:53+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e1175acce040175ae19a4f93f2f",
+ "encodedKey" "8a818e8f75ad70260175b1c048021fb1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25523.84,
+ {"totalBalance" 29997.01,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:41:57+01:00"}
+ "bookingDate" "2020-11-10T11:42:53+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:01+01:00",
+{"creationDate" "2020-11-10T11:42:53+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -687,41 +610,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1553",
+ "id" "1681",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:00+01:00",
+ "valueDate" "2020-11-10T11:42:53+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f1475ad65ea0175ae19b33121ca",
+ "encodedKey" "8a818edc75ad703a0175b1c0495324a7",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25546.84,
+ {"totalBalance" 30158.02,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:00+01:00"}
+ "bookingDate" "2020-11-10T11:42:53+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:06+01:00",
+{"creationDate" "2020-11-10T11:42:54+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -730,41 +653,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1554",
+ "id" "1682",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:05+01:00",
+ "valueDate" "2020-11-10T11:42:54+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818eda75ad6fc40175ae19c5ff0843",
+ "encodedKey" "8a818e4a75b09fb80175b1c04a941ddb",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25569.84,
+ {"totalBalance" 30319.03,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:05+01:00"}
+ "bookingDate" "2020-11-10T11:42:54+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:14+01:00",
+{"creationDate" "2020-11-10T11:42:54+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -773,41 +696,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1555",
+ "id" "1683",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:13+01:00",
+ "valueDate" "2020-11-10T11:42:54+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ffc75ad6fdb0175ae19e5a50ed8",
+ "encodedKey" "8a818f0075b09f3e0175b1c04caf1eee",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25592.84,
+ {"totalBalance" 30480.04,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:13+01:00"}
+ "bookingDate" "2020-11-10T11:42:54+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:18+01:00",
+{"creationDate" "2020-11-10T11:42:55+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -816,41 +739,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1556",
+ "id" "1684",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:17+01:00",
+ "valueDate" "2020-11-10T11:42:54+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e8f75ad70260175ae19f4c40cb2",
+ "encodedKey" "8a818f3175b0d3160175b1c04eb91bf9",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25615.84,
+ {"totalBalance" 30641.05,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:17+01:00"}
+ "bookingDate" "2020-11-10T11:42:54+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:19+01:00",
+{"creationDate" "2020-11-10T11:42:55+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -859,41 +782,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1557",
+ "id" "1685",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:19+01:00",
+ "valueDate" "2020-11-10T11:42:55+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f5575ad761b0175ae18f8820d60",
+ "encodedKey" "8a818fce75aea51d0175b1c0509f627d",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25638.84,
+ {"totalBalance" 30802.06,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:19+01:00"}
+ "bookingDate" "2020-11-10T11:42:55+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:19+01:00",
+{"creationDate" "2020-11-10T11:42:55+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -902,41 +825,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1558",
+ "id" "1686",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:19+01:00",
+ "valueDate" "2020-11-10T11:42:55+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e0675acdc750175ae196c6e3c16",
+ "encodedKey" "8a818eda75ad6fc40175b1c0521917d9",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25661.84,
+ {"totalBalance" 30963.07,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:19+01:00"}
+ "bookingDate" "2020-11-10T11:42:55+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:20+01:00",
+{"creationDate" "2020-11-10T11:42:56+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -945,41 +868,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1559",
+ "id" "1687",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:20+01:00",
+ "valueDate" "2020-11-10T11:42:56+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f7375acd0be0175ae198a2c38e9",
+ "encodedKey" "8a818f9875aea4a60175b1c053fe7383",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25684.84,
+ {"totalBalance" 31124.08,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:20+01:00"}
+ "bookingDate" "2020-11-10T11:42:56+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:20+01:00",
+{"creationDate" "2020-11-10T11:42:56+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -988,41 +911,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1560",
+ "id" "1688",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:20+01:00",
+ "valueDate" "2020-11-10T11:42:56+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5e75acd6fc0175ae192d0e33cf",
+ "encodedKey" "8a818e8f75ad70260175b1c062571fbf",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25707.84,
+ {"totalBalance" 31285.09,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:20+01:00"}
+ "bookingDate" "2020-11-10T11:42:56+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:20+01:00",
+{"creationDate" "2020-11-10T11:42:57+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1031,41 +954,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1561",
+ "id" "1689",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:20+01:00",
+ "valueDate" "2020-11-10T11:42:57+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e6975acd1350175ae192e6c3d52",
+ "encodedKey" "8a818edc75ad703a0175b1c0639f24b5",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25730.84,
+ {"totalBalance" 31446.1,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:20+01:00"}
+ "bookingDate" "2020-11-10T11:42:57+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:21+01:00",
+{"creationDate" "2020-11-10T11:42:57+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1074,41 +997,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1562",
+ "id" "1690",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:21+01:00",
+ "valueDate" "2020-11-10T11:42:57+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fe875accb170175ae19349e433e",
+ "encodedKey" "8a818e4a75b09fb80175b1c058001ddf",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25753.84,
+ {"totalBalance" 31607.11,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:21+01:00"}
+ "bookingDate" "2020-11-10T11:42:57+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:21+01:00",
+{"creationDate" "2020-11-10T11:42:57+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1117,41 +1040,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1563",
+ "id" "1691",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:21+01:00",
+ "valueDate" "2020-11-10T11:42:57+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e1175acce040175ae19a4f93f33",
+ "encodedKey" "8a818f0075b09f3e0175b1c059cb1ef2",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25776.84,
+ {"totalBalance" 31768.12,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:21+01:00"}
+ "bookingDate" "2020-11-10T11:42:57+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:42:22+01:00",
+{"creationDate" "2020-11-10T11:42:58+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1160,37 +1083,37 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1564",
+ "id" "1692",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:42:22+01:00",
+ "valueDate" "2020-11-10T11:42:58+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f0275accd820175ae1955903970",
+ "encodedKey" "8a818f3175b0d3160175b1c0689d1c02",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 25799.84,
+ {"totalBalance" 31929.13,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:42:22+01:00"}
+ "bookingDate" "2020-11-10T11:42:58+01:00"}
 "Number of items:" 16
 
  ..."Successful Call: 201"
@@ -1235,9 +1158,9 @@ clj::http.api.mambu.loan-account=>
 
  ...)
 clj::http.api.mambu.loan-account=> 
-"Elapsed time: 1648.685276 msecs"
+"Elapsed time: 781.108857 msecs"
 "Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:08+01:00",
+{"creationDate" "2020-11-10T11:45:18+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1246,40 +1169,40 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1575",
+ "id" "1703",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:08+01:00",
+ "valueDate" "2020-11-10T11:45:18+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e1175acce040175ae1a035c3f3c",
+ "encodedKey" "8a818edc75ad703a0175b1c06ff224bd",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26052.84,
+ {"totalBalance" 33700.25,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:08+01:00"}
+ "bookingDate" "2020-11-10T11:45:18+01:00"}
 "Number of items:" 16
 (nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:09+01:00",
+{"creationDate" "2020-11-10T11:45:18+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1288,41 +1211,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1576",
+ "id" "1704",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:09+01:00",
+ "valueDate" "2020-11-10T11:45:18+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f0275accd820175ae1a052e3974",
+ "encodedKey" "8a818e4a75b09fb80175b1c28bfc1e73",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26075.84,
+ {"totalBalance" 33861.26,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:09+01:00"}
+ "bookingDate" "2020-11-10T11:45:18+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:09+01:00",
+{"creationDate" "2020-11-10T11:45:18+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1331,41 +1254,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1577",
+ "id" "1705",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:09+01:00",
+ "valueDate" "2020-11-10T11:45:18+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ebf75ad657f0175ae1a0b842291",
+ "encodedKey" "8a818f0075b09f3e0175b1c28dc71fa4",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26098.84,
+ {"totalBalance" 34022.27,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:09+01:00"}
+ "bookingDate" "2020-11-10T11:45:18+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:10+01:00",
+{"creationDate" "2020-11-10T11:45:19+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1374,41 +1297,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1578",
+ "id" "1706",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:09+01:00",
+ "valueDate" "2020-11-10T11:45:19+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ff675ad65a10175ae1a2bba2615",
+ "encodedKey" "8a818f3175b0d3160175b1c074761c14",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26121.84,
+ {"totalBalance" 34183.28,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:09+01:00"}
+ "bookingDate" "2020-11-10T11:45:19+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:14+01:00",
+{"creationDate" "2020-11-10T11:45:19+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1417,41 +1340,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1579",
+ "id" "1707",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:14+01:00",
+ "valueDate" "2020-11-10T11:45:19+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ef675ad658f0175ae1ca69b2143",
+ "encodedKey" "8a818fce75aea51d0175b1c291b5634c",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26144.84,
+ {"totalBalance" 34344.29,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:14+01:00"}
+ "bookingDate" "2020-11-10T11:45:19+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:16+01:00",
+{"creationDate" "2020-11-10T11:45:20+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1460,41 +1383,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1580",
+ "id" "1708",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:16+01:00",
+ "valueDate" "2020-11-10T11:45:20+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e8f75ad70260175ae1a393f0cfb",
+ "encodedKey" "8a818eda75ad6fc40175b1c2932618c6",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26167.84,
+ {"totalBalance" 34505.3,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:16+01:00"}
+ "bookingDate" "2020-11-10T11:45:20+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:16+01:00",
+{"creationDate" "2020-11-10T11:45:20+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1503,41 +1426,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1581",
+ "id" "1709",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:16+01:00",
+ "valueDate" "2020-11-10T11:45:20+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818edc75ad703a0175ae1a49670a6d",
+ "encodedKey" "8a818f9875aea4a60175b1c06d7c7395",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26190.84,
+ {"totalBalance" 34666.31,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:16+01:00"}
+ "bookingDate" "2020-11-10T11:45:20+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:16+01:00",
+{"creationDate" "2020-11-10T11:45:21+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1546,41 +1469,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1582",
+ "id" "1710",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:16+01:00",
+ "valueDate" "2020-11-10T11:45:21+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fd575ad709d0175ae1a4f560ade",
+ "encodedKey" "8a818e8f75ad70260175b1c06ed61fc7",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26213.84,
+ {"totalBalance" 34827.32,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:16+01:00"}
+ "bookingDate" "2020-11-10T11:45:21+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:17+01:00",
+{"creationDate" "2020-11-10T11:45:21+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1589,41 +1512,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1583",
+ "id" "1711",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:17+01:00",
+ "valueDate" "2020-11-10T11:45:21+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fed75ad74ea0175ae1a50f90bbb",
+ "encodedKey" "8a818edc75ad703a0175b1c28ac1255c",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26236.84,
+ {"totalBalance" 34988.33,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:17+01:00"}
+ "bookingDate" "2020-11-10T11:45:21+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:17+01:00",
+{"creationDate" "2020-11-10T11:45:21+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1632,41 +1555,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1584",
+ "id" "1712",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:17+01:00",
+ "valueDate" "2020-11-10T11:45:21+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f5575ad761b0175ae1a52e40d77",
+ "encodedKey" "8a818e4a75b09fb80175b1c28bfc1e77",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26259.84,
+ {"totalBalance" 35149.34,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:17+01:00"}
+ "bookingDate" "2020-11-10T11:45:21+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:18+01:00",
+{"creationDate" "2020-11-10T11:45:22+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1675,41 +1598,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1585",
+ "id" "1713",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:18+01:00",
+ "valueDate" "2020-11-10T11:45:22+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e0675acdc750175ae1cb4f13c87",
+ "encodedKey" "8a818f0075b09f3e0175b1c28dc71fa8",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26282.84,
+ {"totalBalance" 35310.35,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:18+01:00"}
+ "bookingDate" "2020-11-10T11:45:22+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:18+01:00",
+{"creationDate" "2020-11-10T11:45:22+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1718,41 +1641,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1586",
+ "id" "1714",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:18+01:00",
+ "valueDate" "2020-11-10T11:45:22+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f9975acca930175ae1a55be3c3e",
+ "encodedKey" "8a818f3175b0d3160175b1c28fd11ca4",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26305.84,
+ {"totalBalance" 35471.36,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:18+01:00"}
+ "bookingDate" "2020-11-10T11:45:22+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:19+01:00",
+{"creationDate" "2020-11-10T11:45:23+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1761,41 +1684,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1587",
+ "id" "1715",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:19+01:00",
+ "valueDate" "2020-11-10T11:45:23+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f7375acd0be0175ae1a578e39b9",
+ "encodedKey" "8a818fce75aea51d0175b1c291b56350",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26328.84,
+ {"totalBalance" 35632.37,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:19+01:00"}
+ "bookingDate" "2020-11-10T11:45:23+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:19+01:00",
+{"creationDate" "2020-11-10T11:45:23+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1804,41 +1727,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1588",
+ "id" "1716",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:19+01:00",
+ "valueDate" "2020-11-10T11:45:23+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e2975accbd20175ae1927a94041",
+ "encodedKey" "8a818eda75ad6fc40175b1c2932618ca",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26351.84,
+ {"totalBalance" 35793.38,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:19+01:00"}
+ "bookingDate" "2020-11-10T11:45:23+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:20+01:00",
+{"creationDate" "2020-11-10T11:45:24+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1847,41 +1770,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1589",
+ "id" "1717",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:20+01:00",
+ "valueDate" "2020-11-10T11:45:23+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5e75acd6fc0175ae19feed340f",
+ "encodedKey" "8a818f9875aea4a60175b1c294e97452",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26374.84,
+ {"totalBalance" 35954.39,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:20+01:00"}
+ "bookingDate" "2020-11-10T11:45:23+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:20+01:00",
+{"creationDate" "2020-11-10T11:45:24+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1890,41 +1813,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1590",
+ "id" "1718",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:20+01:00",
+ "valueDate" "2020-11-10T11:45:24+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fe875accb170175ae1a01e54360",
+ "encodedKey" "8a818e8f75ad70260175b1c296692057",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26397.84,
+ {"totalBalance" 36115.4,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:20+01:00"}
+ "bookingDate" "2020-11-10T11:45:24+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:21+01:00",
+{"creationDate" "2020-11-10T11:45:24+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1933,41 +1856,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1591",
+ "id" "1719",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:21+01:00",
+ "valueDate" "2020-11-10T11:45:24+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f0275accd820175ae1c918b39af",
+ "encodedKey" "8a818edc75ad703a0175b1c2979d2560",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26420.84,
+ {"totalBalance" 36276.41,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:21+01:00"}
+ "bookingDate" "2020-11-10T11:45:24+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:21+01:00",
+{"creationDate" "2020-11-10T11:45:25+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -1976,41 +1899,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1592",
+ "id" "1720",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:21+01:00",
+ "valueDate" "2020-11-10T11:45:25+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ebf75ad657f0175ae1c92e722ae",
+ "encodedKey" "8a818e4a75b09fb80175b1c298cf1e7b",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26443.84,
+ {"totalBalance" 36437.42,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:21+01:00"}
+ "bookingDate" "2020-11-10T11:45:25+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:22+01:00",
+{"creationDate" "2020-11-10T11:45:25+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2019,41 +1942,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1593",
+ "id" "1721",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:21+01:00",
+ "valueDate" "2020-11-10T11:45:25+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ff675ad65a10175ae1c94c6263c",
+ "encodedKey" "8a818f0075b09f3e0175b1c29a9c1fb1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26466.84,
+ {"totalBalance" 36598.43,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:21+01:00"}
+ "bookingDate" "2020-11-10T11:45:25+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:22+01:00",
+{"creationDate" "2020-11-10T11:45:26+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2062,41 +1985,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1594",
+ "id" "1722",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:22+01:00",
+ "valueDate" "2020-11-10T11:45:25+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5b75ad658b0175ae1cc56a22f6",
+ "encodedKey" "8a818f3175b0d3160175b1c29caf1cb2",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26489.84,
+ {"totalBalance" 36759.44,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:22+01:00"}
+ "bookingDate" "2020-11-10T11:45:25+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:22+01:00",
+{"creationDate" "2020-11-10T11:45:26+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2105,41 +2028,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1595",
+ "id" "1723",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:22+01:00",
+ "valueDate" "2020-11-10T11:45:26+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ef675ad658f0175ae1ca69b2147",
+ "encodedKey" "8a818fce75aea51d0175b1c29e87635e",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26512.84,
+ {"totalBalance" 36920.45,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:22+01:00"}
+ "bookingDate" "2020-11-10T11:45:26+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:23+01:00",
+{"creationDate" "2020-11-10T11:45:26+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2148,41 +2071,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1596",
+ "id" "1724",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:23+01:00",
+ "valueDate" "2020-11-10T11:45:26+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f1475ad65ea0175ae19b33121ce",
+ "encodedKey" "8a818eda75ad6fc40175b1c29ff518d3",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26535.84,
+ {"totalBalance" 37081.46,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:23+01:00"}
+ "bookingDate" "2020-11-10T11:45:26+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:30+01:00",
+{"creationDate" "2020-11-10T11:45:27+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2191,41 +2114,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1597",
+ "id" "1725",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:29+01:00",
+ "valueDate" "2020-11-10T11:45:27+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fc875ad66020175ae1ce50a2562",
+ "encodedKey" "8a818f9875aea4a60175b1c2a1d77460",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26558.84,
+ {"totalBalance" 37242.47,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:29+01:00"}
+ "bookingDate" "2020-11-10T11:45:27+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:33+01:00",
+{"creationDate" "2020-11-10T11:45:27+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2234,41 +2157,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1598",
+ "id" "1726",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:33+01:00",
+ "valueDate" "2020-11-10T11:45:27+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ffc75ad6fdb0175ae19e5a50edc",
+ "encodedKey" "8a818e8f75ad70260175b1c2a34f2065",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26581.84,
+ {"totalBalance" 37403.48,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:33+01:00"}
+ "bookingDate" "2020-11-10T11:45:27+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:33+01:00",
+{"creationDate" "2020-11-10T11:45:28+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2277,41 +2200,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1599",
+ "id" "1727",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:33+01:00",
+ "valueDate" "2020-11-10T11:45:27+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e8f75ad70260175ae1cac8e0d36",
+ "encodedKey" "8a818edc75ad703a0175b1c2b15d257d",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26604.84,
+ {"totalBalance" 37564.49,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:33+01:00"}
+ "bookingDate" "2020-11-10T11:45:27+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:34+01:00",
+{"creationDate" "2020-11-10T11:45:28+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2320,37 +2243,37 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1600",
+ "id" "1728",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:34+01:00",
+ "valueDate" "2020-11-10T11:45:28+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818edc75ad703a0175ae1cadbc0a8a",
+ "encodedKey" "8a818e4a75b09fb80175b1c2a5d01e7f",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26627.84,
+ {"totalBalance" 37725.5,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:34+01:00"}
+ "bookingDate" "2020-11-10T11:45:28+01:00"}
 "Number of items:" 16
 
  ..."Successful Call: 201"
@@ -2395,9 +2318,9 @@ clj::http.api.mambu.loan-account=>
 
  ...)
 clj::http.api.mambu.loan-account=> 
-"Elapsed time: 304.173932 msecs"
+"Elapsed time: 1794.659642 msecs"
 "Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:58+01:00",
+{"creationDate" "2020-11-10T11:49:45+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2406,40 +2329,40 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1611",
+ "id" "1741",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:58+01:00",
+ "valueDate" "2020-11-10T11:49:45+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f1475ad65ea0175ae1cc8ac21f5",
+ "encodedKey" "8a818e8f75ad70260175b1c2bc41206d",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26880.84,
+ {"totalBalance" 25362.85,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:58+01:00"}
+ "bookingDate" "2020-11-10T11:49:45+01:00"}
 "Number of items:" 16
 (nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:58+01:00",
+{"creationDate" "2020-11-10T11:49:45+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2448,41 +2371,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1612",
+ "id" "1742",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:58+01:00",
+ "valueDate" "2020-11-10T11:49:45+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fc875ad66020175ae1ce50a2566",
+ "encodedKey" "8a818edc75ad703a0175b1c2bd4e2585",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26903.84,
+ {"totalBalance" 25523.86,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:58+01:00"}
+ "bookingDate" "2020-11-10T11:49:45+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:59+01:00",
+{"creationDate" "2020-11-10T11:49:45+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2491,41 +2414,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1613",
+ "id" "1743",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:59+01:00",
+ "valueDate" "2020-11-10T11:49:45+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818eda75ad6fc40175ae19c5ff0847",
+ "encodedKey" "8a818e4a75b09fb80175b1c6a0c51f95",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26926.84,
+ {"totalBalance" 25684.87,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:59+01:00"}
+ "bookingDate" "2020-11-10T11:49:45+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:45:59+01:00",
+{"creationDate" "2020-11-10T11:49:46+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2534,41 +2457,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1614",
+ "id" "1744",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:45:59+01:00",
+ "valueDate" "2020-11-10T11:49:46+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ffc75ad6fdb0175ae1cef880f58",
+ "encodedKey" "8a818f3175b0d3160175b1c2c1e61cc8",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26949.84,
+ {"totalBalance" 25845.88,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:45:59+01:00"}
+ "bookingDate" "2020-11-10T11:49:46+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:00+01:00",
+{"creationDate" "2020-11-10T11:49:46+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2577,41 +2500,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1615",
+ "id" "1745",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:00+01:00",
+ "valueDate" "2020-11-10T11:49:46+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e8f75ad70260175ae1cf11a0d3f",
+ "encodedKey" "8a818eda75ad6fc40175b1c2b95718e5",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26972.84,
+ {"totalBalance" 26006.89,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:00+01:00"}
+ "bookingDate" "2020-11-10T11:49:46+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:00+01:00",
+{"creationDate" "2020-11-10T11:49:47+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2620,41 +2543,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1616",
+ "id" "1746",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:00+01:00",
+ "valueDate" "2020-11-10T11:49:47+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818edc75ad703a0175ae1cf2780a98",
+ "encodedKey" "8a818f9875aea4a60175b1c6a5e2756c",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 26995.84,
+ {"totalBalance" 26167.9,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:00+01:00"}
+ "bookingDate" "2020-11-10T11:49:47+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:00+01:00",
+{"creationDate" "2020-11-10T11:49:47+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2663,41 +2586,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1617",
+ "id" "1747",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:00+01:00",
+ "valueDate" "2020-11-10T11:49:47+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fd575ad709d0175ae1d5b2c0af5",
+ "encodedKey" "8a818e8f75ad70260175b1c69e23212f",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27018.84,
+ {"totalBalance" 26328.91,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:00+01:00"}
+ "bookingDate" "2020-11-10T11:49:47+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:01+01:00",
+{"creationDate" "2020-11-10T11:49:47+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2706,41 +2629,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1618",
+ "id" "1748",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:01+01:00",
+ "valueDate" "2020-11-10T11:49:47+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fed75ad74ea0175ae1cf6250bff",
+ "encodedKey" "8a818edc75ad703a0175b1c69f882697",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27041.84,
+ {"totalBalance" 26489.92,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:01+01:00"}
+ "bookingDate" "2020-11-10T11:49:47+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:01+01:00",
+{"creationDate" "2020-11-10T11:49:48+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2749,41 +2672,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1619",
+ "id" "1749",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:01+01:00",
+ "valueDate" "2020-11-10T11:49:48+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e0675acdc750175ae1cf9383c8f",
+ "encodedKey" "8a818e4a75b09fb80175b1c6a0c51f99",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27064.84,
+ {"totalBalance" 26650.93,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:01+01:00"}
+ "bookingDate" "2020-11-10T11:49:48+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:02+01:00",
+{"creationDate" "2020-11-10T11:49:48+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2792,41 +2715,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1620",
+ "id" "1750",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:02+01:00",
+ "valueDate" "2020-11-10T11:49:48+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f9975acca930175ae1d609e3c69",
+ "encodedKey" "8a818f0075b09f3e0175b1c6abe42094",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27087.84,
+ {"totalBalance" 26811.94,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:02+01:00"}
+ "bookingDate" "2020-11-10T11:49:48+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:02+01:00",
+{"creationDate" "2020-11-10T11:49:49+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2835,41 +2758,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1621",
+ "id" "1751",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:02+01:00",
+ "valueDate" "2020-11-10T11:49:49+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f7375acd0be0175ae1d62a939ee",
+ "encodedKey" "8a818fce75aea51d0175b1c663796561",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27110.84,
+ {"totalBalance" 26972.95,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:02+01:00"}
+ "bookingDate" "2020-11-10T11:49:49+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:03+01:00",
+{"creationDate" "2020-11-10T11:49:49+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2878,41 +2801,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1622",
+ "id" "1752",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:03+01:00",
+ "valueDate" "2020-11-10T11:49:49+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5e75acd6fc0175ae1d64193476",
+ "encodedKey" "8a818f9875aea4a60175b1c6a5e27570",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27133.84,
+ {"totalBalance" 27133.96,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:03+01:00"}
+ "bookingDate" "2020-11-10T11:49:49+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:03+01:00",
+{"creationDate" "2020-11-10T11:49:50+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2921,41 +2844,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1623",
+ "id" "1753",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:03+01:00",
+ "valueDate" "2020-11-10T11:49:50+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fe875accb170175ae1d018443d1",
+ "encodedKey" "8a818e8f75ad70260175b1c6a75e2133",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27156.84,
+ {"totalBalance" 27294.97,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:03+01:00"}
+ "bookingDate" "2020-11-10T11:49:50+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:04+01:00",
+{"creationDate" "2020-11-10T11:49:50+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -2964,41 +2887,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1624",
+ "id" "1754",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:03+01:00",
+ "valueDate" "2020-11-10T11:49:50+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e1175acce040175ae1c8fcb4035",
+ "encodedKey" "8a818edc75ad703a0175b1c6a89a269b",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27179.84,
+ {"totalBalance" 27455.98,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:03+01:00"}
+ "bookingDate" "2020-11-10T11:49:50+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:04+01:00",
+{"creationDate" "2020-11-10T11:49:50+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3007,41 +2930,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1625",
+ "id" "1755",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:04+01:00",
+ "valueDate" "2020-11-10T11:49:50+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f0275accd820175ae1cc09a39bd",
+ "encodedKey" "8a818e4a75b09fb80175b1c6a9cd1f9d",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27202.84,
+ {"totalBalance" 27616.99,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:04+01:00"}
+ "bookingDate" "2020-11-10T11:49:50+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:04+01:00",
+{"creationDate" "2020-11-10T11:49:51+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3050,41 +2973,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1626",
+ "id" "1756",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:04+01:00",
+ "valueDate" "2020-11-10T11:49:51+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ebf75ad657f0175ae1d041b22b6",
+ "encodedKey" "8a818f0075b09f3e0175b1c6abe42098",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27225.84,
+ {"totalBalance" 27778.0,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:04+01:00"}
+ "bookingDate" "2020-11-10T11:49:51+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:05+01:00",
+{"creationDate" "2020-11-10T11:49:51+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3093,41 +3016,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1627",
+ "id" "1757",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:05+01:00",
+ "valueDate" "2020-11-10T11:49:51+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ff675ad65a10175ae1cc3db2645",
+ "encodedKey" "8a818f3175b0d3160175b1c6a2c91dad",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27248.84,
+ {"totalBalance" 27939.01,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:05+01:00"}
+ "bookingDate" "2020-11-10T11:49:51+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:05+01:00",
+{"creationDate" "2020-11-10T11:49:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3136,41 +3059,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1628",
+ "id" "1758",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:05+01:00",
+ "valueDate" "2020-11-10T11:49:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e5b75ad658b0175ae1cc56a22fa",
+ "encodedKey" "8a818eda75ad6fc40175b1c6b8cb19d4",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27271.84,
+ {"totalBalance" 28100.02,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:05+01:00"}
+ "bookingDate" "2020-11-10T11:49:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:06+01:00",
+{"creationDate" "2020-11-10T11:49:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3179,41 +3102,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1629",
+ "id" "1759",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:05+01:00",
+ "valueDate" "2020-11-10T11:49:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ef675ad658f0175ae1cc6c3214b",
+ "encodedKey" "8a818e8f75ad70260175b1c6b13e2137",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27294.84,
+ {"totalBalance" 28261.03,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:05+01:00"}
+ "bookingDate" "2020-11-10T11:49:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:06+01:00",
+{"creationDate" "2020-11-10T11:49:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3222,41 +3145,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1630",
+ "id" "1760",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:06+01:00",
+ "valueDate" "2020-11-10T11:49:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818f1475ad65ea0175ae1d519e2203",
+ "encodedKey" "8a818edc75ad703a0175b1c6bb2b269f",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27317.84,
+ {"totalBalance" 28422.04,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:06+01:00"}
+ "bookingDate" "2020-11-10T11:49:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:07+01:00",
+{"creationDate" "2020-11-10T11:49:52+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3265,41 +3188,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1631",
+ "id" "1761",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:06+01:00",
+ "valueDate" "2020-11-10T11:49:52+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fc875ad66020175ae1d5385256a",
+ "encodedKey" "8a818e4a75b09fb80175b1c6b3a61fa1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27340.84,
+ {"totalBalance" 28583.05,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:06+01:00"}
+ "bookingDate" "2020-11-10T11:49:52+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:07+01:00",
+{"creationDate" "2020-11-10T11:49:53+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3308,41 +3231,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1632",
+ "id" "1762",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:07+01:00",
+ "valueDate" "2020-11-10T11:49:53+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818eda75ad6fc40175ae1d551808be",
+ "encodedKey" "8a818f0075b09f3e0175b1c6b555209c",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27363.84,
+ {"totalBalance" 28744.06,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:07+01:00"}
+ "bookingDate" "2020-11-10T11:49:53+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:07+01:00",
+{"creationDate" "2020-11-10T11:49:53+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3351,41 +3274,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1633",
+ "id" "1763",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:07+01:00",
+ "valueDate" "2020-11-10T11:49:53+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818ffc75ad6fdb0175ae1d56e10f6b",
+ "encodedKey" "8a818f3175b0d3160175b1c6b75e1db1",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27386.84,
+ {"totalBalance" 28905.07,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:07+01:00"}
+ "bookingDate" "2020-11-10T11:49:53+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:08+01:00",
+{"creationDate" "2020-11-10T11:49:54+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3394,41 +3317,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1634",
+ "id" "1764",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:08+01:00",
+ "valueDate" "2020-11-10T11:49:54+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818e8f75ad70260175ae1d77d30d43",
+ "encodedKey" "8a818fce75aea51d0175b1c6adea656a",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27409.84,
+ {"totalBalance" 29066.08,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:08+01:00"}
+ "bookingDate" "2020-11-10T11:49:54+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:08+01:00",
+{"creationDate" "2020-11-10T11:49:54+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3437,41 +3360,41 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1635",
+ "id" "1765",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:08+01:00",
+ "valueDate" "2020-11-10T11:49:54+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818edc75ad703a0175ae1d59790a9c",
+ "encodedKey" "8a818eda75ad6fc40175b1c6b8cb19d8",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27432.84,
+ {"totalBalance" 29227.09,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:08+01:00"}
+ "bookingDate" "2020-11-10T11:49:54+01:00"}
 "Number of items:" 16
 
  nil"Successful Call: 201"
-{"creationDate" "2020-11-09T18:46:09+01:00",
+{"creationDate" "2020-11-10T11:49:55+01:00",
  "transactionDetails" {},
  "taxes"
  {"taxOnInterestAmount" 0,
@@ -3480,37 +3403,37 @@ clj::http.api.mambu.loan-account=>
   "taxOnFeesAmount" 0,
   "taxOnPenaltyAmount" 0},
  "userKey" "8a818efe6ccdd7d3016cce22da960bbe",
- "id" "1636",
+ "id" "1766",
  "parentAccountKey" "8a818ece75a3211a0175a8474e421294",
- "valueDate" "2020-11-09T18:46:08+01:00",
+ "valueDate" "2020-11-10T11:49:55+01:00",
  "affectedAmounts"
  {"principalAmount" 0,
   "interestAmount" 0,
   "interestFromArrearsAmount" 0,
   "deferredInterestAmount" 0,
-  "feesAmount" 23.0,
+  "feesAmount" 161.01,
   "penaltyAmount" 0,
   "fundersInterestAmount" 0,
   "organizationCommissionAmount" 0},
  "branchKey" "8a818ece75a3211a0175a8239c454d8b",
- "encodedKey" "8a818fd575ad709d0175ae1d5b2c0af9",
+ "encodedKey" "8a818e8f75ad70260175b1c6c476213b",
  "fees"
  [{"predefinedFeeKey" "8a818ece75a3211a0175a84cd03d1307",
    "name" "Documentation Fee",
-   "amount" 23.0,
+   "amount" 161.01,
    "taxAmount" 0,
    "trigger" "MANUAL"}],
  "type" "FEE_APPLIED",
- "amount" 23.0,
+ "amount" 161.01,
  "accountBalances"
- {"totalBalance" 27455.84,
+ {"totalBalance" 29388.1,
   "advancePosition" 0,
   "arrearsPosition" 0,
   "expectedPrincipalRedraw" 0,
   "redrawBalance" 0,
   "principalBalance" 21100.0},
  "terms" {"interestSettings" {}},
- "bookingDate" "2020-11-09T18:46:08+01:00"}
+ "bookingDate" "2020-11-10T11:49:55+01:00"}
 "Number of items:" 16
 
  ..."Successful Call: 201"

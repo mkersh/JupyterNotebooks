@@ -85,7 +85,21 @@
     (:basic-auth (get env/ENV-MAP envId)))
   )
 
+(defn get-num [strNum]
+  (BigDecimal. strNum))
+
+(defn round-num [num]
+  (format "%.2f" num))
+
 (declare get-lists-from tidyup-results findPath-aux)
+
+(defn get-attr [obj nested-fields & format]
+  (let [att-val (reduce #(get %1 %2) obj nested-fields)]
+    (if (= (first format) :DECIMAL)
+      (get-num att-val)
+      att-val)))
+
+
 
 (defn find-path 
   "Given a resultEdn find a match to matchStr
