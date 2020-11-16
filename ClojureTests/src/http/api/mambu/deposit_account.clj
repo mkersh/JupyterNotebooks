@@ -7,32 +7,29 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
                                 "limit" limitVal
                                 "offset" offset}}
         options (merge optdefs moreOpts)
-        url "{{env1}}/deposits"]
+        url "{{*env*}}/deposits"]
     (api/PRINT (api/GET url options))))
 
 (defn get-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         detailLevel (or (:details-level moreOpts) "FULL")
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id)]
+        url (str "{{*env*}}/deposits/" id)]
     (prn "**get-deposit " moreOpts)
     (api/PRINT (api/GET url options) moreOpts)))
 
 (defn create-deposit [prodid clientIdOrEncId & opt-overrides]
   (let [moreOpts (first opt-overrides)
         clientId (cust/get-customer-encid clientIdOrEncId)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body  {"accountType" "REGULAR_SAVINGS"
@@ -40,96 +37,86 @@
                          "currencyCode" "EUR"
                          "accountHolderKey" clientId
                          "productTypeKey" prodid
-                         "accountHolderType" "CLIENT"
-                         }}
+                         "accountHolderType" "CLIENT"}}
         options (merge optdefs moreOpts)]
-    (api/PRINT (api/POST "{{env1}}/deposits" options))))
+    (api/PRINT (api/POST "{{*env*}}/deposits" options))))
 
 (defn approve-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"action" "APPROVE"
                         "notes" "more notes"}
                  :query-params {}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id ":changeState")]
+        url (str "{{*env*}}/deposits/" id ":changeState")]
     (api/PRINT (api/POST url options))))
 
 (defn deposit-transaction [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"depositAccountId" id
                         "amount" 10.0}
                  :query-params {}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id "/deposit-transactions")]
+        url (str "{{*env*}}/deposits/" id "/deposit-transactions")]
     (api/PRINT (api/POST url options))))
 
 (defn withdrawal-transaction [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"depositAccountId" id
                         "amount" 10.0}
                  :query-params {}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id "/withdrawal-transactions")]
+        url (str "{{*env*}}/deposits/" id "/withdrawal-transactions")]
     (api/PRINT (api/POST url options))))
 
 (defn transfer-transaction [from-id to-id2 & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :body {"amount" 10.0
                         "transferDetails" {"linkedAccountId" to-id2
                                            "linkedAccountType" "DEPOSIT"
                                            ;"linkedAccountKey" "8a81868e6808ec4501680e7898bf26e5"
-                                           }
-                        }
+                                           }}
                  :query-params {}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" from-id "/transfer-transactions")]
+        url (str "{{*env*}}/deposits/" from-id "/transfer-transactions")]
     (api/PRINT (api/POST url options))))
 
 (defn delete-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id)]
+        url (str "{{*env*}}/deposits/" id)]
     (api/PRINT (api/DELETE url options))))
 
 (defn put-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body
                  {}}
-        url (str "{{env1}}/deposits/" id)
+        url (str "{{*env*}}/deposits/" id)
         options (merge optdefs moreOpts)]
     (api/PRINT (api/PUT url options))))
 
 (defn patch-deposit [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body [{"op" "ADD"
                          "path" "loanName"
-                         "value" "Lease3BBBBB"}
-                        ]}
+                         "value" "Lease3BBBBB"}]}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/deposits/" id)]
+        url (str "{{*env*}}/deposits/" id)]
     (api/PRINT (api/PATCH url options))))
 
 

@@ -5,14 +5,14 @@
             ))
 
 (defn apply-fee [loanid feeid amount installNumber]
-  (let [options {:basic-auth (api/get-auth)
+  (let [options {
                  :headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body {"amount" amount
                         "predefinedFeeKey" feeid
                         "installmentNumber" installNumber}}
-        url (str "{{env1}}/loans/" loanid "/fee-transactions")]
+        url (str "{{*env*}}/loans/" loanid "/fee-transactions")]
     (api/PRINT (api/POST url options))))
 
 (defn enumerate [s]
@@ -34,7 +34,10 @@
 
 (defn apply-VAT-to-instalments
   [loanid feeid vatPercentage]
-  (let [schedule-list (enumerate (get (loan/loan-schedule loanid {:no-print true}) "installments"))]
+  (let [schedule-list (enumerate
+                       (get
+                        (loan/loan-schedule loanid {:no-print true})
+                        "installments"))]
     (map #(apply-VAT loanid feeid vatPercentage %1)  schedule-list)))
 
 

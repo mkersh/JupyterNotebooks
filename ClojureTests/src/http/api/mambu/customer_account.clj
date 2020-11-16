@@ -9,15 +9,14 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
                                 "limit" limitVal
                                 "accountHolderType" "CLIENT"
                                 "accountHolderId" encID}}
         options (merge optdefs moreOpts)
-        url "{{env1}}/loans"]
+        url "{{*env*}}/loans"]
     (prn "*******get-customer-loans " options )
     (api/PRINT (api/GET url options) options)))
 

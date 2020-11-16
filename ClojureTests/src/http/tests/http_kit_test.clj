@@ -27,23 +27,23 @@
     (str/replace currentStr placeHolder placeHolderValue)))
 
 ;; Support the expansion of placeholder in URLs 
-;; e.g "{{env1}}/branches" which will have the {{env1}} placeholders replaced
+;; e.g "{{*env*}}/branches" which will have the {{*env*}} placeholders replaced
 (defn expandURL [url]
   (let [placeholderRegExp #"\{\{[^\}]*\}\}"
         placeholderList (re-seq placeholderRegExp url)
         placeholderSet (set placeholderList)]
     (reduce replacePlaceholder url placeholderSet)))
 
-(expandURL "{{env1}}/branches")
+(expandURL "{{*env*}}/branches")
 
 ;; Testing string replace
 (str/replace "112211331144" "11" "@@")
 
 ;; Tests to find out how to use clojure regExps to extract what I need
 (def placeholderRegExp #"\{\{[^\}]*\}\}")
-(re-seq placeholderRegExp "{{env1}}/branches{{env2}}some more{{env3}}")
-(re-seq placeholderRegExp "{{env1}}")
-(re-seq placeholderRegExp "{{env1}}{{env1}}")
+(re-seq placeholderRegExp "{{*env*}}/branches{{env2}}some more{{env3}}")
+(re-seq placeholderRegExp "{{*env*}}")
+(re-seq placeholderRegExp "{{*env*}}{{*env*}}")
 (re-seq placeholderRegExp "no placeholder to expand")
 
 ;; Extract the best response from resp
@@ -135,7 +135,7 @@
                   ;;                 "identificationDocumentTemplateKey" "8a81879867f40eff0167f45206e8002b"
                  })
                  }]
-    (PRINT (POST "{{env1}}/clients" options))))
+    (PRINT (POST "{{*env*}}/clients" options))))
 
 ;; Testing the functions
 (comment
@@ -168,7 +168,7 @@
                           }
                  :query-params {}
                          }
-        url (str "{{env1}}/clients/" NewCustomerID) ]
+        url (str "{{*env*}}/clients/" NewCustomerID) ]
     (PRINT (DELETE url options))))
 
 ;;; ----------------------------------------------------------------------
@@ -242,7 +242,7 @@
                          "groupKeys" []}
                         
                         }
-        url (str "{{env1}}/clients/" NewCustomerID)]
+        url (str "{{*env*}}/clients/" NewCustomerID)]
     (PRINT (PUT url options))))
 
 
@@ -273,7 +273,7 @@
                                          "path" "This attribute doesn't exists"
                                          "value" "FEMALEff"}])
                  }
-        url (str "{{env1}}/clients/" NewCustomerID)]
+        url (str "{{*env*}}/clients/" NewCustomerID)]
     (PRINT (PATCH url options))))
 
 ;; Testing the functions
@@ -295,14 +295,14 @@
   (let [options {:basic-auth (get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{*env*}}/clients/" id)]
     (PRINT (GET url options))))
 
 (defn apiTest-getAllBranches []
   (let [options {:basic-auth (get-auth "env1")
                  :headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" "FULL"}}]
-    (PRINT (GET "{{env1}}/branches" options))))
+    (PRINT (GET "{{*env*}}/branches" options))))
 
 ;; Testing the functions
 (comment

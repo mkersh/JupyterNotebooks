@@ -253,13 +253,14 @@
   (let [;; Need to strip the {{ and }} from the placeholder before doing the lookup
         p2 (str/replace placeHolder "{{" "")
         p3 (str/replace p2 "}}" "")
+        p4 (if (= p3 "*env*") ENV p3)
         ;;placeHolderValue (:url (get env/ENV-MAP p3))
-        placeHolderValue (:url (get env/ENV-MAP ENV))
+        placeHolderValue (:url (get env/ENV-MAP p4))
         ]
     (str/replace currentStr placeHolder placeHolderValue)))
 
 ;; Support the expansion of placeholder in URLs 
-;; e.g "{{env1}}/branches" which will have the {{env1}} placeholders replaced
+;; e.g "{{*env*}}/branches" which will have the {{*env*}} placeholders replaced
 (defn- expandURL [url]
   (let [placeholderRegExp #"\{\{[^\}]*\}\}"
         placeholderList (re-seq placeholderRegExp url)
@@ -274,17 +275,29 @@
       (str "SUCCESS: " status) ;; Could return resp for full response but makes it noisy
       (json/read-str body))))
 
+;;:Xbasic-auth (api/get-auth)
+(defn add-auth-header [options]
+  (if (:basic-auth options)
+    options
+    (assoc options :xbasic-auth (get-auth))))
 
 ;; Convert options parameters from EDN to JSON
 (defn- expand-options [options]
   ;;(prn "OPTIONS: " options)
-  (let [body (:body options)]
+  (let [options1 (add-auth-header options)
+        body (:body options1)]
     (if (or (map? body) (vector? body))
-      (assoc options :body (json/write-str body)) ; Convert body to JSON string if needed
-      options)))
+      (assoc options1 :body (json/write-str body)) ; Convert body to JSON string if needed
+      options1)))
 
 ;;(def nCinoConnectorJson (convertJsonFileToEdn "/Users/mkersh/Downloads/folder_684_1599545125.json"))
 
 (comment
 ;;(find-path "https://{{config.url}}" nCinoConnectorJson
+;;
+(def req1 {:xbasic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW32"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "FULL"}})
+
+(add-auth-header req1)
+
+(conj [:basic-auth 123] req1)
 )

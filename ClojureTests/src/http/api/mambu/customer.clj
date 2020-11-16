@@ -7,32 +7,28 @@
         detailLevel (or (:details-level moreOpts) "FULL")
         limitVal (or (:limit moreOpts) 50)
         offset (or (:offset moreOpts) 0)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
-                 :query-params {
-                                "detailsLevel" (or detailLevel "FULL")
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
+                 :query-params {"detailsLevel" (or detailLevel "FULL")
                                 "paginationDetails" "ON"
                                 "limit" limitVal
                                 "offset" offset}}
         options (merge optdefs moreOpts)
-        url "{{env1}}/clients"]
+        url "{{*env*}}/clients"]
     (prn options)
     (api/PRINT (api/GET url options))))
 
 (defn get-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
         detailLevel (or (:details-level moreOpts) "FULL")
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {"detailsLevel" detailLevel}}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{*env*}}/clients/" id)]
     (api/PRINT (api/GET url options) moreOpts)))
 
 (defn create-customer [& opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body  {"firstName" "Dominic"
@@ -44,22 +40,20 @@
                          "gender" "MALE"
                          "identificationDocumentTemplateKey" "8a81879867f40eff0167f45206e8002b"}}
         options (merge optdefs moreOpts)]
-    (api/PRINT (api/POST "{{env1}}/clients" options))))
+    (api/PRINT (api/POST "{{*env*}}/clients" options))))
 
 
 (defn delete-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"}
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"}
                  :query-params {}}
-        url (str "{{env1}}/clients/" id)
+        url (str "{{*env*}}/clients/" id)
         options (merge optdefs moreOpts)]
     (api/PRINT (api/DELETE url options))))
 
 (defn put-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body
@@ -82,14 +76,13 @@
                                   <p style= 'color:#FF0000';>Red paragraph text</p>
                                   "
                   "groupKeys" []}}
-        url (str "{{env1}}/clients/" id)
+        url (str "{{*env*}}/clients/" id)
         options (merge optdefs moreOpts)]
     (api/PRINT (api/PUT url options))))
 
 (defn patch-customer [id & opt-overrides]
   (let [moreOpts (first opt-overrides)
-        optdefs {:basic-auth (api/get-auth)
-                 :headers {"Accept" "application/vnd.mambu.v2+json"
+        optdefs {:headers {"Accept" "application/vnd.mambu.v2+json"
                            "Content-Type" "application/json"}
                  :query-params {}
                  :body [{"op" "ADD"
@@ -107,7 +100,7 @@
                          "path" "This attribute doesn't exists"
                          "value" "FEMALEff"}]}
         options (merge optdefs moreOpts)
-        url (str "{{env1}}/clients/" id)]
+        url (str "{{*env*}}/clients/" id)]
     (api/PRINT (api/PATCH url options))))
 
 
