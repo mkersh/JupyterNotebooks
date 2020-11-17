@@ -116,44 +116,50 @@
 
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
-(comment 
+(comment
+  (api/setenv "env1")
   (def NewCustomerID "596337874")
   (time (list-customers {:query-params {"detailsLevel" "BASIC"}}))
   (time (list-customers {:details-level "BASIC"}))
   (time (list-customers {:details-level "FULL" :limit 6 :offset 0}))
   (time (list-customers))
-  
+
   (time (get-customer NewCustomerID {:no-print true}))
   (time (get-customer NewCustomerID {:details-level "FULL"}))
   (time (get-customer NewCustomerID {:details-level "BASIC"}))
-  
+
   (get-customer-encid "756828242")
-  
+
   (time (create-customer))
   (time (create-customer {:body  {"firstName" "Jane"
-                         "lastName" "Brown"}}))
-  
+                                  "lastName" "Brown"}}))
+
   (time (delete-customer NewCustomerID))
-  
+
   (time (patch-customer NewCustomerID {:body [{"op" "ADD"
-                         "path" "firstName"
-                         "value" "1212121212121212"}]}))
+                                               "path" "firstName"
+                                               "value" "1212121212121212"}]}))
   (time (patch-customer NewCustomerID))
-  
+
   (time (put-customer "580959603" {:body {"creationDate" "2020-08-14T22:24:47+02:00"
-                                            "idDocuments" []
-                                            "groupLoanCycle" 0
-                                            "preferredLanguage" "ENGLISH"
-                                            "lastName" "Brownxx"
-                                            "id" "580959603"
-                                            "lastModifiedDate" "2020-08-14T22:24:47+02:00"
-                                            "firstName" "Charles"
-                                            "encodedKey" "8a81871173ec66260173eea5761e1d9e"
-                                            "addresses" []
-                                            "loanCycle" 0
-                                            "state" "INACTIVE"
-                                            "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
+                                          "idDocuments" []
+                                          "groupLoanCycle" 0
+                                          "preferredLanguage" "ENGLISH"
+                                          "lastName" "Brownxx"
+                                          "id" "580959603"
+                                          "lastModifiedDate" "2020-08-14T22:24:47+02:00"
+                                          "firstName" "Charles"
+                                          "encodedKey" "8a81871173ec66260173eea5761e1d9e"
+                                          "addresses" []
+                                          "loanCycle" 0
+                                          "state" "INACTIVE"
+                                          "clientRoleKey" "8a818e74677a2e9201677ec2b4c336aa"}}))
   (time (put-customer NewCustomerID))
+
+  (api/setenv "env3")
+  (api/setenv "env1")
+  (def NewCustomerID "370395062")
+  (time (get-customer NewCustomerID {:details-level "FULL"}))
   
- 
+  
   )

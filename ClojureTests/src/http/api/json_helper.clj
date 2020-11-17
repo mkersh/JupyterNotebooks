@@ -51,11 +51,15 @@
     ))
 
 (defn- request [url, method, options0]
+  ;;(prn "request START")
+  
   (let [url-expanded (expandURL url)
         options (expand-options options0)
         response @(method url-expanded options)
         status (:status response)]
 
+    ;;(prn options)
+    ;;(prn "request ENDxxx")
     (if (< status 300)
       (PRN (str "Successful Call: " status) options0)
       (if (:throw-errors options)
@@ -84,6 +88,11 @@
   ([envId]
     (:basic-auth (get env/ENV-MAP envId)))
   )
+
+(defn get-auth2
+  ([] (get-auth2 ENV))
+  ([envId]
+   (:ApiKey (get env/ENV-MAP envId))))
 
 (defn get-num [strNum]
   (BigDecimal. strNum))
@@ -275,11 +284,22 @@
       (str "SUCCESS: " status) ;; Could return resp for full response but makes it noisy
       (json/read-str body))))
 
-;;:Xbasic-auth (api/get-auth)
-(defn add-auth-header [options]
+(defn add-apikey-header [options]
+  (let [headers (:headers options)
+        ext-headers (assoc headers "ApiKey" (get-auth2))]
+    (assoc options :headers ext-headers)))
+
+(defn add-auth-header
+  "Add an authentication header to the request. 
+  Get this using (get-auth)"
+  [options]
   (if (:basic-auth options)
     options
-    (assoc options :xbasic-auth (get-auth))))
+    (if (get-auth2)
+      ;; Use ApiKey method as the preferrence (if supplied) else basic-auth
+      (add-apikey-header options)
+      ;;(assoc options :basic-auth (get-auth))
+      (assoc options :basic-auth (get-auth)))))
 
 ;; Convert options parameters from EDN to JSON
 (defn- expand-options [options]
@@ -300,4 +320,7 @@
 (add-auth-header req1)
 
 (conj [:basic-auth 123] req1)
+
+(setenv "env3b")
+(get-auth2)
 )
