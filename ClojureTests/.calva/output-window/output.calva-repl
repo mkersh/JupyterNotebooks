@@ -139,3 +139,118 @@ clj::http.api.mambu.customer=>
 "Elapsed time: 605.043794 msecs"
 nil
 clj::http.api.mambu.customer=> 
+; Evaluating file: json_helper.clj
+nil
+clj::http.api.json_helper=> 
+"ERROR Status: " 404
+{"errors" [{"errorCode" 301, "errorReason" "INVALID_CLIENT_ID"}]}
+"Number of items:" 1
+"Elapsed time: 3582.184393 msecs"
+nil
+clj::http.api.mambu.customer=> 
+#'http.api.mambu.customer/NewCustomerID
+clj::http.api.mambu.customer=> 
+"ERROR Status: " 404
+{"errors" [{"errorCode" 301, "errorReason" "INVALID_CLIENT_ID"}]}
+"Number of items:" 1
+"Elapsed time: 1993.255509 msecs"
+nil
+clj::http.api.mambu.customer=> 
+#'http.api.json_helper/ENV
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2020-11-16T17:06:49Z",
+ "idDocuments" [],
+ "approvedDate" "2020-11-16T17:07:16Z",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Payments",
+ "id" "370395062",
+ "lastModifiedDate" "2020-11-16T17:07:16Z",
+ "firstName" "Test",
+ "assignedBranchKey" "8a194434749b715001749ba61fdc0606",
+ "encodedKey" "8a19bc1775d1ded50175d204f62401ff",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a195222749b818c01749ba530a70053",
+ "notes" "",
+ "groupKeys" [],
+ "_Custom_Fields_Clients"
+ {"internal_client_id" "2112112", "internal_user_id" "2111212"}}
+"Number of items:" 18
+"Elapsed time: 422.233727 msecs"
+nil
+clj::http.api.mambu.customer=> 
+; Evaluating file: json_helper.clj
+; Syntax error macroexpanding clojure.core/let at (src/http/api/json_helper.clj:308:3).
+; [envId] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+; Evaluation of file json_helper.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj::http.api.json_helper=> 
+#'http.api.json_helper/add-apikey-header
+clj::http.api.json_helper=> 
+; Evaluating file: json_helper.clj
+nil
+clj::http.api.json_helper=> 
+"env1"
+clj::http.api.json_helper=> 
+"env3"
+clj::http.api.json_helper=> 
+"env1"
+clj::http.api.json_helper=> 
+; Evaluating file: json_helper.clj
+nil
+clj::http.api.json_helper=> 
+#'http.api.json_helper/ENV
+clj::http.api.mambu.customer=> 
+#'http.api.mambu.customer/NewCustomerID
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2020-11-16T17:06:49Z",
+ "idDocuments" [],
+ "approvedDate" "2020-11-16T17:07:16Z",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Payments",
+ "id" "370395062",
+ "lastModifiedDate" "2020-11-16T17:07:16Z",
+ "firstName" "Test",
+ "assignedBranchKey" "8a194434749b715001749ba61fdc0606",
+ "encodedKey" "8a19bc1775d1ded50175d204f62401ff",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a195222749b818c01749ba530a70053",
+ "notes" "",
+ "groupKeys" [],
+ "_Custom_Fields_Clients"
+ {"internal_client_id" "2112112", "internal_user_id" "2111212"}}
+"Number of items:" 18
+"Elapsed time: 1513.53126 msecs"
+nil
+clj::http.api.mambu.customer=> 
+"Successful Call: 200"
+{"creationDate" "2020-11-16T17:06:49Z",
+ "idDocuments" [],
+ "approvedDate" "2020-11-16T17:07:16Z",
+ "groupLoanCycle" 0,
+ "preferredLanguage" "ENGLISH",
+ "lastName" "Payments",
+ "id" "370395062",
+ "lastModifiedDate" "2020-11-16T17:07:16Z",
+ "firstName" "Test",
+ "assignedBranchKey" "8a194434749b715001749ba61fdc0606",
+ "encodedKey" "8a19bc1775d1ded50175d204f62401ff",
+ "addresses" [],
+ "loanCycle" 0,
+ "state" "INACTIVE",
+ "clientRoleKey" "8a195222749b818c01749ba530a70053",
+ "notes" "",
+ "groupKeys" [],
+ "_Custom_Fields_Clients"
+ {"internal_client_id" "2112112", "internal_user_id" "2111212"}}
+"Number of items:" 18
+"Elapsed time: 1026.568182 msecs"
+nil
+clj::http.api.mambu.customer=> 

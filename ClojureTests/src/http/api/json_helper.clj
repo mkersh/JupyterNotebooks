@@ -54,7 +54,7 @@
   ;;(prn "request START")
   
   (let [url-expanded (expandURL url)
-        options (expand-options options0)
+        options (expand-options options0 url)
         response @(method url-expanded options)
         status (:status response)]
 
@@ -257,6 +257,12 @@
 
 
 
+(defn- get-envID [_ placeHolder]
+  (let [;; Need to strip the {{ and }} from the placeholder before doing the lookup
+        p2 (str/replace placeHolder "{{" "")
+        p3 (str/replace p2 "}}" "")
+        p4 (if (= p3 "*env*") ENV p3)]
+    p4))
 
 (defn- replacePlaceholder [currentStr placeHolder]
   (let [;; Need to strip the {{ and }} from the placeholder before doing the lookup
@@ -276,6 +282,12 @@
         placeholderSet (set placeholderList)]
     (reduce replacePlaceholder url placeholderSet)))
 
+(defn- get-env-from-URL [url]
+  (let [placeholderRegExp #"\{\{[^\}]*\}\}"
+        placeholderList (re-seq placeholderRegExp url)
+        placeholderSet (set placeholderList)]
+    (reduce get-envID url placeholderSet)))
+
 ;; Extract the best response from resp
 (defn- best-response [resp]
   (let [body (:body resp)
@@ -284,27 +296,28 @@
       (str "SUCCESS: " status) ;; Could return resp for full response but makes it noisy
       (json/read-str body))))
 
-(defn add-apikey-header [options]
+(defn add-apikey-header [options envId]
   (let [headers (:headers options)
-        ext-headers (assoc headers "ApiKey" (get-auth2))]
+        ext-headers (assoc headers "ApiKey" (get-auth2 envId))]
     (assoc options :headers ext-headers)))
 
 (defn add-auth-header
   "Add an authentication header to the request. 
   Get this using (get-auth)"
-  [options]
-  (if (:basic-auth options)
-    options
-    (if (get-auth2)
+  [options url]
+  (let [envId (get-env-from-URL url)]
+    (if (:basic-auth options)
+      options
+      (if (get-auth2 envId)
       ;; Use ApiKey method as the preferrence (if supplied) else basic-auth
-      (add-apikey-header options)
+        (add-apikey-header options envId)
       ;;(assoc options :basic-auth (get-auth))
-      (assoc options :basic-auth (get-auth)))))
+        (assoc options :basic-auth (get-auth envId))))))
 
 ;; Convert options parameters from EDN to JSON
-(defn- expand-options [options]
+(defn- expand-options [options url]
   ;;(prn "OPTIONS: " options)
-  (let [options1 (add-auth-header options)
+  (let [options1 (add-auth-header options url)
         body (:body options1)]
     (if (or (map? body) (vector? body))
       (assoc options1 :body (json/write-str body)) ; Convert body to JSON string if needed
@@ -318,6 +331,8 @@
 (def req1 {:xbasic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW32"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "FULL"}})
 
 (add-auth-header req1)
+
+(get-env-from-URL "{{*env*}}/clients/")
 
 (conj [:basic-auth 123] req1)
 
