@@ -1,4 +1,235 @@
+"ERROR Status: " 400
+{:last-call
+ {"errors" [{"errorCode" 4, "errorSource" "Request entity is required", "errorReason" "INVALID_PARAMETERS"}]},
+ :last-name "Barry4",
+ :rcashop-id "GSOT125",
+ :XXcust-key "8a818ed276333a6d0176339f7b494eea",
+ :first-name "John",
+ :ca-id "LPJ539",
+ :rcacash-id "RUFK377",
+ :accid "GSOT125",
+ :branchid "8a818f5f6cbe6621016cbf217c9e5060",
+ :tempdda-id "OXVX863",
+ :show-only false}
+clj::http.api.mambu.demo.credit_card_pipe=> 
+; Evaluating file: credit_card_pipe.clj
+nil
+clj::http.api.mambu.demo.credit_card_pipe=> 
+"Successful Call: 200"
+{:last-call
+ {"creationDate" "2020-12-05T18:58:22+01:00",
+  "approvedDate" "2020-12-05T19:00:45+01:00",
+  "accruedInterest" 0,
+  "prepaymentSettings"
+  {"prepaymentRecalculationMethod" "NO_RECALCULATION",
+   "principalPaidInstallmentStatus" "PARTIALLY_PAID",
+   "applyInterestOnPrepaymentMethod" "AUTOMATIC"},
+  "productTypeKey" "8a818f5f6cbe6621016cbf6d66075e54",
+  "balances"
+  {"interestFromArrearsDue" 0,
+   "interestFromArrearsPaid" 0,
+   "feesDue" 0,
+   "feesPaid" 0,
+   "penaltyDue" 0,
+   "penaltyBalance" 0,
+   "interestBalance" 0,
+   "interestFromArrearsBalance" 0,
+   "principalDue" 0,
+   "redrawBalance" 0,
+   "principalBalance" 0,
+   "penaltyPaid" 0,
+   "holdBalance" 0,
+   "interestPaid" 0,
+   "interestDue" 0,
+   "feesBalance" 0,
+   "principalPaid" 0},
+  "id" "GSOT125",
+  "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS",
+  "lastModifiedDate" "2020-12-05T19:00:44+01:00",
+  "arrearsTolerancePeriod" 0,
+  "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE",
+  "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09",
+  "encodedKey" "8a818f447633453a0176340d9a6c624e",
+  "accountArrearsSettings"
+  {"encodedKey" "8a818f447633453a0176340d9a6c6251",
+   "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD",
+   "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS",
+   "nonWorkingDaysMethod" "EXCLUDED",
+   "tolerancePeriod" 0},
+  "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"},
+  "interestFromArrearsAccrued" 0,
+  "principalPaymentSettings"
+  {"encodedKey" "8a818f447633453a0176340d9a6c624f",
+   "totalDuePayment" "TOTAL_BALANCE_PERCENTAGE",
+   "includeInterestInFloorAmount" false,
+   "includeFeesInFloorAmount" false,
+   "percentage" 3.0},
+  "disbursementDetails" {"encodedKey" "8a818f447633453a0176340d9a6c6250", "fees" []},
+  "accountState" "APPROVED",
+  "paymentMethod" "HORIZONTAL",
+  "creditArrangementKey" "8a818e85763351a20176340d980c2100",
+  "allowOffset" false,
+  "interestSettings"
+  {"interestChargeFrequency" "ANNUALIZED",
+   "interestApplicationMethod" "REPAYMENT_DUE_DATE",
+   "accrueLateInterest" true,
+   "interestRateReviewUnit" "DAYS",
+   "interestSpread" 0,
+   "interestCalculationMethod" "DECLINING_BALANCE",
+   "interestRateReviewCount" 31,
+   "interestBalanceCalculationMethod" "ONLY_PRINCIPAL",
+   "interestRateSource" "INDEX_INTEREST_RATE",
+   "interestType" "SIMPLE_INTEREST",
+   "interestRate" 24.9,
+   "accrueInterestAfterMaturity" false},
+  "scheduleSettings"
+  {"periodicPayment" 0,
+   "fixedDaysOfMonth" [1],
+   "hasCustomSchedule" false,
+   "gracePeriod" 0,
+   "shortMonthHandlingMethod" "LAST_DAY_IN_MONTH",
+   "scheduleDueDatesMethod" "FIXED_DAYS_OF_MONTH",
+   "repaymentScheduleMethod" "DYNAMIC",
+   "repaymentInstallments" 0,
+   "principalRepaymentInterval" 1,
+   "gracePeriodType" "NONE"},
+  "accountHolderType" "CLIENT",
+  "loanAmount" 30000.0,
+  "loanName" "CC - Purchases",
+  "accountHolderKey" "8a818fcc763351880176340b315720bf",
+  "accruedPenalty" 0},
+ :last-name "Barry4",
+ :rcashop-id "GSOT125",
+ :XXcust-key "8a818ed276333a6d0176339f7b494eea",
+ :first-name "John",
+ :ca-id "LPJ539",
+ :rcacash-id "RUFK377",
+ :accid "GSOT125",
+ :branchid "8a818f5f6cbe6621016cbf217c9e5060",
+ :tempdda-id "OXVX863",
+ :show-only false}
+clj::http.api.mambu.demo.credit_card_pipe=> 
+; Evaluating file: credit_card_pipe.clj
+nil
+clj::http.api.mambu.demo.credit_card_pipe=> 
+{:last-name "Barry4",
+ :rcashop-id "GSOT125",
+ :XXcust-key "8a818ed276333a6d0176339f7b494eea",
+ :first-name "John",
+ :ca-id "LPJ539",
+ :rcacash-id "RUFK377",
+ :branchid "8a818f5f6cbe6621016cbf217c9e5060",
+ :tempdda-id "OXVX863",
+ :show-only false}
+clj::http.api.mambu.demo.credit_card_pipe=> 
+#'http.api.mambu.demo.credit_card_pipe/create-cc-collection
+clj::http.api.mambu.demo.credit_card_pipe=> 
 "Successful Call: 201"
-"Successful Call: 204"
-{:first-name "John", :last-name "Barry3", :last-call "SUCCESS: 204", :custid "109504269"}
+"Successful Call: 201"
+"Successful Call: 201"
+"Successful Call: 201"
+"Successful Call: 201"
+"Successful Call: 200"
+"Successful Call: 200"
+"Successful Call: 200"
+"Successful Call: 200"
+"Successful Call: 200"
+"Successful Call: 200"
+{:last-call
+ {"creationDate" "2020-12-05T19:02:01+01:00",
+  "approvedDate" "2020-12-05T19:02:03+01:00",
+  "accruedInterest" 0,
+  "prepaymentSettings"
+  {"prepaymentRecalculationMethod" "NO_RECALCULATION",
+   "principalPaidInstallmentStatus" "PARTIALLY_PAID",
+   "applyInterestOnPrepaymentMethod" "AUTOMATIC"},
+  "productTypeKey" "8a818f5f6cbe6621016cbf6d66075e54",
+  "balances"
+  {"interestFromArrearsDue" 0,
+   "interestFromArrearsPaid" 0,
+   "feesDue" 0,
+   "feesPaid" 0,
+   "penaltyDue" 0,
+   "penaltyBalance" 0,
+   "interestBalance" 0,
+   "interestFromArrearsBalance" 0,
+   "principalDue" 0,
+   "redrawBalance" 0,
+   "principalBalance" 0,
+   "penaltyPaid" 0,
+   "holdBalance" 0,
+   "interestPaid" 0,
+   "interestDue" 0,
+   "feesBalance" 0,
+   "principalPaid" 0},
+  "id" "CFTI794",
+  "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS",
+  "lastModifiedDate" "2020-12-05T19:02:03+01:00",
+  "arrearsTolerancePeriod" 0,
+  "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE",
+  "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09",
+  "encodedKey" "8a818f447633453a0176340e03d0625a",
+  "accountArrearsSettings"
+  {"encodedKey" "8a818f447633453a017634115adb62cb",
+   "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD",
+   "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS",
+   "nonWorkingDaysMethod" "EXCLUDED",
+   "tolerancePeriod" 0},
+  "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"},
+  "interestFromArrearsAccrued" 0,
+  "principalPaymentSettings"
+  {"encodedKey" "8a818f447633453a0176340e03d0625b",
+   "totalDuePayment" "TOTAL_BALANCE_PERCENTAGE",
+   "includeInterestInFloorAmount" false,
+   "includeFeesInFloorAmount" false,
+   "percentage" 3.0},
+  "disbursementDetails" {"encodedKey" "8a818f447633453a017634115adb62ca", "fees" []},
+  "accountState" "APPROVED",
+  "paymentMethod" "HORIZONTAL",
+  "creditArrangementKey" "8a818e85763351a20176340e00682106",
+  "allowOffset" false,
+  "interestSettings"
+  {"interestChargeFrequency" "ANNUALIZED",
+   "interestApplicationMethod" "REPAYMENT_DUE_DATE",
+   "accrueLateInterest" true,
+   "interestRateReviewUnit" "DAYS",
+   "interestSpread" 0,
+   "interestCalculationMethod" "DECLINING_BALANCE",
+   "interestRateReviewCount" 31,
+   "interestBalanceCalculationMethod" "ONLY_PRINCIPAL",
+   "interestRateSource" "INDEX_INTEREST_RATE",
+   "interestType" "SIMPLE_INTEREST",
+   "interestRate" 24.9,
+   "accrueInterestAfterMaturity" false},
+  "scheduleSettings"
+  {"periodicPayment" 0,
+   "fixedDaysOfMonth" [1],
+   "hasCustomSchedule" false,
+   "gracePeriod" 0,
+   "shortMonthHandlingMethod" "LAST_DAY_IN_MONTH",
+   "scheduleDueDatesMethod" "FIXED_DAYS_OF_MONTH",
+   "repaymentScheduleMethod" "DYNAMIC",
+   "repaymentInstallments" 0,
+   "principalRepaymentInterval" 1,
+   "gracePeriodType" "NONE"},
+  "accountHolderType" "CLIENT",
+  "loanAmount" 30000.0,
+  "loanName" "CC - Purchases",
+  "accountHolderKey" "8a818fcc763351880176340e0858210e",
+  "accruedPenalty" 0},
+ :last-name "Barry4",
+ :rcashop-id "CFTI794",
+ :custid "916695929",
+ :acc-name "CC - Purchases",
+ :XXcust-key "8a818ed276333a6d0176339f7b494eea",
+ :tempdda-product "8a818f5f6cbe6621016cbf7310ff6064",
+ :first-name "John",
+ :ca-id "WAF274",
+ :rcacash-id "BLLX920",
+ :prod-key "8a818f5f6cbe6621016cbf6d66075e54",
+ :accid "CFTI794",
+ :branchid "8a818f5f6cbe6621016cbf217c9e5060",
+ :tempdda-id "VCDJ970",
+ :cust-key "8a818fcc763351880176340e0858210e",
+ :show-only false}
 clj::http.api.mambu.demo.credit_card_pipe=> 

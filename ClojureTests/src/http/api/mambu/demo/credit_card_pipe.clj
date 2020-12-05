@@ -5,7 +5,7 @@
 
 (def create-customer
   (fn [context]
-    {:url (str "{{*env*}}/clients/" (:custid context))
+    {:url (str "{{*env*}}/clients")
      :method api/POST
      :headers {"Accept" "application/vnd.mambu.v2+json"
                "Content-Type" "application/json"}
@@ -20,6 +20,108 @@
             "assignedBranchKey" (:branchid context)}
      }))
 
+(defn create-credit-arrangement [context]
+  {:url (str "{{*env*}}/creditarrangements")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :query-params {}
+   :body  {"amount" 10000.0
+           "availableCreditAmount" 10000.0
+           "expireDate" "2030-08-23T00:00:00+02:00"
+           "exposureLimitType" "OUTSTANDING_AMOUNT"
+           "holderKey" (:cust-key context)
+           "holderType" "CLIENT"
+           "notes" ""
+           "startDate" "2019-08-23T00:00:00+02:00"
+           "state" "APPROVED"
+           "_URepayOptions" {"AutoRepayMethod" "Direct-Debit"
+                             "PaymentDueDay" "1"
+                             "ShortMonthOption" "late"}}})
+
+(defn createRCABucket [context]
+  {:url (str "{{*env*}}/loans")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :query-params {}
+   :body  {"loanAmount" 30000.0
+           "loanName" (:acc-name context)
+           "accountHolderKey" (:cust-key context)
+           "productTypeKey" (:prod-key context)
+           "accountHolderType" "CLIENT"
+           "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09"
+           "interestFromArrearsAccrued" 0.0
+           "interestSettings" {"accrueInterestAfterMaturity" false
+                               "interestApplicationMethod" "REPAYMENT_DUE_DATE"
+                               "interestBalanceCalculationMethod" "ONLY_PRINCIPAL"
+                               "interestCalculationMethod" "DECLINING_BALANCE"
+                               "interestChargeFrequency" "ANNUALIZED"
+                               "interestRateReviewCount" 31
+                               "interestRateReviewUnit" "DAYS"
+                               "interestRateSource" "INDEX_INTEREST_RATE"
+                               "interestSpread" 0.0
+                               "interestType" "SIMPLE_INTEREST"}
+           "scheduleSettings" {"fixedDaysOfMonth" [1]
+                               "gracePeriod" 0
+                               "gracePeriodType" "NONE"
+                               "paymentPlan" []
+                               "periodicPayment" 0.0
+                               "principalRepaymentInterval" 1
+                               "repaymentPeriodUnit" "DAYS"
+                               "repaymentScheduleMethod" "DYNAMIC"
+                               "scheduleDueDatesMethod" "FIXED_DAYS_OF_MONTH"
+                               "shortMonthHandlingMethod" "LAST_DAY_IN_MONTH"}}})
+
+(defn createTEMPCardDDAAccount [context]
+  {:url (str "{{*env*}}/deposits")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :body {"overdraftInterestSettings" {"interestRateSettings" {"encodedKey" "8a818f9c6cd48156016cd6ef16ec3c25"
+                                                               "interestChargeFrequency" "ANNUALIZED"
+                                                               "interestChargeFrequencyCount" 1
+                                                               "interestRate" 0.0
+                                                               "interestRateSource" "FIXED_INTEREST_RATE"
+                                                               "interestRateTerms" "FIXED"
+                                                               "interestRateTiers" []}}
+          "overdraftSettings" {"allowOverdraft" true
+                               "overdraftExpiryDate" "2020-05-02T00:00:00+02:00"
+                               "overdraftLimit" 0.0}
+
+          "accountType" "CURRENT_ACCOUNT"
+          "name" "TEMP Card Account"
+          "accountHolderKey" (:cust-key context)
+          "productTypeKey" (:tempdda-product context)
+          "currencyCode" "EUR"
+          "accountHolderType" "CLIENT"}})
+
+(defn addDepositToCreditLine [context]
+  {:url (str "{{*env*}}/linesofcredit/" (:ca-id context) "/savings/" (:accid context) )
+   :method api/POST
+   :headers {"Content-Type" "application/json"}})
+
+(defn addLoanToCreditLine [context]
+  {:url (str "{{*env*}}/linesofcredit/" (:ca-id context) "/loans/" (:accid context))
+   :method api/POST
+   :headers {"Content-Type" "application/json"}})
+
+(defn approveDepositAccount [context]
+  {:url (str "{{*env*}}/deposits/" (:accid context) ":changeState")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :body {"action" "APPROVE"
+          "notes" "Approved from the API"}})
+
+(defn approveLoanAccount [context]
+  {:url (str "{{*env*}}/loans/" (:accid context) ":changeState")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :body {"action" "APPROVE"
+          "notes" "Approved from the API"}})
+
 (def delete-customer
   (fn [context]
     {:url (str "{{*env*}}/clients/" (:custid context))
@@ -30,20 +132,60 @@
 
 ;; A collection of steps     
 (def create-cc-collection
-  {:context {:first-name "John", :last-name "Barry4"}
-   :steps [{:request create-customer
-            :post-filter [(steps/save-part-to-context ["id"] :custid)
-                          ;;(steps/save-part-to-context [0 "birthDate"] :last-date)
-                          ;;(save-last-to-context :cust-list)
-                          ]}
-            {:request delete-customer }
+  {:context {:show-only false ; when true only prints steps, doesn't execute
+             :first-name "John", :last-name "Barry4" 
+             :XXcust-key "8a818ed276333a6d0176339f7b494eea"
+             :branchid "8a818f5f6cbe6621016cbf217c9e5060"
+             :ca-id "LPJ539"
+             :tempdda-id "OXVX863"
+             :rcashop-id "GSOT125"
+             :rcacash-id "RUFK377"}
+   :Xjump-to-step :jump-here ; set :id in a step to :jump-here
+   :steps [;; [STEP-1] Create Customer
+           {:request create-customer
+            :post-filter [;(steps/save-last-to-context :cust-create)
+                          (steps/save-part-to-context ["encodedKey"] :cust-key)
+                          (steps/save-part-to-context ["id"] :custid)]}
+           ;; [STEP-2] Create CA
+           {:request create-credit-arrangement
+            :post-filter [(steps/save-part-to-context ["id"] :ca-id)]}
+           ;; [STEP-3] Create RCA-CASH
+           {:pre-filter [(steps/save-value-to-context "8a818f5f6cbe6621016cbf3cf8675424" :prod-key)
+                         (steps/save-value-to-context  "CC - Cash" :acc-name)]
+            :request createRCABucket
+            :post-filter [;(steps/print-context "**RCA-CASH**:")
+                          (steps/save-part-to-context ["id"] :rcacash-id)]}
+            ;; [STEP-4] Create RCA-Purchase
+           {:pre-filter [(steps/save-value-to-context "8a818f5f6cbe6621016cbf6d66075e54" :prod-key)
+                         (steps/save-value-to-context  "CC - Purchases" :acc-name)]
+            :request createRCABucket
+            :post-filter [(steps/save-part-to-context ["id"] :rcashop-id)]}
 
-        ;;    {
-        ;;     :request (fn [_] 
-        ;;                {:method (fn [_,_] (prn "Step 2"))})
-        ;;    }
-        ]}
+           ;; [STEP-5] Create TempDDA
+           {:pre-filter [(steps/save-value-to-context "8a818f5f6cbe6621016cbf7310ff6064" :tempdda-product)
+                         (steps/save-value-to-context  false :show-only)]
+            :request createTEMPCardDDAAccount
+            :post-filter [(steps/save-part-to-context ["id"] :tempdda-id)]}
+
+            ;; [STEP-6] Add Accounts to Credit-Arrangement
+           {:pre-filter [(steps/save-context-value-to-context :tempdda-id :accid)]
+            :request addDepositToCreditLine}
+           {:pre-filter [(steps/save-context-value-to-context :rcacash-id :accid)]
+            :request addLoanToCreditLine}
+           {:pre-filter [(steps/save-context-value-to-context :rcashop-id :accid)]
+            :request addLoanToCreditLine}
+
+            ;; [STEP-7] Approve Accounts
+           {:pre-filter [(steps/save-context-value-to-context :tempdda-id :accid)]
+            :request approveDepositAccount}
+           {:pre-filter [(steps/save-context-value-to-context :rcacash-id :accid)]
+            :request approveLoanAccount}
+           {:pre-filter [(steps/save-context-value-to-context :rcashop-id :accid)]
+            :request approveLoanAccount}]}
            
+           ;; [STEP-7] Activate the TempDDA
+           ;; Need to deposit some cash and then withdraw
+
            )
 
 (comment

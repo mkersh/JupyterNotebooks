@@ -1,7 +1,8 @@
 ;;; Support the processing of a collection of JSON API calls
 ;;; 
 (ns http.api.api_pipe
-  (:require [http.api.json_helper :as api]))
+  (:require [http.api.json_helper :as api]
+            [clojure.pprint :as pp]))
 
 (defn save-part-to-context [part-path name]
   (fn [context _] ; 2nd param is the step object
@@ -9,9 +10,24 @@
           part (api/get-attr last part-path)]
       (assoc context name part))))
 
+(defn save-value-to-context [val name]
+  (fn [context _] ; 2nd param is the step object
+    (assoc context name val)))
+
+(defn save-context-value-to-context [old-name new-name]
+  (fn [context _] ; 2nd param is the step object
+    (assoc context new-name (get context old-name))))
+
+
 (defn save-last-to-context [name]
   (fn [context _] ; 2nd param is the step object
     (assoc context name (:last-call context))))
+
+(defn print-context [label]
+  (fn [context _] ; 2nd param is the step object
+    (do (prn label)
+        (pp/pprint context))
+    context))
       
 
 ;;; *******************************************************
@@ -55,7 +71,11 @@
   (let [request0 (request context) ; expand the request using the context
         url (:url request0)
         api-method (:method request0)]
-    (api-method url request0)))
+    (if (:show-only context)
+      (do (prn "DEBUG:")
+          (pp/pprint request0))
+      (api-method url request0))    
+    ))
 
 (defn process-filter [filterFn context step]
   (if (vector? filterFn)
@@ -67,15 +87,29 @@
         new-context1 (if pre-filter
                        (process-filter pre-filter context step)
                        context)
-        request-results (process-api-request new-context1 (:request step))
+        request (:request step)
+        request-results (if request (process-api-request new-context1 request) nil)
         new-context2 (assoc new-context1 :last-call request-results)
         post-filter (:post-filter step)]
         (if post-filter
           (process-filter post-filter new-context2 step)
           new-context2)))
 
+(defn- find-jump-pos [id-val steps-list]
+  (+ 1 (count
+        (take-while #(not (= (:id %1) id-val)) steps-list))))
+
+(find-jump-pos :jump-here [1 {:id :jump-here} 3])
+
+(defn jump-to-step [col steps-list]
+  (let [jumpto (:jump-to-step col)]
+    (if jumpto
+      (drop (- (find-jump-pos jumpto steps-list) 1) steps-list)
+      steps-list)
+    ))
+
 (defn process-collection [col]
-  (reduce next-step (:context col) (:steps col) )
+  (reduce next-step (:context col) (jump-to-step col (:steps col)) )
   )
 
 (comment

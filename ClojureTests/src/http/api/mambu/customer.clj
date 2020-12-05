@@ -157,8 +157,8 @@
   (time (put-customer NewCustomerID))
 
   (api/setenv "env3")
-  (api/setenv "env1")
-  (def NewCustomerID "370395062")
+  (api/setenv "env2")
+  (def NewCustomerID "795528765")
   (time (get-customer NewCustomerID {:details-level "FULL"}))
   
   
