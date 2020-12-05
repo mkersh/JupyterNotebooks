@@ -26,8 +26,8 @@
    :headers {"Accept" "application/vnd.mambu.v2+json"
              "Content-Type" "application/json"}
    :query-params {}
-   :body  {"amount" 10000.0
-           "availableCreditAmount" 10000.0
+   :body  {"amount" (:card-limit context)
+           "availableCreditAmount" (:card-limit context)
            "expireDate" "2030-08-23T00:00:00+02:00"
            "exposureLimitType" "OUTSTANDING_AMOUNT"
            "holderKey" (:cust-key context)
@@ -45,7 +45,7 @@
    :headers {"Accept" "application/vnd.mambu.v2+json"
              "Content-Type" "application/json"}
    :query-params {}
-   :body  {"loanAmount" 30000.0
+   :body  {"loanAmount" (:card-limit context)
            "loanName" (:acc-name context)
            "accountHolderKey" (:cust-key context)
            "productTypeKey" (:prod-key context)
@@ -86,8 +86,8 @@
                                                                "interestRateTerms" "FIXED"
                                                                "interestRateTiers" []}}
           "overdraftSettings" {"allowOverdraft" true
-                               "overdraftExpiryDate" "2020-05-02T00:00:00+02:00"
-                               "overdraftLimit" 0.0}
+                               "overdraftExpiryDate" "2030-05-02T00:00:00+02:00"
+                               "overdraftLimit" (:card-limit context)}
 
           "accountType" "CURRENT_ACCOUNT"
           "name" "TEMP Card Account"
@@ -136,6 +136,7 @@
              :first-name "John", :last-name "Barry4" 
              :XXcust-key "8a818ed276333a6d0176339f7b494eea"
              :branchid "8a818f5f6cbe6621016cbf217c9e5060"
+             :card-limit 1000.00
              :ca-id "LPJ539"
              :tempdda-id "OXVX863"
              :rcashop-id "GSOT125"
