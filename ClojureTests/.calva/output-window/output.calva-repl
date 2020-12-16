@@ -3,6 +3,8 @@
 "Successful Call: 201"
 "Successful Call: 201"
 "Successful Call: 201"
+"Successful Call: 201"
+"Successful Call: 200"
 "Successful Call: 200"
 "Successful Call: 200"
 "Successful Call: 200"
@@ -10,8 +12,8 @@
 "Successful Call: 200"
 "Successful Call: 200"
 {:last-call
- {"creationDate" "2020-12-05T20:50:06+01:00",
-  "approvedDate" "2020-12-05T20:50:10+01:00",
+ {"creationDate" "2020-12-10T19:01:18+01:00",
+  "approvedDate" "2020-12-10T19:01:36+01:00",
   "accruedInterest" 0,
   "prepaymentSettings"
   {"prepaymentRecalculationMethod" "NO_RECALCULATION",
@@ -36,15 +38,15 @@
    "interestDue" 0,
    "feesBalance" 0,
    "principalPaid" 0},
-  "id" "BHGE548",
+  "id" "NWPZ490",
   "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS",
-  "lastModifiedDate" "2020-12-05T20:50:09+01:00",
+  "lastModifiedDate" "2020-12-10T19:01:35+01:00",
   "arrearsTolerancePeriod" 0,
   "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE",
-  "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09",
-  "encodedKey" "8a818fcc76335188017634719f282cf3",
+  "assignedBranchKey" "8a818f5f6cbe6621016cbf217c9e5060",
+  "encodedKey" "8a818f5d764c6fa101764dc622823cea",
   "accountArrearsSettings"
-  {"encodedKey" "8a818fcc763351880176347450292da0",
+  {"encodedKey" "8a818f5d764c6fa101764dd07eaa3e6e",
    "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD",
    "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS",
    "nonWorkingDaysMethod" "EXCLUDED",
@@ -52,15 +54,15 @@
   "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"},
   "interestFromArrearsAccrued" 0,
   "principalPaymentSettings"
-  {"encodedKey" "8a818fcc76335188017634719f282cf4",
+  {"encodedKey" "8a818f5d764c6fa101764dd07eaa3e6c",
    "totalDuePayment" "TOTAL_BALANCE_PERCENTAGE",
    "includeInterestInFloorAmount" false,
    "includeFeesInFloorAmount" false,
    "percentage" 3.0},
-  "disbursementDetails" {"encodedKey" "8a818fcc76335188017634719f282cf5", "fees" []},
+  "disbursementDetails" {"encodedKey" "8a818f5d764c6fa101764dd07eaa3e6d", "fees" []},
   "accountState" "APPROVED",
   "paymentMethod" "HORIZONTAL",
-  "creditArrangementKey" "8a818f3976334f8e017634744d643683",
+  "creditArrangementKey" "8a818ff6764d180e01764dcc0b991a24",
   "allowOffset" false,
   "interestSettings"
   {"interestChargeFrequency" "ANNUALIZED",
@@ -77,7 +79,7 @@
    "accrueInterestAfterMaturity" false},
   "scheduleSettings"
   {"periodicPayment" 0,
-   "fixedDaysOfMonth" [1],
+   "fixedDaysOfMonth" [3],
    "hasCustomSchedule" false,
    "gracePeriod" 0,
    "shortMonthHandlingMethod" "LAST_DAY_IN_MONTH",
@@ -89,22 +91,28 @@
   "accountHolderType" "CLIENT",
   "loanAmount" 1000.0,
   "loanName" "CC - Purchases",
-  "accountHolderKey" "8a818ec676334eb101763471a68b3b1b",
+  "accountHolderKey" "8a818f7b764d17ae01764dcbff2814f3",
   "accruedPenalty" 0},
- :last-name "Barry4",
- :rcashop-id "BHGE548",
- :custid "041889274",
+ :last-name "Barry8",
+ :payment-day 3,
+ :rcashop-id "NWPZ490",
+ :custid "479685446",
  :acc-name "CC - Purchases",
- :XXcust-key "8a818ed276333a6d0176339f7b494eea",
+ :interestspread 0.0,
  :tempdda-product "8a818f5f6cbe6621016cbf7310ff6064",
  :first-name "John",
  :card-limit 1000.0,
- :ca-id "AJT234",
- :rcacash-id "LDDS331",
+ :payacc-id "QRMY405",
+ :ca-id "GCQ128",
+ :rcacash-id "GPMD802",
  :prod-key "8a818f5f6cbe6621016cbf6d66075e54",
- :accid "BHGE548",
+ :ignore-rest false,
+ :ccpay-product "8a818e3b763684f8017637bf5c5c0fb5",
+ :accid "NWPZ490",
  :branchid "8a818f5f6cbe6621016cbf217c9e5060",
- :tempdda-id "WZKE195",
- :cust-key "8a818ec676334eb101763471a68b3b1b",
+ :tempdda-id "JKQQ256",
+ :cust-key "8a818f7b764d17ae01764dcbff2814f3",
  :show-only false}
+clj::http.api.mambu.demo.credit_card_pipe=> 
+#'http.api.json_helper/ENV
 clj::http.api.mambu.demo.credit_card_pipe=> 

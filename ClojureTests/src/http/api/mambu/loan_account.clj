@@ -130,13 +130,13 @@
 ; Test in your REPL: Select line to run ctl+alt+c <space>
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment
-  
+  (api/setenv "env2")
   (time (list-loans {:details-level "BASIC" :limit 1000 :offset 110}))
   (time (list-loans))
 
   ;; ({"id" "WBOS115"} {"id" "OJBS671"} {"id" "ARNM393"} {"id" "BKDP961"} {"id" "TVTV962"} {"id" "LLQB002"} {"id" "ADNP290"})
 
-  (def NewAccountID "ARNM393")
+  (def NewAccountID "WVJN135")
   (time (get-loan NewAccountID))
   (time (get-loan NewAccountID {:details-level "BASIC"}))
 

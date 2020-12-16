@@ -4,19 +4,24 @@
   (:require [http.api.json_helper :as api]
             [clojure.pprint :as pp]))
 
+(defn show-only-val [context, nm, val]
+  (let [show-only? (:show-only context)]
+    (if show-only?  (str "{{" (name nm) "}}")
+        val)))
+
 (defn save-part-to-context [part-path name]
   (fn [context _] ; 2nd param is the step object
     (let [last (:last-call context)
-          part (api/get-attr last part-path)]
-      (assoc context name part))))
+          part (api/get-attr last (show-only-val context name part-path))]
+      (assoc context name (show-only-val context name part)))))
 
 (defn save-value-to-context [val name]
   (fn [context _] ; 2nd param is the step object
-    (assoc context name val)))
+    (assoc context name (show-only-val context name val))))
 
 (defn save-context-value-to-context [old-name new-name]
   (fn [context _] ; 2nd param is the step object
-    (assoc context new-name (get context old-name))))
+    (assoc context new-name (show-only-val context name (get context old-name)))))
 
 
 (defn save-last-to-context [name]
@@ -67,8 +72,23 @@
 }
 )
 
+(defn method-name [fn]
+  (cond
+    (= fn api/GET) "GET"
+    (= fn api/POST) "POST"
+    (= fn api/DELETE) "DELETE"
+    (= fn api/PUT) "PUT"
+    (= fn api/PATCH) "PATCH"
+    :else "UNKNOWN-METHOD"))
+
+(defn show-only-method [context req]
+  (let [show-only (:show-only context)]
+    (if show-only
+      (assoc req :method (method-name (:method req)))
+      req)))
+
 (defn process-api-request [context request]
-  (let [request0 (request context) ; expand the request using the context
+  (let [request0 (show-only-method context (request context)) ; expand the request using the context
         url (:url request0)
         api-method (:method request0)]
     (if (:show-only context)
@@ -83,17 +103,18 @@
     (filterFn context step)))
 
 (defn next-step [context step]
-  (let [pre-filter (:pre-filter step)
-        new-context1 (if pre-filter
-                       (process-filter pre-filter context step)
-                       context)
-        request (:request step)
-        request-results (if request (process-api-request new-context1 request) nil)
-        new-context2 (assoc new-context1 :last-call request-results)
-        post-filter (:post-filter step)]
+  (if (:ignore-rest context) context
+      (let [pre-filter (:pre-filter step)
+            new-context1 (if pre-filter
+                           (process-filter pre-filter context step)
+                           context)
+            request (:request step)
+            request-results (if request (process-api-request new-context1 request) nil)
+            new-context2 (assoc new-context1 :last-call request-results)
+            post-filter (:post-filter step)]
         (if post-filter
           (process-filter post-filter new-context2 step)
-          new-context2)))
+          new-context2))))
 
 (defn- find-jump-pos [id-val steps-list]
   (+ 1 (count
@@ -102,11 +123,22 @@
 (find-jump-pos :jump-here [1 {:id :jump-here} 3])
 
 (defn jump-to-step [col steps-list]
-  (let [jumpto (:jump-to-step col)]
+  (let [jumpto (:jump-to-step col)
+        jumpId (if (vector? jumpto)
+                 (first jumpto)
+                 jumpto)
+        oneOnly (if (vector? jumpto)
+                  (= (second jumpto) :one-only)
+                  false)
+        ]
     (if jumpto
-      (drop (- (find-jump-pos jumpto steps-list) 1) steps-list)
+      (let [start-from (drop (- (find-jump-pos jumpId steps-list) 1) steps-list)]
+        (if oneOnly (take 1 start-from) start-from))
       steps-list)
     ))
+
+;; Test jump-to-step
+;;(jump-to-step {:jump-to-step [:jump-here :one-only]} [1 2 {:id :jump-here} 3 4 5])
 
 (defn process-collection [col]
   (reduce next-step (:context col) (jump-to-step col (:steps col)) )

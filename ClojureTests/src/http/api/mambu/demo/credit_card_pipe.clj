@@ -50,7 +50,7 @@
            "accountHolderKey" (:cust-key context)
            "productTypeKey" (:prod-key context)
            "accountHolderType" "CLIENT"
-           "assignedBranchKey" "8a818f156ccf5fb1016cd2e8e4532b09"
+           "assignedBranchKey" (:branchid context)
            "interestFromArrearsAccrued" 0.0
            "interestSettings" {"accrueInterestAfterMaturity" false
                                "interestApplicationMethod" "REPAYMENT_DUE_DATE"
@@ -60,9 +60,9 @@
                                "interestRateReviewCount" 31
                                "interestRateReviewUnit" "DAYS"
                                "interestRateSource" "INDEX_INTEREST_RATE"
-                               "interestSpread" 0.0
+                               "interestSpread" (:interestspread context)
                                "interestType" "SIMPLE_INTEREST"}
-           "scheduleSettings" {"fixedDaysOfMonth" [1]
+           "scheduleSettings" {"fixedDaysOfMonth" [(:payment-day context)]
                                "gracePeriod" 0
                                "gracePeriodType" "NONE"
                                "paymentPlan" []
@@ -94,6 +94,18 @@
           "accountHolderKey" (:cust-key context)
           "productTypeKey" (:tempdda-product context)
           "currencyCode" "EUR"
+          "accountHolderType" "CLIENT"}})
+
+(defn createPaymentSettlementAccount [context]
+  {:url (str "{{*env*}}/deposits")
+   :method api/POST
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}
+   :body {"accountType" "REGULAR_SAVINGS"
+          "name" "CC Pay/Settle Account"
+          "currencyCode" "EUR"
+          "accountHolderKey" (:cust-key context)
+          "productTypeKey" (:ccpay-product context)
           "accountHolderType" "CLIENT"}})
 
 (defn addDepositToCreditLine [context]
@@ -133,15 +145,18 @@
 ;; A collection of steps     
 (def create-cc-collection
   {:context {:show-only false ; when true only prints steps, doesn't execute
-             :first-name "John", :last-name "Barry4" 
-             :XXcust-key "8a818ed276333a6d0176339f7b494eea"
+             :first-name "John", :last-name "Barry8" 
              :branchid "8a818f5f6cbe6621016cbf217c9e5060"
              :card-limit 1000.00
+             :payment-day 3
+             ;; **** Debug Only settings next - allows you to jump to individual steps
+             :cust-key "8a818ec676334eb101763471a68b3b1b"
              :ca-id "LPJ539"
              :tempdda-id "OXVX863"
              :rcashop-id "GSOT125"
-             :rcacash-id "RUFK377"}
-   :Xjump-to-step :jump-here ; set :id in a step to :jump-here
+             :rcacash-id "RUFK377"
+             :payacc-id "FRGO251"}
+   :Xjump-to-step [:step2 :one-only] ; set ":id :jump-here" in a step 
    :steps [;; [STEP-1] Create Customer
            {:request create-customer
             :post-filter [;(steps/save-last-to-context :cust-create)
@@ -149,15 +164,24 @@
                           (steps/save-part-to-context ["id"] :custid)]}
            ;; [STEP-2] Create CA
            {:request create-credit-arrangement
-            :post-filter [(steps/save-part-to-context ["id"] :ca-id)]}
+            :post-filter [(steps/save-part-to-context ["id"] :ca-id)
+                          (steps/save-value-to-context  false :ignore-rest)]
+            }
+           ;; [STEP-2b] Create Payment/Settlement Account
+           ;; This is automatically linked to RCA bucket accounts
+           {:pre-filter (steps/save-value-to-context "8a818e3b763684f8017637bf5c5c0fb5" :ccpay-product)
+            :request createPaymentSettlementAccount
+            :post-filter [(steps/save-part-to-context ["id"] :payacc-id)]}
            ;; [STEP-3] Create RCA-CASH
            {:pre-filter [(steps/save-value-to-context "8a818f5f6cbe6621016cbf3cf8675424" :prod-key)
+                         (steps/save-value-to-context 5 :interestspread)
                          (steps/save-value-to-context  "CC - Cash" :acc-name)]
             :request createRCABucket
             :post-filter [;(steps/print-context "**RCA-CASH**:")
                           (steps/save-part-to-context ["id"] :rcacash-id)]}
             ;; [STEP-4] Create RCA-Purchase
            {:pre-filter [(steps/save-value-to-context "8a818f5f6cbe6621016cbf6d66075e54" :prod-key)
+                         (steps/save-value-to-context 0.0 :interestspread)
                          (steps/save-value-to-context  "CC - Purchases" :acc-name)]
             :request createRCABucket
             :post-filter [(steps/save-part-to-context ["id"] :rcashop-id)]}
@@ -177,6 +201,8 @@
             :request addLoanToCreditLine}
 
             ;; [STEP-7] Approve Accounts
+           {:pre-filter [(steps/save-context-value-to-context :payacc-id :accid)]
+            :request approveDepositAccount}
            {:pre-filter [(steps/save-context-value-to-context :tempdda-id :accid)]
             :request approveDepositAccount}
            {:pre-filter [(steps/save-context-value-to-context :rcacash-id :accid)]
