@@ -94,40 +94,6 @@
         inList2 (get inList "installments")]
     (reduce (add-date-to-map accid) shMap inList2)))
 
-
-
-  (comment
-  
-    (def test {"MHVT083"
-               {"installments"
-                [{"encodedKey" "8a818ecf76760d0c01767620625e0301"
-                  "number" "1"
-                  "dueDate" "2020-10-03T02:00:00+02:00"
-                  "state" "LATE"
-                  "principal" {"amount" {"expected" 2.86, "paid" 0, "due" 2.86}}
-                  "interest" {"amount" {"expected" 0.14, "paid" 0, "due" 0.14}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
-                 {"encodedKey" "8a818ecf76760d0c01767621a15d032a"
-                  "number" "2"
-                  "dueDate" "2020-11-03T01:00:00+01:00"
-                  "state" "LATE"
-                  "principal" {"amount" {"expected" 0.89, "paid" 0, "due" 0.89}}
-                  "interest" {"amount" {"expected" 2.11, "paid" 0, "due" 2.11}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
-                 {"encodedKey" "8a818ecf76760d0c01767621a15d032b"
-                  "number" "3"
-                  "dueDate" "2020-12-03T01:00:00+01:00"
-                  "state" "LATE"
-                  "principal" {"amount" {"expected" 0.95, "paid" 0, "due" 0.95}}
-                  "interest" {"amount" {"expected" 2.05, "paid" 0, "due" 2.05}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
-                  "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}]}})
-
-    (add-schedule-item {} test))
-
-
 (defn create-date-map [sh-list]
   (reduce add-schedule-item {} sh-list) 
   )
@@ -136,16 +102,49 @@
 (let [schedule-list (:loan-schedule context)
       date-map (create-date-map schedule-list)]
       (assoc context :date-map date-map))
-
 )
 
 (defn get-ca-schedule []
   (let [context (steps/process-collection get-ca-schedule-step1)
         context2 (get-all-loan-schedules context)
-        context3 (merge-schedules context2)]
-    context3))
+        context3 (merge-schedules context2)
+        shList (into [] (:date-map context3))
+        shList-sorted (sort shList)]
+    shList-sorted))
 
   (comment
     (api/setenv "env2")
     (get-ca-schedule) 
     )
+
+
+(comment
+
+  (def test {"MHVT083"
+             {"installments"
+              [{"encodedKey" "8a818ecf76760d0c01767620625e0301"
+                "number" "1"
+                "dueDate" "2020-10-03T02:00:00+02:00"
+                "state" "LATE"
+                "principal" {"amount" {"expected" 2.86, "paid" 0, "due" 2.86}}
+                "interest" {"amount" {"expected" 0.14, "paid" 0, "due" 0.14}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+               {"encodedKey" "8a818ecf76760d0c01767621a15d032a"
+                "number" "2"
+                "dueDate" "2020-11-03T01:00:00+01:00"
+                "state" "LATE"
+                "principal" {"amount" {"expected" 0.89, "paid" 0, "due" 0.89}}
+                "interest" {"amount" {"expected" 2.11, "paid" 0, "due" 2.11}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+               {"encodedKey" "8a818ecf76760d0c01767621a15d032b"
+                "number" "3"
+                "dueDate" "2020-12-03T01:00:00+01:00"
+                "state" "LATE"
+                "principal" {"amount" {"expected" 0.95, "paid" 0, "due" 0.95}}
+                "interest" {"amount" {"expected" 2.05, "paid" 0, "due" 2.05}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}
+                "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}]}})
+
+  (add-schedule-item {} test))
