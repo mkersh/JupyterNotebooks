@@ -18,7 +18,7 @@
         env (or (:env moreOpts) "env1")
         ;; FULL_DETAILS, BASIC, SUMMARY
         detailLevel (or (:details-level moreOpts) "FULL_DETAILS") 
-        limit (or (:limit moreOpts) 2)
+        limit (or (:limit moreOpts) 20)
         offset (or (:offset moreOpts) 0)
         optdefs {:basic-auth (api/get-auth env)
                  :headers {}  ;; detailsLevel
@@ -31,6 +31,8 @@
 (comment
   (list-views-v1)
   (get-views-v1 "clients" "8a81868e6808ec4501681508bcd530df")
+  (get-views-v1 "clients" "8a818e74677a2e9201677ec2baf136ba")
+  
   (get-views-v1 "clients" "8a81868e6808ec4501681508bcd530df" {:limit 500 :offset 13})
   
   (get-views-v1 "savings" "8a818684701c9a660170339c93f93004")

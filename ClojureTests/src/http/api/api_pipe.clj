@@ -28,6 +28,17 @@
   (fn [context _] ; 2nd param is the step object
     (assoc context name (:last-call context))))
 
+(defn append-last-to-context [item-id name]
+  (fn [context _] ; 2nd param is the step object
+    (let [previous-val (get context name)]
+      (assoc context name (conj previous-val {item-id (:last-call context)})))))
+
+;; merge with save-last-to-context when have time
+(defn save-last-to-context2 [item-id name]
+  (fn [context _] ; 2nd param is the step object
+      (assoc context name {item-id (:last-call context)})))
+
+
 (defn print-context [label]
   (fn [context _] ; 2nd param is the step object
     (do (prn label)

@@ -118,7 +118,7 @@
 ; Use api/find-path and api/extract-attrs to navigate through results
 (comment
   (api/setenv "env1")
-  (def NewCustomerID "596337874")
+  (def NewCustomerID "738211733") 
   (time (list-customers {:query-params {"detailsLevel" "BASIC"}}))
   (time (list-customers {:details-level "BASIC"}))
   (time (list-customers {:details-level "FULL" :limit 6 :offset 0}))
@@ -132,7 +132,7 @@
 
   (time (create-customer))
   (time (create-customer {:body  {"firstName" "Jane"
-                                  "lastName" "Brown"}}))
+                                  "lastName" "Brown2"}}))
 
   (time (delete-customer NewCustomerID))
 
