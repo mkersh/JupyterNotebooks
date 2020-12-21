@@ -25,6 +25,14 @@
    :headers {"Accept" "application/vnd.mambu.v2+json"
              "Content-Type" "application/json"}})
 
+(defn get-loan-trans-api [context]
+  {:url (str "{{*env*}}/loans/" (:accid context) "/transactions")
+   :method api/GET
+   :query-params {"detailsLevel" "FULL"}
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}})
+
+
 (defn merge-append [context1 context2 item-to-append]
   (let [val1 (get context1 item-to-append)
         val2 (get context2 item-to-append)
@@ -41,12 +49,25 @@
         steps {:context {:accid accid}
                :steps [{:request get-loan-schedule-api
                         :post-filter (steps/save-last-to-context2 accid :loan-schedule)}]}
-        
         context2 (steps/process-collection steps)]
     (merge-append context context2 :loan-schedule)))
 
 (defn get-all-loan-schedules [context]
   (reduce get-loan-schedule context (get (:ca-accounts context ) "loanAccounts"))) 
+
+
+(defn get-loan-transacions [context loan-obj]
+  (prn "In get-loan-transacions")
+  (prn (get loan-obj "id"))
+  (let [accid (get loan-obj "id")
+        steps {:context {:accid accid}
+               :steps [{:request get-loan-trans-api
+                        :post-filter (steps/save-last-to-context2 accid :loan-trans)}]}
+        context2 (steps/process-collection steps)]
+    (merge-append context context2 :loan-trans)))
+
+(defn get-all-loan-transacions [context]
+  (reduce get-loan-transacions context (get (:ca-accounts context) "loanAccounts")))
 
 (def get-ca-schedule-step1
   "Get the combined schedule for all the loans underneath a given caid"
@@ -76,6 +97,7 @@
 (defn add-date-to-map [accid]
   (fn [oldMap newItem]
     (prn "Add schedule for " accid)
+    (prn newItem)
     (let [dueDate (get newItem  "dueDate")
           oldItem (get oldMap dueDate)
           oldPrincipal (:principle oldItem)
@@ -107,14 +129,24 @@
 (defn get-ca-schedule []
   (let [context (steps/process-collection get-ca-schedule-step1)
         context2 (get-all-loan-schedules context)
+        parts (:loan-schedule context2)
         context3 (merge-schedules context2)
         shList (into [] (:date-map context3))
-        shList-sorted (sort shList)]
-    shList-sorted))
+        shList-sorted (sort shList)
+        ca-schedule {:total shList-sorted, :parts parts}
+        ]
+    ca-schedule))
+
+(defn get-ca-transactions []
+  (let [context (steps/process-collection get-ca-schedule-step1)
+        context2 (get-all-loan-transacions context)
+        ca-trans (:loan-trans context2)]
+    ca-trans))
 
   (comment
     (api/setenv "env2")
     (get-ca-schedule) 
+     (get-ca-transactions)
     )
 
 
