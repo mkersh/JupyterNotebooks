@@ -618,3 +618,100 @@ clj::http.api.credit-arrangements=>
     "bookingDate" "2020-10-01T00:00:00+02:00",
     "notes" ""}]})
 clj::http.api.credit-arrangements=> 
+"Successful Call: 200"
+"Successful Call: 200"
+"In get-loan-schedule"
+"MHVT083"
+"Successful Call: 200"
+"In get-loan-schedule"
+"YRLE211"
+"Successful Call: 200"
+"Add schedule for " "MHVT083"
+{"encodedKey" "8a818ecf76760d0c01767620625e0301", "number" "1", "dueDate" "2020-10-03T02:00:00+02:00", "state" "LATE", "principal" {"amount" {"expected" 2.86, "paid" 0, "due" 2.86}}, "interest" {"amount" {"expected" 0.14, "paid" 0, "due" 0.14}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "MHVT083"
+{"encodedKey" "8a818ecf76760d0c01767621a15d032a", "number" "2", "dueDate" "2020-11-03T01:00:00+01:00", "state" "LATE", "principal" {"amount" {"expected" 0.89, "paid" 0, "due" 0.89}}, "interest" {"amount" {"expected" 2.11, "paid" 0, "due" 2.11}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "MHVT083"
+{"encodedKey" "8a818ecf76760d0c01767621a15d032b", "number" "3", "dueDate" "2020-12-03T01:00:00+01:00", "state" "LATE", "principal" {"amount" {"expected" 0.95, "paid" 0, "due" 0.95}}, "interest" {"amount" {"expected" 2.05, "paid" 0, "due" 2.05}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "YRLE211"
+{"encodedKey" "8a818ecf76760d0c0176762266f6038a", "number" "1", "dueDate" "2020-09-03T02:00:00+02:00", "state" "LATE", "principal" {"amount" {"expected" 6.3, "paid" 0, "due" 6.3}}, "interest" {"amount" {"expected" 0.36, "paid" 0, "due" 0.36}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "YRLE211"
+{"encodedKey" "8a818ecf76760d0c0176762266f6038b", "number" "2", "dueDate" "2020-10-03T02:00:00+02:00", "state" "LATE", "principal" {"amount" {"expected" 1.2, "paid" 0, "due" 1.2}}, "interest" {"amount" {"expected" 5.46, "paid" 0, "due" 5.46}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "YRLE211"
+{"encodedKey" "8a818ecf76760d0c0176762266f6038c", "number" "3", "dueDate" "2020-11-03T01:00:00+01:00", "state" "LATE", "principal" {"amount" {"expected" 1.02, "paid" 0, "due" 1.02}}, "interest" {"amount" {"expected" 5.64, "paid" 0, "due" 5.64}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+"Add schedule for " "YRLE211"
+{"encodedKey" "8a818ecf76760d0c0176762266f6038d", "number" "4", "dueDate" "2020-12-03T01:00:00+01:00", "state" "LATE", "principal" {"amount" {"expected" 1.2, "paid" 0, "due" 1.2}}, "interest" {"amount" {"expected" 5.46, "paid" 0, "due" 5.46}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}, "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+{:total
+ (["2020-09-03T02:00:00+02:00"
+   {:principle {"amount" {"expected" 6.3, "paid" 0.0, "due" 6.3}},
+    :interest {"amount" {"expected" 0.36, "paid" 0.0, "due" 0.36}}}]
+  ["2020-10-03T02:00:00+02:00"
+   {:principle {"amount" {"expected" 4.06, "paid" 0.0, "due" 4.06}},
+    :interest {"amount" {"expected" 5.6, "paid" 0.0, "due" 5.6}}}]
+  ["2020-11-03T01:00:00+01:00"
+   {:principle {"amount" {"expected" 1.9100000000000001, "paid" 0.0, "due" 1.9100000000000001}},
+    :interest {"amount" {"expected" 7.75, "paid" 0.0, "due" 7.75}}}]
+  ["2020-12-03T01:00:00+01:00"
+   {:principle {"amount" {"expected" 2.15, "paid" 0.0, "due" 2.15}},
+    :interest {"amount" {"expected" 7.51, "paid" 0.0, "due" 7.51}}}]),
+ :parts
+ [{"MHVT083"
+   {"installments"
+    [{"encodedKey" "8a818ecf76760d0c01767620625e0301",
+      "number" "1",
+      "dueDate" "2020-10-03T02:00:00+02:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 2.86, "paid" 0, "due" 2.86}},
+      "interest" {"amount" {"expected" 0.14, "paid" 0, "due" 0.14}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+     {"encodedKey" "8a818ecf76760d0c01767621a15d032a",
+      "number" "2",
+      "dueDate" "2020-11-03T01:00:00+01:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 0.89, "paid" 0, "due" 0.89}},
+      "interest" {"amount" {"expected" 2.11, "paid" 0, "due" 2.11}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+     {"encodedKey" "8a818ecf76760d0c01767621a15d032b",
+      "number" "3",
+      "dueDate" "2020-12-03T01:00:00+01:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 0.95, "paid" 0, "due" 0.95}},
+      "interest" {"amount" {"expected" 2.05, "paid" 0, "due" 2.05}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}]}}
+  {"YRLE211"
+   {"installments"
+    [{"encodedKey" "8a818ecf76760d0c0176762266f6038a",
+      "number" "1",
+      "dueDate" "2020-09-03T02:00:00+02:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 6.3, "paid" 0, "due" 6.3}},
+      "interest" {"amount" {"expected" 0.36, "paid" 0, "due" 0.36}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+     {"encodedKey" "8a818ecf76760d0c0176762266f6038b",
+      "number" "2",
+      "dueDate" "2020-10-03T02:00:00+02:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 1.2, "paid" 0, "due" 1.2}},
+      "interest" {"amount" {"expected" 5.46, "paid" 0, "due" 5.46}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+     {"encodedKey" "8a818ecf76760d0c0176762266f6038c",
+      "number" "3",
+      "dueDate" "2020-11-03T01:00:00+01:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 1.02, "paid" 0, "due" 1.02}},
+      "interest" {"amount" {"expected" 5.64, "paid" 0, "due" 5.64}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}
+     {"encodedKey" "8a818ecf76760d0c0176762266f6038d",
+      "number" "4",
+      "dueDate" "2020-12-03T01:00:00+01:00",
+      "state" "LATE",
+      "principal" {"amount" {"expected" 1.2, "paid" 0, "due" 1.2}},
+      "interest" {"amount" {"expected" 5.46, "paid" 0, "due" 5.46}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "fee" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}},
+      "penalty" {"amount" {"expected" 0, "paid" 0, "due" 0}, "tax" {"expected" 0, "paid" 0, "due" 0}}}]}}]}
+clj::http.api.credit-arrangements=> 
