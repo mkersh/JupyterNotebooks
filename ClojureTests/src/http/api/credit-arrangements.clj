@@ -32,6 +32,36 @@
    :headers {"Accept" "application/vnd.mambu.v2+json"
              "Content-Type" "application/json"}})
 
+;;; The following is a more efficient way to search for transactions
+(defn get-loan-trans-api2 [context]
+  {:url (str "{{*env*}}/loans/transactions:search")
+   :method api/POST
+   :query-params {"detailsLevel" "FULL"}
+   :body {"filterCriteria" [{"field" "parentAccountKey"
+                             "operator" "EQUALS"
+                             "value" "8a818f1676715ba301767552950e2cbc"}
+                            {"field" "creationDate"
+                             "operator" "AFTER"
+                             "value" "2020-12-20T00:00:35+01:00"}]}
+   :headers {"Accept" "application/vnd.mambu.v2+json"
+             "Content-Type" "application/json"}})
+
+ 
+
+(defn get-loan-trans2 []
+  (prn "In get-loan-trans2")
+  (let [
+        steps {:context {:accid "GHGHG"}
+               :steps [{:request get-loan-trans-api2
+                        :post-filter (steps/save-last-to-context :loan-trans2)}]}
+        context2 (steps/process-collection steps)]
+    context2))
+
+(comment 
+
+(get-loan-trans2)
+
+)
 
 (defn merge-append [context1 context2 item-to-append]
   (let [val1 (get context1 item-to-append)

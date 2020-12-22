@@ -155,6 +155,14 @@
   (reduce next-step (:context col) (jump-to-step col (:steps col)) )
   )
 
+;; Next function is an easy way to call individual API calls
+(defn apply-api [api-obj context save-results-name]
+  (let [steps {:context context
+               :steps [{:request api-obj
+                        :post-filter (save-last-to-context save-results-name)}]}
+        context2 (process-collection steps)]
+    context2))
+
 (comment
   (json-api-example {:custid "019327031"})
 
