@@ -42,3 +42,16 @@ clj::http.api.mambu.demo.cc-poc=>
     "errorSource" "The amount exceeds transaction max available amount for reversal: 0.0000000000 ",
     "errorReason" "CARD_TRANSACTION_MAX_REVERSAL_AMOUNT_EXCEEDED"}]}}
 clj::http.api.mambu.demo.cc-poc=> 
+; Evaluating file: json_helper.clj
+nil
+clj::http.api.json_helper=> 
+; Syntax error compiling at (src/http/api/json_helper.clj:333:1).
+; Unable to resolve symbol: req1 in this context
+clj::http.api.json_helper=> 
+#'http.api.json_helper/req1
+clj::http.api.json_helper=> 
+{:xbasic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW32"],
+ :headers {"Accept" "application/vnd.mambu.v2+json"},
+ :query-params {"detailsLevel" "FULL"},
+ :basic-auth ["apiUser" "complexPassword12345"]}
+clj::http.api.json_helper=> 

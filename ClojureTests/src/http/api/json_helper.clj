@@ -330,7 +330,7 @@
 ;;
 (def req1 {:xbasic-auth ["apiUser" "k6RxsaedvbPEg6cjNmXqvxaW32"], :headers {"Accept" "application/vnd.mambu.v2+json"}, :query-params {"detailsLevel" "FULL"}})
 
-(add-auth-header req1)
+(add-auth-header req1 "{{*env*}}/clients/")
 
 (get-env-from-URL "{{*env*}}/clients/")
 
