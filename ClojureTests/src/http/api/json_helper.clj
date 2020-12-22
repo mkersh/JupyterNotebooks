@@ -75,6 +75,8 @@
 ;;; 
 ;;; 
 
+(defn to-json [obj]
+  (json/write-str obj))
 
 (defn PRINT [http-kit-response & options]
   (if (:no-print (first options))
