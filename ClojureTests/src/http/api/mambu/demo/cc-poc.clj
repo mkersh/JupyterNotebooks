@@ -248,8 +248,8 @@
 
 
 ;;; Hitting problems linking a card CARD_TRANSACTION_REVERSAL to a previous WITHDRAWAL
-;;; Was hoping to use this to determine which cad transacions still need to be moved
-;;; Its not working though because there is nothing to tie the two together (is in UI!!)
+;;; Was hoping to use this to determine which card transacions still need to be moved
+;;; Its not working though because there is nothing to tie the two together (there is in UI though!!)
 ;;; See find-all-unallocated-trans for what I have settled on for MVP
 (defn find-all-unallocated-trans2 [context]
   (let [context1 (steps/apply-api get-all-unallocated-trans-api context :trans_details)
@@ -259,6 +259,9 @@
         _ (prn "***END****")]
     unalloc-list))
 
+;;; In this versions get-all-unallocated-trans-api returns a list of most recent transactions first
+;;; This function takes from the front until finding a transaction whose type is not WITHDRAWAL
+;;; This is not ideal and we should find a better approach at some point 
 (defn find-all-unallocated-trans [context]
   (let [context1 (steps/apply-api get-all-unallocated-trans-api context :trans_details)
         unalloc-list (take-while take-while-withdrawal (:trans_details context1))]
