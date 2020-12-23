@@ -222,10 +222,10 @@
     (steps/apply-api reverse-card-trans-api moved :card_reverse)))
 
 (defn get-allocated-list [alloc-list tran]
-(prn "***In get-allocated-list" alloc-list tran)
+  (prn "***In get-allocated-list" alloc-list tran)
   (let [type (get tran "type")
         card_tran (get tran "cardTransaction")
-        
+
         card_ref (get card_tran "externalReferenceId")
         _ (prn card_ref)
         _ (prn "**END")]
@@ -234,29 +234,43 @@
       alloc-list)))
 
 (defn get-unallocated-list-maker [alloc-list]
-  (fn [resList tran](let [type (get tran "type")
-        card_tran (get tran "cardTransaction")
-        card_ref (get card_tran "externalReferenceId")]
-    (if (and (= type "WITHDRAWAL") (not (get alloc-list card_ref)))
-      (conj resList tran)
-      resList))))
+  (fn [resList tran] (let [type (get tran "type")
+                           card_tran (get tran "cardTransaction")
+                           card_ref (get card_tran "externalReferenceId")]
+                       (if (and (= type "WITHDRAWAL") (not (get alloc-list card_ref)))
+                         (conj resList tran)
+                         resList))))
+
+(defn take-while-withdrawal [tran]
+  (let [type (get tran "type")]
+  (if (= type "WITHDRAWAL")
+    true false)))
 
 
-(defn find-all-unallocated-trans [context]
+;;; Hitting problems linking a card CARD_TRANSACTION_REVERSAL to a previous WITHDRAWAL
+;;; Was hoping to use this to determine which cad transacions still need to be moved
+;;; Its not working though because there is nothing to tie the two together (is in UI!!)
+;;; See find-all-unallocated-trans for what I have settled on for MVP
+(defn find-all-unallocated-trans2 [context]
   (let [context1 (steps/apply-api get-all-unallocated-trans-api context :trans_details)
         alloc-list (reduce get-allocated-list {} (:trans_details context1))
         unalloc-list (reduce (get-unallocated-list-maker alloc-list) [] (:trans_details context1))
         _ (prn "***RESULTS****:" alloc-list)
-        _ (prn "***END****")
-        ]
+        _ (prn "***END****")]
+    unalloc-list))
+
+(defn find-all-unallocated-trans [context]
+  (let [context1 (steps/apply-api get-all-unallocated-trans-api context :trans_details)
+        unalloc-list (take-while take-while-withdrawal (:trans_details context1))]
     unalloc-list))
 
 (comment
   (api/setenv "env2")
 
   (def move-obj {:move_channel "8a818fc1768a3af801768b8020d14a63"
-                 :cust-key "8a818eef768ae48801768ee523e939dc"
-                 :trans_id "8a818ea5768de23401768ee91ab61eb0" ; Card transaction to move
+                 :cust-key "8a818eef768ae48801768ee523e939dc" 
+                 ;; 8a818fdd768f6d970176908963cc3afb + 
+                 :trans_id "8a818fdd768f6d970176908963cc3afb" ; Card transaction to move
                  :loan_type "PROM" ; RCA | BNPL | INSTAL | PROM
                  :payment-day 1
                  :interestspread 0.0
@@ -308,7 +322,7 @@
                  :acckey "8a818f44768ae48201768ee042dc4db3"
                  :lastid 716
                  :card-token "cardtoken_1223_1"
-                 :amount 7.12
+                 :amount 7.14
                  :card-acceptor card-acceptor
                  :channelid "8a818e74677a2e9201677ec2b4c336a6"
                  :trans_ref (api/uuid)
