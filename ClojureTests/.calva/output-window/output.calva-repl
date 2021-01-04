@@ -4,3 +4,11 @@ clj::http.api.mambu.demo.cc-poc=>
 ; Evaluating file: cc-poc.clj
 nil
 clj::http.api.mambu.demo.cc-poc=> 
+; Syntax error compiling at (src/http/api/mambu/cards.clj:59:5).
+; No such namespace: api
+clj::http.api.mambu.cards=> 
+; Evaluating file: cards.clj
+nil
+clj::http.api.mambu.cards=> 
+#'http.api.mambu.cards/increase-hold
+clj::http.api.mambu.cards=> 
