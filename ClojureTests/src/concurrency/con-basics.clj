@@ -3,6 +3,8 @@
 ;;; [B] Delays
 ;;; [C] Promises
 ;;; [D] Atoms
+;;; [E] Refs
+;;; [F] Dynamic Variables
 (ns concurrency.con-basics)
 
 ;;; [A] ********** futures (aka threads)
@@ -67,7 +69,7 @@
   (deref my-promise2 2000 "Deref timeout!!")
   )
 
-;;; [D] ********** atoms
+;;; [D] ********** Atoms
 ;;; In clojure atoms are a key basic building block for managing state. 
 ;;; It allows you to name things whose state (i.e. value) will change over time
 
@@ -126,3 +128,10 @@
   (def atom1 (atom-swap-test))
   @atom1
   )
+
+  ;;; [E] ********** Refs
+  ;;;   TODO
+  
+
+  ;;; [F] ********** Dynamic variables
+  ;;;   TODO
