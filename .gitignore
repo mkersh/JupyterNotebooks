@@ -21,4 +21,5 @@ ClojureTests/.calva/output-window/output.calva-repl
 ClojureTests/heapdump.*
 ClojureTests/javacore.*
 .gitignore
+ClojureTests/.clj-kondo/*
 ClojureTests/Snap.*

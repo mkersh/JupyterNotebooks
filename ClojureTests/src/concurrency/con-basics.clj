@@ -5,6 +5,7 @@
 ;;; [D] Atoms
 ;;; [E] Refs
 ;;; [F] Dynamic Variables
+;;; [G] Locking
 (ns concurrency.con-basics)
 
 ;;; [A] ********** futures (aka threads)
@@ -135,3 +136,19 @@
 
   ;;; [F] ********** Dynamic variables
   ;;;   TODO
+  
+  ;;; [G] Locking
+  ;;; I have already justed locking above in sync-prn
+  ;;; Just wanted to give another example here  
+  
+  ;; Rather than locking the *out* stream this creates a java Object in a closure and 
+  ;; locks this everytime a print is performed.
+  ;; The author claims it is better because you ae not locking a global object, which I agree with  
+  (let [lock (Object.)]
+    (defn sync-println [& args]
+      (locking lock (apply println args))))
+
+(comment 
+(sync-println "this is a test" "yyy")
+
+)

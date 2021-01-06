@@ -6,6 +6,7 @@
   :min-lein-version "2.0.0"
   :uberjar-name "mk-clojure-tests-standalone.jar"
   :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/core.async "1.3.610"]
                  [log4j "1.2.17" :exclusions [javax.mail/mail
                                               javax.jms/jms
                                               com.sun.jdmk/jmxtools
