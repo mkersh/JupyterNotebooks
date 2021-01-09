@@ -1,54 +1,69 @@
-; This is the Calva evaluation results output window.
-; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
-;   when connected to a REPL session.
-; Please see https://calva.io/output/ for more info.
-; Happy coding! ♥️
-
-; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :dependencies conj '[clj-kondo,"2020.04.05"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.25.6"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +dev repl :headless
-; Hooking up nREPL sessions...
-; Connected session: clj
-; TIPS: 
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉tools.repl-navigate꞉>  ; Use `alt+enter` to evaluate
-; Jack-in done.
-clj꞉tools.repl-navigate꞉> 
-; Evaluating file: core-sync.clj
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-"return from go"
-nil
-clj꞉concurrency.core-sync꞉> 
-; Syntax error reading source at (REPL:67:1).
-; EOF while reading, starting at line 67
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-"return from go"
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-"return from go"
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-"return from go"
-nil
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-#object[clojure.core.async.impl.channels.ManyToManyChannel 0xba932d76 "clojure.core.async.impl.channels.ManyToManyChannel@ba932d76"]
-clj꞉concurrency.core-sync꞉> 
-"Result:" "hello"
-#object[clojure.core.async.impl.channels.ManyToManyChannel 0xa1696169 "clojure.core.async.impl.channels.ManyToManyChannel@a1696169"]
-clj꞉concurrency.core-sync꞉> 
+"Successful Call: 200"
+"API call took (ms):" 522.780753
+({"id" "0",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2021-01-08T18:45:02+01:00"}
+ {"id" "1",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"})
+"Number of items:" 2
+"API call took (ms):" 522.780753
+"Time including print (ms):" 528.632815
+528.632815
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+#'http.api.mambu.datarepl.datarep/get-all-clients-next-page
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+"Successful Call: 200"
+"API call took (ms):" 1613.58643
+({"id" "27",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2021-01-08T18:48:51+01:00"}
+ {"id" "0",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2021-01-08T18:45:02+01:00"})
+"Number of items:" 2
+"API call took (ms):" 1613.58643
+"Time including print (ms):" 1622.580862
+1622.580862
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+#'http.api.mambu.datarepl.datarep/get-all-clients-next-page
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+"Successful Call: 200"
+"API call took (ms):" 2925.928382
+({"id" "1",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"}
+ {"id" "2",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"})
+"Number of items:" 2
+"API call took (ms):" 2925.928382
+"Time including print (ms):" 2932.655086
+2932.655086
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+"Successful Call: 200"
+"API call took (ms):" 1706.722107
+({"id" "1",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"}
+ {"id" "2",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"})
+"Number of items:" 2
+"API call took (ms):" 1706.722107
+"Time including print (ms):" 1718.072558
+1718.072558
+clj꞉http.api.mambu.datarepl.datarep꞉> 
+"Successful Call: 200"
+"API call took (ms):" 1630.770745
+({"id" "1",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"}
+ {"id" "2",
+  "creationDate" "2018-12-18T13:09:47+01:00",
+  "lastModifiedDate" "2018-12-18T13:09:47+01:00"})
+"Number of items:" 2
+"API call took (ms):" 1630.770745
+"Time including print (ms):" 1639.496282
+1639.496282
+clj꞉http.api.mambu.datarepl.datarep꞉> 
