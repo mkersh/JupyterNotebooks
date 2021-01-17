@@ -145,7 +145,7 @@
 ;; A collection of steps     
 (def create-cc-collection
   {:context {:show-only false ; when true only prints steps, doesn't execute
-             :first-name "John", :last-name "Barry11" 
+             :first-name "1401", :last-name "Tester" 
              :branchid "8a818f5f6cbe6621016cbf217c9e5060"
              :card-limit 1000.00
              :payment-day 3

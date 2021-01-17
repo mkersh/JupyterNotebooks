@@ -156,12 +156,27 @@
   )
 
 ;; Next function is an easy way to call individual API calls
-(defn apply-api [api-obj context save-results-name]
+(defn- apply-api1 [api-obj context]
+  (let [steps {:context context
+               :steps [{:request api-obj}]}
+        context2 (process-collection steps)]
+    context2))
+
+(defn- apply-api2 [api-obj context save-results-name]
   (let [steps {:context context
                :steps [{:request api-obj
                         :post-filter (save-last-to-context save-results-name)}]}
         context2 (process-collection steps)]
     context2))
+
+(defn apply-api
+  ([api-obj context]
+   (if-let [saveas (:saveas context)]
+     (apply-api2 api-obj context saveas)
+     (apply-api1 api-obj context)))
+  ([api-obj context save-results-name]
+   (apply-api2 api-obj context save-results-name)))
+
 
 (comment
   (json-api-example {:custid "019327031"})

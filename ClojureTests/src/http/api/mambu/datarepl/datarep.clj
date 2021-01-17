@@ -14,31 +14,35 @@
         time-diff))
 
 (defn get-all-clients-next-page [context]
-  (let [page-size (:page-size context)
-        offset (* (:page-num context) page-size)]
-    {:url (str "{{*env*}}/clients")
-     :method api/GET
-     :query-params {"detailsLevel" "FULL"
-                    "paginationDetails" "ON"
-                    "offset" offset "limit" (:page-size context)
-                    "sortBy" "lastModifiedDate:ASC"} ;; ASC is important to min changes to what the cursor returns
-     :headers {"Accept" "application/vnd.mambu.v2+json"
-               "Content-Type" "application/json"}}))
+  (let [api-call (fn [context0]
+                   (let [page-size (:page-size context0)
+                         offset (* (:page-num context0) page-size)]
+                     {:url (str "{{*env*}}/clients")
+                      :method api/GET
+                      :query-params {"detailsLevel" "FULL"
+                                     "paginationDetails" "ON"
+                                     "offset" offset "limit" (:page-size context0)
+                                     "sortBy" "lastModifiedDate:ASC"} ;; ASC is important to min changes to what the cursor 
+                      :headers {"Accept" "application/vnd.mambu.v2+json"
+                                "Content-Type" "application/json"}}))]
+    (steps/apply-api api-call context)))
+
 
 (comment 
 (api/setenv "env2")
 
-(def context {:page-size 2 :page-num 0})
+(def context {:page-size 2, :page-num 0, :saveas nil})
 
 ;; Test getting a page of customer objects
 (let [startTimer (getTimer)
-      context1 (steps/apply-api get-all-clients-next-page context :allcust_page)
+      context1 (get-all-clients-next-page context)
       timeDiff (showTimeDiff "API call took (ms):" startTimer)
-      page (:allcust_page context1)]
+      page (:last-call context1)]
 
   (api/PRINT (api/extract-attrs ["id" "creationDate" "lastModifiedDate"] page))
   (prn "API call took (ms):" timeDiff)
   (showTimeDiff "Time including print (ms):" startTimer)
+  context1
   )
 
 
