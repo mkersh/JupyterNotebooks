@@ -29,4 +29,9 @@
  
 (iban/iban "RO" "BTRLLGBO89B2P72HNFGM")
 
-(* 20000 0.23)
+(iban/iban "GB" "NWBK60161331926822")
+
+
+(iban/bic  "RO26BTRLLGBO89B2P72HNFGM")
+
+(* 54 60)

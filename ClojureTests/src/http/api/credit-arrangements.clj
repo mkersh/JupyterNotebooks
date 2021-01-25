@@ -1,4 +1,8 @@
 ;;; A higher level set of APIs for Mambu credit-arrangements
+;;; The new higher level APIs exposed are:
+;;;     (get-ca-schedule)
+;;;     (get-ca-transactions)
+;;;     
 (ns http.api.credit-arrangements (:require [http.api.json_helper :as api]
                                            [http.api.api_pipe :as steps]))
 
@@ -46,22 +50,19 @@
    :headers {"Accept" "application/vnd.mambu.v2+json"
              "Content-Type" "application/json"}})
 
- 
+
 
 (defn get-loan-trans2 []
   (prn "In get-loan-trans2")
-  (let [
-        steps {:context {:accid "GHGHG"}
+  (let [steps {:context {:accid "GHGHG"}
                :steps [{:request get-loan-trans-api2
                         :post-filter (steps/save-last-to-context :loan-trans2)}]}
         context2 (steps/process-collection steps)]
     context2))
 
-(comment 
+(comment
 
-(get-loan-trans2)
-
-)
+  (get-loan-trans2))
 
 (defn merge-append [context1 context2 item-to-append]
   (let [val1 (get context1 item-to-append)
@@ -83,7 +84,7 @@
     (merge-append context context2 :loan-schedule)))
 
 (defn get-all-loan-schedules [context]
-  (reduce get-loan-schedule context (get (:ca-accounts context ) "loanAccounts"))) 
+  (reduce get-loan-schedule context (get (:ca-accounts context) "loanAccounts")))
 
 
 (defn get-loan-transacions [context loan-obj]
@@ -137,8 +138,7 @@
           oldInterest (:interest oldItem)
           interest (get newItem  "interest")
           new-interest (addAmounts oldInterest interest)]
-          (assoc oldMap dueDate  {:principle new-principal, :interest new-interest}))
-    ))
+      (assoc oldMap dueDate  {:principle new-principal, :interest new-interest}))))
 
 (defn add-schedule-item [shMap install-obj]
   (let [accid (first (keys install-obj))
@@ -147,14 +147,12 @@
     (reduce (add-date-to-map accid) shMap inList2)))
 
 (defn create-date-map [sh-list]
-  (reduce add-schedule-item {} sh-list) 
-  )
+  (reduce add-schedule-item {} sh-list))
 
 (defn merge-schedules [context]
-(let [schedule-list (:loan-schedule context)
-      date-map (create-date-map schedule-list)]
-      (assoc context :date-map date-map))
-)
+  (let [schedule-list (:loan-schedule context)
+        date-map (create-date-map schedule-list)]
+    (assoc context :date-map date-map)))
 
 (defn get-ca-schedule []
   (let [context (steps/process-collection get-ca-schedule-step1)
@@ -163,8 +161,7 @@
         context3 (merge-schedules context2)
         shList (into [] (:date-map context3))
         shList-sorted (sort shList)
-        ca-schedule {:total shList-sorted, :parts parts}
-        ]
+        ca-schedule {:total shList-sorted, :parts parts}]
     ca-schedule))
 
 (defn get-ca-transactions []
@@ -173,11 +170,10 @@
         ca-trans (:loan-trans context2)]
     ca-trans))
 
-  (comment
-    (api/setenv "env2")
-    (get-ca-schedule) 
-    (get-ca-transactions)
-    )
+(comment
+  (api/setenv "env2")
+  (get-ca-schedule)
+  (get-ca-transactions))
 
 
 (comment

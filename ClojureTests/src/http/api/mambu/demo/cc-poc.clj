@@ -273,7 +273,7 @@
   (def move-obj {:move_channel "8a818fc1768a3af801768b8020d14a63"
                  :cust-key "8a818eef768ae48801768ee523e939dc" 
                  ;; 8a818fdd768f6d970176908963cc3afb + 
-                 :trans_id "8a818fdd768f6d970176908963cc3afb" ; Card transaction to move
+                 :trans_id "8a818e847739d26501773a1e8c2c2b49" ; Card transaction to move
                  :loan_type "PROM" ; RCA | BNPL | INSTAL | PROM
                  :payment-day 1
                  :interestspread 0.0
@@ -329,7 +329,7 @@
                  :card-acceptor card-acceptor
                  :channelid "8a818e74677a2e9201677ec2b4c336a6"
                  :trans_ref (api/uuid)
-                 :trans_id "8a818ff47688c51401768a43d42e280a"})
+                 :trans_id "8a818e847739d26501773a1e8c2c2b49"})
 
   (steps/apply-api add-card-trans-api card-obj :card_trans)
   (steps/apply-api get-transaction-api card-obj :trans_details)
