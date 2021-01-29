@@ -28,7 +28,7 @@
 (rolledUp-interest 1000 0.1)
 (rolledUp-interest-single-equation 1000 0.1)
 
-;; Both of the methhods for calculating only work for interest-rate < 1
+;; Both of the methods for calculating only work for interest-rate < 1
 ;; rolledUp-interest will blow the stack if you have an interest-rate >0.99
 ;; rolledUp-interest-single-equation works upto 1 and then you get a divide-by-zero
 ;; What both are telling us is that if the interest-rate is 100% or > of the amount then
