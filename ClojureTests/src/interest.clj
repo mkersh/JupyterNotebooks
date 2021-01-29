@@ -1,7 +1,7 @@
 ;;; It is common in business development lending for a Borrrower to have to take a loan out for
 ;;; both the capital and the interest due on this capital. 
 ;;; This is typically referred to as RolledUp interest, 
-;;; as opposed to serviced interest - where borrower pays the interest themselves from a separate revenue stream.
+;;; as opposed to Serviced interest - where borrower pays the interest themselves from a separate revenue stream.
 ;;; See https://www.propertyfinancegroup.com/glossary/rolled-up-interest/
 (ns interest)
 

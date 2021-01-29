@@ -35,3 +35,11 @@ clj꞉interest꞉> 
 ; Execution error (ArithmeticException) at interest/rolledUp-interest-single-equation (interest.clj:17).
 ; Divide by zero
 clj꞉interest꞉> 
+3333.307563354267
+clj꞉interest꞉> 
+3333.333333333333
+clj꞉interest꞉> 
+1111.11
+clj꞉interest꞉> 
+1111.111111111111
+clj꞉interest꞉> 
