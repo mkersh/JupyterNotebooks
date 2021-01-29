@@ -325,7 +325,7 @@
                  :acckey "8a818f44768ae48201768ee042dc4db3"
                  :lastid 716
                  :card-token "cardtoken_1223_1"
-                 :amount 7.14
+                 :amount 99.14
                  :card-acceptor card-acceptor
                  :channelid "8a818e74677a2e9201677ec2b4c336a6"
                  :trans_ref (api/uuid)
@@ -336,6 +336,8 @@
   (steps/apply-api get-all-trans-api card-obj :trans_details)
   (steps/apply-api get-all-unallocated-trans-api card-obj :trans_details)
   (find-all-unallocated-trans card-obj)
+
+  (steps/apply-api get-all-unallocated-trans-api card-obj :trans_details)
 
 
 

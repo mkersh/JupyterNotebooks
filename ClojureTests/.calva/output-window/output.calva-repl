@@ -1,90 +1,37 @@
-"Successful Call: 200"
-"Successful Call: 200"
-{"creationDate" "2020-12-23T10:19:31+01:00",
- "settlementAccountKey" "8a818f63768c1a0d01768ee548c36ccf",
- "guarantors" [],
- "approvedDate" "2020-12-23T10:19:43+01:00",
- "accruedInterest" 0,
- "prepaymentSettings"
- {"prepaymentRecalculationMethod" "NO_RECALCULATION",
-  "principalPaidInstallmentStatus" "PARTIALLY_PAID",
-  "applyInterestOnPrepaymentMethod" "AUTOMATIC"},
- "productTypeKey" "8a818f5f6cbe6621016cbf6d66075e54",
- "balances"
- {"interestFromArrearsDue" 0,
-  "interestFromArrearsPaid" 0,
-  "feesDue" 0,
-  "feesPaid" 0,
-  "penaltyDue" 0,
-  "penaltyBalance" 0,
-  "interestBalance" 0,
-  "interestFromArrearsBalance" 0,
-  "principalDue" 0,
-  "redrawBalance" 0,
-  "principalBalance" 0,
-  "penaltyPaid" 0,
-  "holdBalance" 0,
-  "interestPaid" 0,
-  "interestDue" 0,
-  "feesBalance" 0,
-  "principalPaid" 0},
- "id" "BWEB785",
- "futurePaymentsAcceptance" "NO_FUTURE_PAYMENTS",
- "lastModifiedDate" "2020-12-23T10:19:43+01:00",
- "arrearsTolerancePeriod" 0,
- "latePaymentsRecalculationMethod" "OVERDUE_INSTALLMENTS_INCREASE",
- "assignedBranchKey" "8a818f5f6cbe6621016cbf217c9e5060",
- "encodedKey" "8a818edb768c19b501768ed4ae386796",
- "accountArrearsSettings"
- {"encodedKey" "8a818edb768c19b501768ee576e16a69",
-  "toleranceCalculationMethod" "ARREARS_TOLERANCE_PERIOD",
-  "dateCalculationMethod" "ACCOUNT_FIRST_WENT_TO_ARREARS",
-  "nonWorkingDaysMethod" "EXCLUDED",
-  "tolerancePeriod" 0},
- "penaltySettings" {"loanPenaltyCalculationMethod" "NONE"},
- "interestFromArrearsAccrued" 0,
- "principalPaymentSettings"
- {"encodedKey" "8a818edb768c19b501768ed4ae386797",
-  "totalDuePayment" "TOTAL_BALANCE_PERCENTAGE",
-  "includeInterestInFloorAmount" false,
-  "includeFeesInFloorAmount" false,
-  "percentage" 3.0},
- "tranches" [],
- "disbursementDetails" {"encodedKey" "8a818edb768c19b501768ee576e16a68", "fees" []},
- "assets" [],
- "accountState" "APPROVED",
- "paymentMethod" "HORIZONTAL",
- "creditArrangementKey" "8a818ea1768c19f701768ee53b0167fc",
- "allowOffset" false,
- "interestSettings"
- {"interestChargeFrequency" "ANNUALIZED",
-  "interestApplicationMethod" "REPAYMENT_DUE_DATE",
-  "accrueLateInterest" true,
-  "interestRateReviewUnit" "DAYS",
-  "interestSpread" 0,
-  "interestCalculationMethod" "DECLINING_BALANCE",
-  "interestRateReviewCount" 31,
-  "interestBalanceCalculationMethod" "ONLY_PRINCIPAL",
-  "interestRateSource" "INDEX_INTEREST_RATE",
-  "interestType" "SIMPLE_INTEREST",
-  "interestRate" 24.9,
-  "accrueInterestAfterMaturity" false},
- "scheduleSettings"
- {"periodicPayment" 0,
-  "fixedDaysOfMonth" [3],
-  "paymentPlan" [],
-  "hasCustomSchedule" false,
-  "gracePeriod" 0,
-  "shortMonthHandlingMethod" "LAST_DAY_IN_MONTH",
-  "scheduleDueDatesMethod" "FIXED_DAYS_OF_MONTH",
-  "repaymentScheduleMethod" "DYNAMIC",
-  "repaymentInstallments" 0,
-  "principalRepaymentInterval" 1,
-  "gracePeriodType" "NONE"},
- "fundingSources" [],
- "accountHolderType" "CLIENT",
- "loanAmount" 1000.0,
- "loanName" "CC - Purchases",
- "accountHolderKey" "8a818eef768ae48801768ee523e939dc",
- "accruedPenalty" 0}
-clj꞉http.api.mambu.demo.sandbox꞉> 
+; Error printing return value (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
+; null
+clj꞉interest꞉> 
+; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
+; null
+clj꞉interest꞉> 
+; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
+; null
+clj꞉interest꞉> 
+9999.907386128692
+clj꞉interest꞉> 
+99999.00474811494
+clj꞉interest꞉> 
+; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
+; null
+clj꞉interest꞉> 
+99999.00474811494
+clj꞉interest꞉> 
+99999.99999999991
+clj꞉interest꞉> 
+99999.00474811494
+clj꞉interest꞉> 
+1.00000000000011E7
+clj꞉interest꞉> 
+1.000000000004551E8
+clj꞉interest꞉> 
+9.999999999712443E8
+clj꞉interest꞉> 
+1.000000000526356E10
+clj꞉interest꞉> 
+9.999999949752408E10
+clj꞉interest꞉> 
+1.0000000282819323E12
+clj꞉interest꞉> 
+; Execution error (ArithmeticException) at interest/rolledUp-interest-single-equation (interest.clj:17).
+; Divide by zero
+clj꞉interest꞉> 
