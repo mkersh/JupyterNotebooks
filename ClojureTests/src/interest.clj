@@ -45,4 +45,6 @@
 
     (prn "Amount:" amount "iRate:" interest "GA1:" ga1 "GA1:" ga2)))
 
+;; Working out the number of secs into a video recording :)
+(+ 20 (* 27 60))
 )
