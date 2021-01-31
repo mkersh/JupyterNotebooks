@@ -23,3 +23,4 @@ ClojureTests/javacore.*
 .gitignore
 ClojureTests/.clj-kondo/*
 ClojureTests/Snap.*
+*.env

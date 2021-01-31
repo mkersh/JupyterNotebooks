@@ -61,7 +61,8 @@
     ;;(prn options)
     ;;(prn "request ENDxxx")
     (if (< status 300)
-      (PRN (str "Successful Call: " status) options0)
+      ;;(PRN (str "Successful Call: " status) options0)
+      nil
       (if (:throw-errors options)
         (throw (Exception. (str "ERROR Status: " status)))
         (prn "ERROR Status: " status)))

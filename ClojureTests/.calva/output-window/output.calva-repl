@@ -1,51 +1,36 @@
-; Error printing return value (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
-; null
-clj꞉interest꞉> 
-; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
-; null
-clj꞉interest꞉> 
-; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
-; null
-clj꞉interest꞉> 
-9999.907386128692
-clj꞉interest꞉> 
-99999.00474811494
-clj꞉interest꞉> 
-; Execution error (StackOverflowError) at interest/rolledUp-interest (interest.clj:7).
-; null
-clj꞉interest꞉> 
-99999.00474811494
-clj꞉interest꞉> 
-99999.99999999991
-clj꞉interest꞉> 
-99999.00474811494
-clj꞉interest꞉> 
-1.00000000000011E7
-clj꞉interest꞉> 
-1.000000000004551E8
-clj꞉interest꞉> 
-9.999999999712443E8
-clj꞉interest꞉> 
-1.000000000526356E10
-clj꞉interest꞉> 
-9.999999949752408E10
-clj꞉interest꞉> 
-1.0000000282819323E12
-clj꞉interest꞉> 
-; Execution error (ArithmeticException) at interest/rolledUp-interest-single-equation (interest.clj:17).
-; Divide by zero
-clj꞉interest꞉> 
-3333.307563354267
-clj꞉interest꞉> 
-3333.333333333333
-clj꞉interest꞉> 
-1111.11
-clj꞉interest꞉> 
-1111.111111111111
-clj꞉interest꞉> 
-1111.11
-clj꞉interest꞉> 
-2980
-clj꞉interest꞉> 
-1640
-clj꞉interest꞉> 
+; Evaluating file: traceclient.clj
+nil
+clj꞉tools.traceclient꞉> 
+"0 - Reset, c - Clear, Other Key - Read Next "
+"Clear the Trace buffer"
+"0 - Reset, c - Clear, Other Key - Read Next "
+A5
+A5
+A5
+"0 - Reset, c - Clear, Other Key - Read Next "
+"Clear the Trace buffer"
+"0 - Reset, c - Clear, Other Key - Read Next "
+"0 - Reset, c - Clear, Other Key - Read Next "
+A5
+"0 - Reset, c - Clear, Other Key - Read Next "
+A5
+"0 - Reset, c - Clear, Other Key - Read Next "
+A5
+"0 - Reset, c - Clear, Other Key - Read Next "
+"0 - Reset, c - Clear, Other Key - Read Next "
+"0 - Reset, c - Clear, Other Key - Read Next "
+"0 - Reset, c - Clear, Other Key - Read Next "
+A5
+A5
+A5
+"0 - Reset, c - Clear, Other Key - Read Next "
+"Clear the Trace buffer"
+"0 - Reset, c - Clear, Other Key - Read Next "
+nil
+clj꞉tools.traceclient꞉> 
+; Evaluating file: traceclient.clj
+nil
+clj꞉tools.traceclient꞉> 
+"0 - Reset, c - Clear, q - quit program, Other Key - Read Next "
+nil
+clj꞉tools.traceclient꞉> 
