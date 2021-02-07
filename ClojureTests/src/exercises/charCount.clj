@@ -3,12 +3,16 @@
 (ns charCount)
 
 
+;; countMap is a map, keyed by characters and with a list of each of the characters
+;; which we will later count to get our result
 (defn- add-char-to-map [countMap ch]
   (let [currVal (get countMap ch)]
     ;; could have done the count here but doinf a conj likely to be faster
-    (assoc countMap ch (conj currVal ch)))
-    )
+    (assoc countMap ch (conj currVal ch))))
 
+;; It will be pass a (key,value) pair from the countMap describes above
+;; All we need to do is count the value to determine the number of times
+;; the (first it) character was in the string
 (defn- count-chars [it]
   (vector (str (first it)) (count (second it))))
 
@@ -23,6 +27,4 @@
 
 (comment
 
-(count-str-chars "aaabbbaaaabbbcccdddfffgggrrr")
-
-)
+  (count-str-chars "aaabbbaaaabbbcccdddfffgggrrr"))
