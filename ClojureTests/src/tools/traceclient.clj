@@ -104,6 +104,7 @@
   ;; Get config details from the TRACECLIENT.env
   ;; NOTE: Make sure this file doesn't get stored in GitHub because it contains an ApiKey   
   (let [config (read-config "TRACECLIENT.env")]
+    ;; Repeat the next loop until the user presses the q key
     (loop [count1 -1
            option "start"
            [i count2] (get-i-from-option option count1)]
@@ -115,9 +116,10 @@
             (do
               (prn "Clear the Trace buffer")
               (getTraceItem config -2)
-              (getTraceItem config -2)) 
+              (getTraceItem config -2))
             nil)
           (if (not= option "q")
+            ;; Recurse into loop above again
             (recur (inc count1) option (get-i-from-option option nextCount))
             nil))))))
 
