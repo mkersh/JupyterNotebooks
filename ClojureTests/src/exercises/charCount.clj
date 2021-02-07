@@ -5,6 +5,7 @@
 
 (defn- add-char-to-map [countMap ch]
   (let [currVal (get countMap ch)]
+    ;; could have done the count here but doinf a conj likely to be faster
     (assoc countMap ch (conj currVal ch)))
     )
 
