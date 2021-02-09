@@ -24,3 +24,4 @@ ClojureTests/javacore.*
 ClojureTests/.clj-kondo/*
 ClojureTests/Snap.*
 *.env
+ClojureTests/.calva/*

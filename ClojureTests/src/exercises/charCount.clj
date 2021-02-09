@@ -24,7 +24,6 @@
 ;; (partition-by identity "aaabbbccc")
 
 
-
 (comment
 
   (count-str-chars "aaabbbaaaabbbcccdddfffgggrrr"))

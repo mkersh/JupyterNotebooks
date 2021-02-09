@@ -1,2 +1,7 @@
 (["a" 7] ["b" 6] ["c" 3] ["d" 3] ["f" 3] ["g" 3] ["r" 3])
 clj꞉charCount꞉> 
+; Evaluating file: charCount.clj
+nil
+clj꞉charCount꞉> 
+(["a" 7] ["b" 6] ["c" 3] ["d" 3] ["f" 3] ["g" 3] ["r" 3])
+clj꞉charCount꞉> 
