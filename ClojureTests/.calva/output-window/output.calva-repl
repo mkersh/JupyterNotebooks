@@ -1,7 +1,29 @@
-(["a" 7] ["b" 6] ["c" 3] ["d" 3] ["f" 3] ["g" 3] ["r" 3])
-clj꞉charCount꞉> 
-; Evaluating file: charCount.clj
-nil
-clj꞉charCount꞉> 
-(["a" 7] ["b" 6] ["c" 3] ["d" 3] ["f" 3] ["g" 3] ["r" 3])
-clj꞉charCount꞉> 
+{:cfid "FromAccountID",
+ :last-call
+ {"creationDate" "2020-04-25T19:24:45+02:00",
+  "usage"
+  [{"objectKey" "8a818fa3720dd43d0172128d425d68d1", "default" false, "required" false}
+   {"objectKey" "8a818f1671acaf300171b77a52f50efd", "default" false, "required" false}
+   {"objectKey" "8a818ed371c05ccf0171c61f163c1cc8", "default" false, "required" false}
+   {"objectKey" "8a818e3575eb3fee0175effebeaf4603", "default" false, "required" false}
+   {"objectKey" "8a818ece75a3211a0175a83127834f39", "default" false, "required" false}
+   {"objectKey" "8a818f28720391260172096703b540f7", "default" false, "required" false}
+   {"objectKey" "8a818ffc7293c4cc017294bbafc24008", "default" false, "required" false}
+   {"objectKey" "8a818f6a7222c4fc017227f927f3491c", "default" false, "required" false}
+   {"objectKey" "8a818fa3720dd43d017212006ee034af", "default" false, "required" false}
+   {"objectKey" "8a818efc7540a3d801754182224f3581", "default" false, "required" false}
+   {"objectKey" "8a818f74720c7f0701720ec245344251", "default" false, "required" false}
+   {"objectKey" "8a818f74720c7f0701720ebbdd363f2d", "default" false, "required" false}
+   {"objectKey" "8a818fa3720dd43d01721263b213494a", "default" false, "required" false}
+   {"objectKey" "8a818f1671acaf300171b251df6e6057", "default" true, "required" true}],
+  "editRights" {"allUsers" false, "roles" []},
+  "id" "FromAccountID",
+  "lastModifiedDate" "2020-11-22T13:50:39+01:00",
+  "viewRights" {"allUsers" false, "roles" []},
+  "displaySettings" {"displayName" "From AccountID", "description" "", "fieldSize" "SHORT", "position" 0},
+  "encodedKey" "8a818f1671acaf300171b25ebca4615d",
+  "type" "FREE_TEXT",
+  "availableFor" "LOAN_ACCOUNT",
+  "state" "ACTIVE",
+  "valueValidationSettings" {"unique" false}}}
+clj꞉http.api.mambu.examples.custom-fields꞉> 

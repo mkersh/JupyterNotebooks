@@ -7,10 +7,10 @@
 ;; which we will later count to get our result
 (defn- add-char-to-map [countMap ch]
   (let [currVal (get countMap ch)]
-    ;; could have done the count here but doinf a conj likely to be faster
+    ;; could have done the count here but doing a conj likely to be faster
     (assoc countMap ch (conj currVal ch))))
 
-;; It will be pass a (key,value) pair from the countMap describes above
+;; It will be passed a (key,value) pair from the countMap described above
 ;; All we need to do is count the value to determine the number of times
 ;; the (first it) character was in the string
 (defn- count-chars [it]
@@ -19,7 +19,7 @@
 (defn count-str-chars [str-to-count]
   (map count-chars (reduce add-char-to-map {} str-to-count)))
 
-;; could have used the standard partition-by function to achieve what I have doen in the 
+;; could have used the standard partition-by function to achieve what I have done in the 
 ;; reduce:
 ;; (partition-by identity "aaabbbccc")
 

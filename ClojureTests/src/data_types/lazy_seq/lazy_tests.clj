@@ -93,3 +93,22 @@
 
 (take 5 (sieve2 (iterate inc 2)))
 
+;; Both test-lazy and test-lazy2 work
+;; BUT they have the lazy-seq in different places
+;; I couldn't understand what was happening here at first but now I can
+(defn test-lazy
+  [n]
+  (cons n
+   (lazy-seq (test-lazy (+ n 1)))))
+
+  (test-lazy 0)
+
+(defn test-lazy2
+  [n]
+  (lazy-seq
+   (cons n (test-lazy2 (+ n 1)))))
+
+(test-lazy2 0)
+
+
+
