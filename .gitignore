@@ -25,3 +25,5 @@ ClojureTests/.clj-kondo/*
 ClojureTests/Snap.*
 *.env
 ClojureTests/.calva/*
+ClojureTests/.calva/output-window/output.calva-repl
+ClojureTests/.calva/output-window/output.calva-repl
